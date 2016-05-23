@@ -139,6 +139,7 @@ p {
 	font-family: 'OpenSans-Regular', sans-serif;
     line-height: 1.8;
     color: #212121;
+    margin-bottom: 40px;
 }
 
 
@@ -151,6 +152,11 @@ p.citation1
 	line-height: 1.4;
 	border-left:3px solid #000000;
 	padding-left: 10px;
+}
+
+p.citation1 a{
+	font-family: 'BrandonGrotesque-BoldItalic', sans-serif;
+	font-size: 24px;
 }
 
 .hideme
@@ -457,6 +463,110 @@ margin-bottom: 50px;
 	display: none;
 }
 
+.comm12{
+	display: none;
+}
+
+.comme22{
+	display: none;
+}
+
+.memepart{
+	display: none;
+}
+
+.poucette2{
+	display: none;
+}
+
+.natif2{
+	display: none;
+}
+
+.denis2{
+	display: none;
+}
+
+.revolu2{
+	display: none;
+}
+
+.capital2{
+	display: none;
+}
+
+.livre2{
+	display: none;
+}
+
+.cerveau2{
+	display: none;
+}
+
+.agilite2{
+	display: none;
+}
+
+.etude2{
+	display: none;
+}
+
+.temoignage2{
+	display: none;
+}
+
+.roger2{
+	display: none;
+}
+
+.ina2{
+	display: none;
+}
+
+.serres2{
+	display: none;
+}
+
+.institutions2{
+	display: none;
+}
+
+.attaque2{
+	display: none;
+}
+
+.sophisme2{
+	display: none;
+}
+
+.rue892{
+	display: none;
+}
+
+.forum2{
+	display: none;
+}
+
+.maxime2{
+	display: none;
+}
+
+.clique2{
+	display: none;
+}
+
+.fossoyeur2{
+	display: none;
+}
+
+.ronald2{
+	display: none;
+}
+
+.general2{
+	display: none;
+}
+
 /* Les contenus vidéos*/
 
 .mediavideo{
@@ -613,6 +723,7 @@ p {
 }
 
 .sommaire {
+	position: relative;
 	font-size: 16px;
 	margin-left: 20px;
 	cursor: pointer;
