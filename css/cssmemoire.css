@@ -1,0 +1,673 @@
+* {
+font-family: 'OpenSans-Regular', sans-serif;
+font-size: 18px;
+color: #000000;
+margin: 0;
+}
+
+/* Fonts */
+@font-face {
+	font-family:'AbrilW01-DisplayRegular';
+	src: url('font/AbrilW01-DisplayRegular_gdi.eot');
+	src: url('font/AbrilW01-DisplayRegular_gdi.eot?#iefix') format('embedded-opentype'),
+		url('font/AbrilW01-DisplayRegular_gdi.woff') format('woff'),
+		url('font/AbrilW01-DisplayRegular_gdi.ttf') format('truetype'),
+		url('font/AbrilW01-DisplayRegular_gdi.svg#AbrilW01-DisplayRegular') format('svg');
+	font-weight: 300;
+	font-style: normal;
+	font-stretch: normal;
+
+}
+
+@font-face {
+	font-family:'OpenSans-Regular';
+	src: url('font/OpenSans_gdi.eot');
+	src: url('font/OpenSans_gdi.eot?#iefix') format('embedded-opentype'),
+		url('font/OpenSans_gdi.woff') format('woff'),
+		url('font/OpenSans_gdi.ttf') format('truetype'),
+		url('font/OpenSans_gdi.svg#OpenSans-Regular') format('svg');
+	font-weight: 400;
+	font-style: normal;
+	font-stretch: normal;
+	unicode-range: U+0020-25CA;
+}
+
+@font-face {
+	font-family:'font/BrandonGrotesque-Bold';
+	src: url('font/BrandonGrotesque-Bold_gdi.eot');
+	src: url('font/BrandonGrotesque-Bold_gdi.eot?#iefix') format('embedded-opentype'),
+		url('font/BrandonGrotesque-Bold_gdi.woff') format('woff'),
+		url('font/BrandonGrotesque-Bold_gdi.ttf') format('truetype'),
+		url('font/BrandonGrotesque-Bold_gdi.svg#BrandonGrotesque-Bold') format('svg');
+	font-weight: 450;
+	font-style: normal;
+	font-stretch: normal;
+}
+
+@font-face {
+	font-family:'font/BrandonGrotesque-BoldItalic';
+	src: url('font/BrandonGrotesque-BoldItalic_gdi.eot');
+	src: url('font/BrandonGrotesque-BoldItalic_gdi.eot?#iefix') format('embedded-opentype'),
+		url('font/BrandonGrotesque-BoldItalic_gdi.woff') format('woff'),
+		url('font/BrandonGrotesque-BoldItalic_gdi.ttf') format('truetype'),
+		url('font/BrandonGrotesque-BoldItalic_gdi.svg#BrandonGrotesque-BoldItalic') format('svg');
+	font-weight: 450;
+	font-style: italic;
+	font-stretch: normal;
+	unicode-range: U+0020-25CA;
+}
+
+@font-face {
+	font-family:'BrandonGrotesque-Light';
+	src: url('font/BrandonGrotesque-Light_gdi.eot');
+	src: url('font/BrandonGrotesque-Light_gdi.eot?#iefix') format('embedded-opentype'),
+		url('font/BrandonGrotesque-Light_gdi.woff') format('woff'),
+		url('font/BrandonGrotesque-Light_gdi.ttf') format('truetype'),
+		url('font/BrandonGrotesque-Light_gdi.svg#BrandonGrotesque-Light') format('svg');
+	font-weight: 330;
+	font-style: normal;
+	font-stretch: normal;
+	unicode-range: U+0020-25CA;
+}
+/*Les titre*/
+
+.bigtitle{
+	font-size: 64px;
+	font-family: 'AbrilW01-DisplayRegular', serif;
+	text-align: center;
+	padding-top: 250px;
+	color: white;
+}
+
+h1 {
+	font-size: 64px;
+	font-family: 'AbrilW01-DisplayRegular', serif;
+	text-transform: uppercase;
+	margin-top: 150px;
+
+}
+
+h2 {
+	margin-top: 150px;
+	font-size: 40px;
+	font-family: 'AbrilW01-DisplayRegular', serif;
+	margin-left: -60px;
+	
+}
+
+h3{
+	margin-left: -30px;
+	margin-top: 100px;
+	margin-bottom: 20px;
+	font-size: 36px;
+	font-family: 'BrandonGrotesque-Bold', sans-serif;
+	
+}
+
+h4{
+	margin-left: -15px;	
+	margin-top: 60px;
+	margin-bottom: 15px;
+	font-size: 36px;
+	font-family: 'BrandonGrotesque-Light', sans-serif;
+	}
+
+
+.h2
+
+.titreh3
+{
+	margin-left: -30px;
+	margin-top: 100px;
+	margin-bottom: 20px;
+	font-size: 36px;
+	font-family: 'BrandonGrotesque-Bold', sans-serif;
+	
+}
+
+.h4
+{
+	margin-left: -15px;	
+	margin-top: 60px;
+	margin-bottom: 15px;
+	font-size: 36px;
+	font-family: 'BrandonGrotesque-Light', sans-serif;
+	}
+/*Les Paragraphes*/
+
+p {
+	font-family: 'OpenSans-Regular', sans-serif;
+    line-height: 1.8;
+    color: #212121;
+}
+
+
+p.citation1
+{
+	font-family: 'BrandonGrotesque-BoldItalic', sans-serif;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    font-size: 24px;
+	line-height: 1.4;
+	border-left:3px solid #000000;
+	padding-left: 10px;
+}
+
+.hideme
+{
+    opacity:0;
+}
+
+/* Bibliographie */
+.bibli
+{
+position: absolute;
+margin:30px;
+width: 200px;
+font-size: 14px;
+display: none;
+}
+
+a:hover .bibli
+{
+	display: block;
+}
+
+.bibli b{
+	font-size: 14px;
+}
+
+.bibli i{
+	font-size: 14px;
+}
+
+/*Les liens*/
+ 
+a, a:visited {
+	text-decoration: none;
+	border-bottom: 3px solid #83F4D6;
+	box-shadow: inset 0 -5px 0 #83F4D6;
+	cursor: pointer;
+	-webkit-transition: all .4s ease-in;
+    -moz-transition: all .4s ease-in;
+    -o-transition: all .4s ease-in;
+    transition: all .4s ease-in;
+
+}
+
+a:hover {
+	background-color: #83F4D6; 
+}
+
+
+/* Top bar */
+.topbar{
+	top: 0px;
+	background-color: #ffffff;
+	opacity: 0.95;
+	position: fixed;
+	height: 50px;
+	width: 100%;
+	border-bottom: 1px solid #EDEDED;
+	z-index: 11;
+}
+
+/* Top bar */
+
+/* Progress bar */
+
+
+/* Progress bar */
+
+
+
+/* img */
+
+.img-cover1{
+	 background-color:blue;
+	 background:url(memoireimg/part1-test.jpg) no-repeat ; 
+	 height: 660px;
+	 width: 100%;
+	 margin-top: 50px;
+}
+
+img{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	width: 57%;
+}
+
+/* sommaire*/
+
+.sommaire {
+	font-size: 12px;
+	margin-left: 40px;
+	margin-top: 15px;
+	cursor: pointer;
+}
+
+.sommaire:hover{
+	text-decoration: underline;
+}
+
+.sidemenu{
+	background-color: #F3F2F2;
+	width: 340px;
+	height: 100%;
+	top:0px;
+	margin-left: 0px;
+	position: fixed;
+	display: none;
+	z-index: 10;
+	float: left;
+	border-right: 1px solid #EDEDED;
+}
+
+.sommairetitle{
+	margin-top: 100px;
+	margin-left: 10px;
+	font-size: 24px;
+	font-family:'Brandon Grotesque', sans-serif; 
+	font-weight: bold;
+}
+
+
+.sidemenu a { 
+	display:block; 
+	text-align:left;
+	border-bottom: none;
+	box-shadow: none;
+     }
+
+.sidemenu a[title=H1] { font-size:18px; font-weight: bold; margin-top : 30px; margin-bottom: 25px; margin-left:10px; }
+.sidemenu a[title=H2] { font-size:14px; font-weight: bold; margin-bottom: 18px; margin-left:15px;}
+.sidemenu a[title=H3] { font-size:14px; margin-bottom: 12px; margin-left:20px;}
+
+.sidemenu a:hover{
+	border-bottom: none;
+	box-shadow: none;
+	text-decoration: underline;
+}
+
+/* Sommaire */
+
+/* Container */
+
+.gauche{
+width: 728px;
+margin: 0 auto;
+}
+
+.imgcontainer01 {
+height: auto;
+width: 930;
+}
+
+.imgcontainer02 {
+
+}
+
+.imgcontainer03 {
+
+}
+
+.droite{
+width: auto;
+
+}
+
+.footer{
+	width: auto;
+	height:50px;
+text-align: center;
+margin-bottom: 50px;
+
+}
+
+.footer a{
+	margin-right: 20px;
+	margin-left: 20px;
+	font-size: 16px;
+	color: #000000;	
+	border-bottom: solid, black;
+
+	-webkit-transition: opacity 0.5s ease;
+	-moz-transition: opacity 0.5s ease;
+}
+
+.footer a:hover{
+	color: #02B875;	
+}
+
+
+
+/* Références */
+.reference{
+	text-align: left;
+	width: 200px;
+	font-size: 12px;
+	margin-top: 100px;
+	margin-left: 30px;
+	position: absolute;
+	line-height: 1.2;
+	display: none;
+
+}
+
+.reference2{
+	text-align: left;
+	width: 200px;
+	font-size: 12px;
+	margin-top: 30px;
+	margin-left: 30px;
+	position: absolute;
+	line-height: 1.2;
+	display: none;
+
+}
+
+.reference i{
+	font-size: 12px;
+}
+
+.reference2 i{
+	font-size: 12px;
+}
+
+/* Media général */
+
+.media{
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+/* Wikipedia cards */
+.sieyes2{
+	display: none;
+}
+
+.president2{
+	display: none;
+}
+
+.pierre2{
+	display: none;
+}
+
+.invisible2{
+	display: none;
+}
+
+.raconter2{
+	display: none;
+}
+
+.enarque2{
+	display: none;
+}
+
+.electeur2{
+	display: none;
+}
+
+.reforme2{
+	display: none;
+}
+
+.juppe2{
+	display: none;
+}
+
+.enarque4{
+	display: none;
+}
+
+.bonneraison2{
+	display: none;
+}
+
+.reel2{
+	display: none;
+}
+
+.mediapart2{
+	display: none;
+}
+
+.cahuwiki2{
+	display: none;
+}
+
+.nul2{
+	display: none;
+}
+
+.lui2{
+	display: none;
+}
+
+.legrand2{
+	display: none;
+}
+
+.mythe2{
+	display: none;
+}
+
+/* Les contenus vidéos*/
+
+.mediavideo{
+	margin-top: 70px;
+	margin-bottom: 70px;
+}
+
+.participatif2{
+		margin-top: 70px;
+	margin-bottom: 70px;
+	display: none;
+}
+
+.link{
+	font-style: bold;
+}
+
+.youtube{
+	position: relative;
+	display: none;
+	z-index: 2;
+}
+
+
+
+.videolepen{
+	position: relative;
+}
+.youtubelepen{
+	position: relative;
+	display: none;
+	z-index: 3;
+}
+
+
+
+.link02{
+}
+.youtube02{
+	position: relative;
+	display: none;
+	z-index: 3;
+}
+
+
+.link03{
+}
+.youtube03{
+	position: relative;
+	display: none;
+	z-index: 3;
+}
+
+
+.link04{
+}
+.youtube04{
+	position: relative;
+	display: none;
+	z-index: 3;
+}
+
+.link05{
+}
+.youtube05{
+	position: relative;
+	display: none;
+	z-index: 3;
+}
+/* Les contenus vidéos*/
+
+
+/* Bkg video */
+.overlay {
+    background-color: #000;
+    bottom: 0;
+    display: none;
+    left: 0;
+    opacity: 0.5;
+    filter: alpha(opacity = 50); /* IE7 & 8 */
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 10;
+}
+
+.fermer{
+	position: relative;
+	background-color: #ffffff;
+	z-index: 4;
+	width: 100px;
+	height: 100px;
+}
+/* Bkg video */
+
+
+
+.article{
+	height:290px;
+	position: relative;
+	right:2%;
+	display: none;
+	border:1px solid;
+}
+.linkarticle{
+	font-style: bold;
+}
+
+
+
+
+
+
+@media all and (min-width: 960px) {
+
+
+}
+ 
+@media all and (max-width: 959px) and (min-width: 600px) {
+
+
+
+}
+ 
+@media all and (max-width: 599px) and (min-width: 320px) {
+
+	* {
+	font-family: 'OpenSans-Regular', sans-serif;
+	font-weight: 400;
+	font-size: 18px;
+	color: #212121;
+	}  
+
+p {
+	font-family: 'OpenSans-Regular', sans-serif;
+    line-height: 1.5;
+    color: #212121;
+}
+
+
+
+/* top bar */
+
+.topbar{
+	top: 0px;
+	background-color: #ffffff;
+	opacity: 0.95;
+	position: fixed;
+	margin-left: 0px;
+	height: 50px;
+	width: 100%;
+	border-bottom: 1px solid #EDEDED;
+	z-index: 11;
+}
+
+.sommaire {
+	font-size: 16px;
+	margin-left: 20px;
+	cursor: pointer;
+}
+
+.gauche{
+margin-left: 10px;
+shape-margin: 15px;
+width: auto;
+
+}
+
+/*Les titres*/
+
+h1 {
+	font-size: 64px;
+	font-family: 'AbrilW01-DisplayRegular', serif;
+	text-transform: uppercase;
+	margin-top: 150px;
+
+}
+
+h2 {
+	margin-top: 120px;
+	font-size: 40px;
+	font-family: 'AbrilW01-DisplayRegular', serif;
+	margin-left: 0px;
+	
+}
+
+h3{
+	margin-left: 10px;
+	margin-top: 100px;
+	margin-bottom: 20px;
+	font-size: 24px;
+	font-family: 'BrandonGrotesque-Bold', sans-serif;
+	
+}
+
+h4{
+	margin-left: 20px;	
+	margin-top: 60px;
+	margin-bottom: 15px;
+	font-size: 36px;
+	font-family: 'BrandonGrotesque-Light', sans-serif;
+	}
+
+.hideme{
+	opacity:1;
+
+}
+
+
+    }
+ 
+
+
+

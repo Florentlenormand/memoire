@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="Florent Lenormand - Currently student designer at EnsAD - Email me to see my work">
+    <meta name="author" content="Florent Lenormand">
+    <link rel="icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">    
+
+
+    <title>Mémoire - Le numérique, porteur ou destructeur d’une nouvelle démocratie ?</title>
+
+
+    <!-- Bootstrap core CSS -->
+    <link href="../../dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/cssmemoire.css" rel="stylesheet">
+
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="../../assets/js/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+     <script src="js/memoire.js"></script>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  </head>
+
+  <body> 
+
+  <script>
+
+
+
+$(document).ready(function(){
+    $(".link").click(function(event){
+      event.stopPropagation();
+        $(".youtube").empty();
+        $(".youtube").append('<iframe width="728" height="422" src="https://www.youtube.com/embed/rfGyRJMxRLw?autoplay=1" frameborder="0" allowfullscreen></iframe>');
+        $(".youtube").toggle();
+    });
+     $(document).click( function(){
+        $('.youtube').hide();
+        $('.youtube').empty();
+    });
+});
+
+
+
+$(document).ready(function(){
+   $('.linkarticle').click( function(event){
+        event.stopPropagation();
+        $('.article').toggle();
+    });
+
+    $(document).click( function(){
+        $('.article').hide();
+    });
+});
+
+//add overlay if it does not exist
+if( $('.overlay').length == 0 ){
+    $('body').append('<div class="overlay"></div>');
+} 
+
+$(document).ready(function(){
+    var clicks = 0;
+    $(".videolepen").click(function(event){
+      event.stopPropagation();
+        $(".youtubelepen").empty();
+        $(".youtubelepen").append('<iframe width="728" height="422" src="https://www.youtube.com/embed/JLPilAzV5dA?autoplay=1" frameborder="0" allowfullscreen></iframe>');
+        $(".youtubelepen").toggle();
+    });
+
+     $(document).click( function(){
+        $('.youtubelepen').hide();
+        $('.youtubelepen').empty();
+    });
+});
+
+
+$(document).ready(function(){
+    var clicks = 0;
+    $(".link02").click(function(event){
+      event.stopPropagation();
+        $(".youtube02").empty();
+        $(".youtube02").append('<iframe width="728" height="422" src="https://www.youtube.com/embed/ihuxnVxEpl8?autoplay=1" frameborder="0" allowfullscreen></iframe>');
+        $(".youtube02").toggle();
+    });
+
+     $(document).click( function(){
+        $('.youtube02').hide();
+        $('.youtube02').empty();
+    });
+});
+
+$(document).ready(function(){
+    var clicks = 0;
+    $(".link03").click(function(event){
+      event.stopPropagation();
+        $(".youtube03").empty();
+        $(".youtube03").append('<iframe width="728" height="422" src="https://www.youtube.com/embed/FdOnWu1qdoo?autoplay=1" frameborder="0" allowfullscreen></iframe>');
+        $(".youtube03").toggle();
+    });
+
+     $(document).click( function(){
+        $('.youtube03').hide();
+        $('.youtube03').empty();
+    });
+});
+
+$(document).ready(function(){
+    var clicks = 0;
+    $(".link04").click(function(event){
+      event.stopPropagation();
+        $(".youtube04").empty();
+        $(".youtube04").append('<iframe width="728" height="422" src="https://www.youtube.com/embed/BxemczLqgsk?autoplay=1" frameborder="0" allowfullscreen></iframe>');
+        $(".youtube04").toggle();
+    });
+
+     $(document).click( function(){
+        $('.youtube04').hide();
+        $('.youtube04').empty();
+    });
+});
+
+$(document).ready(function(){
+    var clicks = 0;
+    $(".link05").click(function(event){
+      event.stopPropagation();
+        $(".youtube05").empty();
+        $(".youtube05").append('<iframe width="728" height="422" src="https://www.youtube.com/embed/vSOxdz93jRI?autoplay=1" frameborder="0" allowfullscreen></iframe>');
+        $(".youtube05").toggle();
+    });
+
+     $(document).click( function(){
+        $('.youtube05').hide();
+        $('.youtube05').empty();
+    });
+});
+
+
+
+
+$(document).ready(function(){
+    $(".sommaire").click(function(event){
+      event.stopPropagation();
+        $(".sidemenu").toggle(100);
+
+    $(".sidemenu").click(function(event){
+      $(".sidemenu").hide(500);
+       });
+     $("html").click( function(){
+        $('.sidemenu').hide(500);
+    });
+
+
+
+    });
+    
+});
+
+// Scipt apparition citations FADE IN 
+$(document).ready(function() {
+    
+    /* Every time the window is scrolled ... */
+    $(window).scroll( function(){
+    
+        /* Check the location of each desired element */
+        $('.hideme').each( function(i){
+            
+            var bottom_of_object = $(this).offset().top + $(this).outerHeight();
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+            
+            /* If the object is completely visible in the window, fade it it */
+            if( bottom_of_window > bottom_of_object ){
+                
+                $(this).animate({'opacity':'1'},1000);
+                    
+            }
+            
+        }); 
+    
+    });
+    
+});
+
+// Scipt apparition citations FADE IN 
+
+</script>
+
+
+ <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js" type="text/javascript"></script>
+ <script type="text/javascript">
+        $(document).ready(function() {
+            $(".sidemenu").append('<p></p>')
+            $("h1, h2, h3").each(function(i) {
+                var current = $(this);
+                current.attr("id", "title" + i);
+
+                $(".sidemenu").append("<a id='link" + i + "' href='#title" + i + "' title='" + current.attr("tagName") + "'>" + current.html() + "</a>");
+            });
+        });
+    </script>
+
+
+
+
+
+  <!--
+   <script>
+    $(function() { // < handler start
+        $(".link").on({
+            click: function() {
+                $(".youtube").stop().hide(500);
+            },
+            
+            click: function() {
+                $(".youtube").stop().show(500);
+            }
+           
+            
+        })
+    }); // < handler end
+</script>
+-->
+
+<!-- Top Bar -->
+<div class="topbar">
+<p><div class='sommaire'>
+Sommaire de la page
+</div>
+<div class="sidemenu">
+  <div class="sommairetitle">
+    Sommaire de la page
+  </div>
+</div>
+</p>
+</div>
+<!-- Top Bar -->
+<!-- Sommaire -->
+
+<!-- Sommaire -->
+
+
+<div class="gauche">
+<h2>III - Le numérique, porteur ou destructeur d’une nouvelle démocratie ?</h2>
+<h3>Introduction</h3>
+<p>
+  J’arrive à un âge où mes amis commencent à rentrer dans la vie active. Je n’en avais jamais vraiment pris conscience tant qu’ils travaillaient dans le même domaine que moi. Mais un jour, j’ai participé à un repas avec des amis du lycée que je n’avais pas vu depuis longtemps et beaucoup d’entre eux étaient devenus professeur de français. C’est d’ailleurs assez particulier d’avoir des amis professeur quand on est encore étudiant. Je les écoutais parler de leurs élèves et j’avais le sentiment de me tenir à un conseil de classe dans lequel j’étais le défenseur de camarades que je ne connaissais pas. 
+
+</p>
+<p>
+Très vite la discussion s’est orientée vers Wikipédia. L’objet de la discorde était que les élèves rendaient des devoirs bêtement copié collé, issu de l’encyclopédie, en pensant que leur professeur n’y verrait que du feu. J’ai tenté d’expliquer en m’embrouillant un peu que Wikipédia était un formidable outil et qu’il faudrait encourager les élèves à l’utiliser de manière intelligente plutôt que de leur en fermer les portes. Cet argument n’a pas fait mouche, sûrement parce qu’il était plus clair dans ma tête que dans ma bouche. J’ai alors émis l’idée de proposer aux élèves d’écrire une page Wikipédia de la même manière qu’un commentaire de texte. Cela permettrait de faire de vraies recherches, de citer les sources et de voir son article corrigé par d’autres internautes. Mais on s’empressa de passer à un autre sujet.   
+</p>
+<p>
+  En faisant quelques recherches, je me suis rendu compte que certaines écoles un peu partout dans le monde pratiquaient ce genre d’exercice. Les copies des élèves se transforment en article Wikipédia et deviennent une nouvelle ressource pour la communauté plutôt qu’une copie rangée au fond d’un tiroir. Leur travail est lu par les internautes, il est amélioré et revu par les rédacteurs de Wikipédia. Les élèves sont donc plus impliqués dans leur travail et s’ils n’ont peut-être pas supprimé le copié collé de leur clavier, ils ont en tout cas compris ce qu’ils rédigeaient. 
+</p>
+<p>
+  Wikipédia est un formidable outil démocratique, on le cite souvent comme un exemple de démocratie coopérative. Cette encyclopédie a su se saisir de la puissance de la multitude, jugeant à égalité ses contributeurs. Mais que retenons-nous de ce modèle ? Est-il vraiment un exemple de démocratie ? Peut-on comparer Wikipédia à la démocratie ?  
+
+</p>
+<p>
+  Dans son célèbre livre Pour tout résoudre, cliquez-ici,  Evgeny Morozov explique ce qu’il définit comme « le solutionisme technologique ». D’après lui la technologie veut non seulement tout transformer mais aussi tout socialiser. Par exemple, la directrice marketing de Facebook s’est enthousiasmée pour Seesaw, une application permettant de demander l’opinion à vos amis via des sondages instantanés pour la moindre décision que vous avez à prendre dans votre vie comme, la robe de mariée que vous devez acheter, la boisson que vous devez commander avant, peut-être, de savoir quel candidat politique soutenir. Evgeny Morozov explique :
+
+</p>
+<p class="citation1 hideme">
+« Il fut un temps où nous achetions des choses pour impressionner nos amis, pleinement conscients du fait qu’ils pourraient ne pas aimer nos achats. Or, ici, la logique est inversée : si quelque chose impressionne nos amis, nous l’achetons. Les risques de rejet ont été réduits au minimum : nous savons à l’avance combien de « Likes » sur Facebook chacune de nos décisions devrait accumuler. »   
+</p>
+<p>
+Cet outil de sondage, à première vue démocratique, est détourné pour acheter en fonction de l’avis de ses amis. Morozov explique les limites de la technologie qui ne résout pas un problème mais le déplace et rend l’utilisateur simple produit de consommation. La technologie possède des limites évidentes et la tendance à régler n’importe quel problème à travers une application nous empêche de réfléchir à nos pratiques et de nous interroger sur nos actions. Résoudre un problème semble suffire à le faire disparaître, comme si nous fermions les yeux. Nous allons analyser les conséquences du solutionnisme technologique à travers la révolution Égyptienne. Cette révolution a été longtemps décrite comme une révolution 2.0, qui a existé grâce à la technologie. Mais nous verrons que si internet à engendrer un mouvement positif il a été capable de l’inverse dans une post-révolution.
+</p>
+<h3>1) L’open-source et la démocratie</h3>
+<h4>a) Wikipédia et la multitude
+</h4>
+<p>
+  Imaginez simplement qu’un homme appelé Jimbo vienne vous voir en 2001 en vous disant : « J’ai une super idée ! Nous commençons à rédiger sept articles et n’importe qui pourra éditer n’importe quoi, n’importe quand, et nous obtiendrons une magnifique encyclopédie ! » À première vue, c’est une idée stupide. Jonathan Zittrain explique que cela ressemble à une idée tellement stupide que même Jimbo n’y a pas pensé. Il a créé Nupedia, une encyclopédie plus traditionnelle dans laquelle il payait des gens qui écrivaient des articles de bonne qualité. Un wiki fut créé ensuite pour que chacun puisse faire des suggestions sur les parutions à la manière d’une antichambre. Mais cette antichambre s’est tellement développée qu’elle a englobé la totalité du projet.    <br> 
+Cette encyclopédie est un modèle participatif et démocratique intéressant car il a su exploiter le pouvoir de la multitude sans contrepartie. En ligne, beaucoup d’internautes, à la manière des abeilles dans une ruche, agissent gratuitement, pour le plaisir, la compétition ou la beauté du geste. 
+</p>
+<p>
+  Wikipédia crée un ordre économique où la notoriété tient lieu de rémunération. Le projet se fondait sur une économie classique, seule la monnaie était différente ; les auteurs sont rémunérés par le prestige attaché à leur contribution. <br>
+Mais la présidente de la fondation Wikimedia a révélé que presque 80 % des contributions sur Wikipédia sont anonymes. Les utilisateurs les plus actifs corrigent les textes non pas pour être rémunérés, mais parce que les erreurs et approximations leur sont insupportables. Ils corrigent pour que l’encyclopédie s’améliorer, pour apporter leur pierre à l’édifice. <br>
+La propension à rendre le monde meilleur, ajouté à la distribution au plus grand nombre de nouvelles ressources pour agir, a instauré une nouvelle forme de rapports économiques : la contribution. « Si tout le monde apporte une petite pierre, pourquoi pas moi ? »
+</p>
+<h4>b) La présupposition d’égalité
+</h4>
+<p>
+  Les rédacteurs sur Wikipédia sont traités à égalité. La voix d’un grand scientifique renommé ne porte pas plus que celle d’un jeune étudiant. Chacun doit participer à la rédaction d’un article en argumentant, en expliquant ses propos et faisant apparaître dans une discussion publique les erreurs. Ces discussions deviennent parfois de très longs débats argumentés autant sur la véracité d’un fait historique ou que sur l’âge d’Arielle Dombaslle. Dans tous les cas, tant qu’une personne participe, elle ne sera pas exclue de Wikipédia. 
+</p>
+<p>
+  Cette présupposition d’égalité est radicalement différente d’un processus électoral. Dominique Cardon explique : 
+
+</p>
+<p class="citation1 hideme">
+« Le processus électoral est une fiction utile destinée à voiler dans l’isoloir les caractéristiques socio-économiques des individus afin de produire un dénombrement égalitaire des opinions. »
+</p>
+<p>
+  La présupposition d’égalité n’évalue les participants que par ce qu’ils font et disent. C’est très fidèle à la figure du hacker qui d’après Steven Levy : 
+</p>
+<p class="citation1 hideme">
+
+  « (...) n’est jugé que sur sa production et non sur de faux critères comme les diplômes, l’âge, la race ou la situation sociale. »
+</p>
+<p>
+  De manière très libérale, la responsabilité individuelle est valorisée. Mais la présupposition d’égalité pose un problème évident : la promotion de ceux qui agissent est porteur d’exclusion. Les agissants disqualifient les immobiles. Les contributeurs, les utilisateurs actifs accaparent l’espace virtuel et réduisent encore plus au silence les petits artisans contentieux et modestes. La plupart des plate-formes qui se servent de l’effet de réseau et de la multitude servent ce principe, si bien qu’on y est habitué. 
+
+</p>
+<p>
+L’idée du « tout participatif » reproduit des partages qui ont pour origine l’inégale distribution des capitaux socioculturels. Dominique Cardon explique qu’internet cherche à corriger ces inégalités cachées en élargissant la notion de participation à des formes d’expression beaucoup moins exigeantes socialement et culturellement. On peut désormais voter pour un article, aimer sur Facebook, laisser un commentaire sur Instagram et rediriger un lien Twitter. Ces interactions sont primordiales car elles constituent des formes de participation qui permettent la hiérarchisation des informations sur Internet. Elles permettent de ne pas exclure les plus discrets. 
+  
+</p>
+<p>
+
+Il ajoute qu’il est important de tolérer cette variété de définition des qualités des personnes, pour conjurer les formes de disqualifications symboliques qui ont séparé les personnes cultivées des personnes populaires dans l’espace public traditionnel.  
+</p>
+<h4>c) La gentillesse des étrangers </h4>
+<p>
+  Ces petites interactions qui facilitent les moyens de s’exprimer sont comparées au travail des abeilles dans une ruche. Plus la participation est facile, simple d’utilisation et diversifiée et moins l’exclusion est forte. Henry Verdier explique que ces contributeurs volontaires créent de la valeur car ils en ont le désir, parce que c’est devenu plus facile grâce aux technologies numériques et parce qu’une application leur a inspiré la possibilité de le faire.<br> 
+Seth Godin en rend compte sur son blog en expliquant pourquoi les gens choisissent de partager des idées :
+
+</p>
+<p class="citation1">
+« - je propage votre idée car cela me fait sentir généreux<br>
+- parce que je me sens malin en partageant avec d’autres ce que j’ai découvert<br>
+- parce que je m’intéresse aux conséquences et que je veux votre réussite (ou celle du créateur de l’idée)<br>
+- parce que je n’ai pas le choix. Chaque fois que j’utilise votre produit j’en propage l’idée (hotmail, l’iPad, un tatouage)<br>
+- parce que j’en tire un avantage financier direct (affiliation à Amazon)<br>
+- parce que cette idée est drôle et que rire seul n’est pas amusant<br>
+- parce que je suis seul et qu’en partageant une idée je règle ce problème du moins pour un instant<br>
+- parce que je suis en colère et que je veux enrôler d’autres personnes dans ma révolte (ou vous mettre à terre)<br>
+- parce que mes amis et moi en tirerons bénéfice si je partage l’idée (Groupon)<br>
+- parce que vous me l’avez demandé et qu’il est difficile de vous dire non<br>
+- parce que je peux utiliser l’idée pour faire se rencontrer des gens et qu’organiser ces rencontres est à la fois amusant et le moyen le plus rapide de créer des liens<br>
+- parce que votre service marche mieux si tous mes amis l’utilisent (email, Facebook)<br>
+- parce que si tout le monde partage cette idée je me sentirais plus heureux<br>
+- parce que votre idée dit quelque chose que j’ai du mal à exprimer directement (alcooliques anonymes, un billet de blog, un livre)<br>
+- parce que quelqu’un m’est cher et que cette idée le rendra plus heureux ou en meilleure santé<br>
+- parce que c’est marrant de faire ricaner un autre ado avec des trucs lascifs que nous ne sommes pas censés regarder<br>
+- parque ma tribu doit être mise au courant si nous voulons éviter une agression extérieure<br>
+- parce que c’est mon travail <br>
+- parce que je suis ébloui par votre art et que la seule manière de vous en remercier est de le partager avec d’autres. » <br>
+</p>
+<p>
+  À part « parce que c’est mon travail » et « parce que j’en tire un avantage financier direct » toutes ces contributions ont des formes gratuites d’un utilisateur à un effort global de création de valeurs sans rémunération.  
+</p>
+<p>
+  Jonathan Zitran dresse en 2009 un portrait très optimiste d’internet. Alors que la plupart des gens s’accordent à dire que le monde devient de moins en moins amical, il insinue qu’Internet est composé de millions de bonnes actions désintéressées, de curiosité et de confiance.  
+
+</p>
+<p>
+Il explique qu’à la naissance d’internet, ce réseau qui allait devenir gigantesque n’avait pas de business plan, de CEO ou d’entreprise responsable. Les fondateurs d’internet n’essayaient de concevoir qu’une extraordinaire liberté car il n’avait pas à construire un réseau rentable. Ils ont donc réalisé quelque chose de différent dont on était sûr que ça n’allait pas marcher. <br>
+Le fonctionnement même d’internet est considéré par Jonathan Zitran comme une preuve du fonctionnement des contributions gratuites sans rémunération. En effet, pour faire circuler des données d’un endroit à l’autre, elles passent parfois par vingt ou trente utilisateurs qui font circuler ces données sans obligation particulière, contractuelle ou légale. Un peu comme si on commandait une bière dans un stade et que chaque personne de la tribune passe la bière à son voisin jusqu’à sa destination.   
+  
+</p>
+<p>
+  Ces effets de réseaux se transforment en ce que Dominique Cardon appelle la force des coopérations faibles. Il explique que les “communautés» de l’Internet se présentent comme le résultat d’un ensemble d’actions individuelles qui, initialement, n’étaient pas ou peu guidées par un sentiment collectif. Il cite l’exemple d’une coopération faible qui est devenue forte au contact des autres. 
+
+</p>
+<p class="citation1 hideme">
+  « Sur flickr des photographes amateurs ont pris en photo les caméras de surveillance de leur ville pour créer un répertoire mondial des caméras indiscrètes. Ces simples citoyens sensibilisés à la dialectique entre liberté et sécurité sont devenus des militants engagés au contact des autres. » 
+</p>
+<p>
+  Dominique Cardon en conclut que ces processus, en partant de points multiples et indéterminés sur le Web, constituent une dynamique nouvelle dans le champ des pratiques politiques. Il devient plus facile de faire entendre une voix et un argumentaire qui ne trouvait pas avant sa place dans les médias traditionnels. 
+</p>
+<h4>Conclusion : 
+</h4>
+<p>
+  Wikipédia est un exemple intéressant de démocratie coopérative. Comme tous les géants d’internet il s’appuie sur les effets de réseaux qui reposent sur la puissance et l’intelligence de la multitude. Finalement, avant d’être la richesse de Wikipédia ils ont été celle d’internet. Depuis, les modèles se sont multipliés portant sur cette même présupposition d’égalité et gentillesse des étrangers. Des budgets participatifs, par exemple, ont pris une forme nouvelle et bien plus importante à l’âge du numérique. Cette façon de “ démocratiser la démocratie” a permis de rendre possibles les dons financiers d’anonymes pour des projets d’association, d’entrepreneurs ou de particuliers. La pétition, qui date du Moyen Âge est aujourd’hui transformée pour construire une imbrication entre les mouvements en ligne et ceux d’un pays. Elles participent au réveil de la société civile qui d’après Pierre Rosanvallon est une contre-démocratie indispensable pour faire contrepoids et continuer de vivre en démocratie.   
+</p>
+<p>
+  On constate que ces formes coopératives existaient parfois depuis des siècles, mais le numérique leur donne une nouvelle forme et surtout une autre ampleur. C’est l’espace public qui s’est élargi sur internet. Il aspire la sociabilité, la vie privée et l’expressivité des individus. Dominique Cardon explique que ce déplacement nous montre ce que l’espace traditionnel a de paternaliste. 
+</p>
+<p class="citation1 hideme">
+  « En le reléguant dans un rôle d’audience, il lui ôte ses capacités d’action. En le filtrant, il domestique ses prises de parole. En privatisant son intimité, il lui interdit de s’engager corps et âme. En faisant corriger ses connaissances par des experts agréés il professionnalise le savoir. En le consultant à travers des sondages, il le “ventriloquise” à tout propos. Mais sinon pas disparus, tous ces travers appartiennent désormais au passé de la démocratie. Car, sur Internet et grâce à Internet, ce public sous contrôle s’est émancipé. Il prend la parole sans qu’on le lui demande. Il s’expose sans vergogne pour créer de nouveaux liens sociaux. Il produit des connaissances sans s’en remettre à d’autres. Il définit lui-même les sujets dont il veut débattre. Il s’organise. » 
+</p>
+<h3>2) Le printemps arabe, les forces et faiblesses des réseaux sociaux </h3>
+<h4>Introduction :</h4>
+<p>
+  La tentation est grande d’imaginer ces logiques de contributions et d’open source à l’échelle d’un état, en se demandant ce que deviendrait un utilisateur citoyen. Mais peut-on appliquer ces systèmes centrés utilisateurs, qui mettent en commun la force de la multitude par ses effets de réseaux, pour améliorer notre démocratie ? <br>
+C’est pourtant de cette manière que les révolutions en 2011 ont commencé : le célèbre printemps arabe. Les médias ont immédiatement parlé de révolution 2.0 et ont encensé les réseaux sociaux en expliquant que, pour libérer une société, la seule chose dont on a besoin c’est internet. <br>
+Cela fait aujourd’hui cinq ans que se sont déroulés ces révolutions et on ne peut s’empêcher d’en dresser un bilan amer. Les régimes se sont succédé en clivant la population, ces peuples qui ont exprimé leur désir profond de liberté sont à nouveau déçus et en colère. Ce que l’on constate cinq ans après c’est que les réseaux sociaux ont leur part de responsabilité dans les deux cas. Ils ont été bénéfiques et initiateurs de grandes révolutions. Mais inversement, ils ont été moteurs de clivage et ont été destructeurs d’une démocratie en tentative de construction. 
+</p>
+<h4>  a) La révolution égyptienne :</h4>
+<p>
+  L’une des figures de la révolution Égyptienne s’appelle Wael Ghonim, c’est un ingénieur ancien employé de Google et activiste politique. En se connectant sur Facebook en 2011, il tombe sur une photo d’un jeune Égyptien appelé Khaled Said, torturé et tué par la police. Comme lui, beaucoup d’autres jeunes Égyptiens se sentent directement concernés par cette photo qui commence à devenir virale sur les réseaux. Tout le monde se dit que Khaled aurait pu être leur frère ou être à sa place.<br> 
+Le régime s’est justifié en expliquant que c’était un drogué que c’était la raison de sa mort. Grâce aux réseaux, la communauté égyptienne réussie à prouver cette fausse information, ce qui amplifie la colère des citoyens. Wael Ghonim ouvre une page Facebook en soutient à Khaled Said avec le titre : “Nous sommes tous Khaled Said”. Des milliers de personnes rejoignent cette page sans qu’aucune organisation ou manifestation ne soit prévue. Une communauté se forme et chaque personne s’estime propriétaire de cette page. De cette façon des idées commencent à germer. Aux contacts des autres, les citoyens les plus discrets deviennent engagés et expriment leurs opinions sur le régime actuel. Les sujets dépassent la mort de Khaled Said et une critique du régime prend forme, à travers des débats autour de l’économie, la corruption, les abus des forces de police, le chômage, le logement, les conditions de vie dégradés etc. La tension en janvier est extrême : la Tunisie a réussi à renverser son dictateur Ben Ali et tout semble possible. 
+</p>
+<p>
+  L’idée d’un rassemblement est lancé sur la page Facebook. Le jour choisi est une fête nationale : le jour de la police. Cette manifestation de milliers de personnes ne concerne pas uniquement la jeunesse des réseaux sociaux mais toutes les tranches de la population et 15 000 personnes arrivent sur la place Tahrir. Ce chiffre est un succès et les images de la manifestation relayée sur les réseaux et les médias font tomber le mur de la peur. Pour la première fois ces milliers de personnes qui se réunissent dans le monde virtuel se retrouvent dans le monde réel et prennent conscience de leur force en partageant une lutte pour les droits de l’homme et une forte volonté de liberté. Le peuple égyptien a compris qu’ils étaient suffisamment forts pour demander la chute régime. 
+</p>
+<p>
+  Le pouvoir avait parfaitement conscience du danger que les réseaux sociaux représentaient. Il a d’ailleurs coupé internet à plusieurs reprises, mais les conséquences économiques étaient trop importantes pour continuer. Les services secrets ont emprisonné des cybers dissidents comme Walter Ghonim pendant plusieurs semaines. Mais à force de révolte et grâce à l’occupation permanente de la place Tahrir le régime égyptien est tombé.    
+
+</p>
+<p>
+Cette révolution était appelée par les médias “révolution 2.0” car elle s’est formée sur internet et ne possédait pas de leader. La page Facebook était gérée par quelques administrateurs, mais leur travail consistait à récolter les idées évoquées pour les soumettre aux votes. Les réseaux sociaux ont permis de relayer l’information, de débattre, d’organiser des manifestations et de constater l’ampleur du mouvement. Ce mode d’action parfaitement horizontal a permis au peuple égyptien de comprendre à quel point le pouvoir des citoyens est plus puissant que le pouvoir des dirigeants.   
+</p>
+<h4>  b) Les faiblesses des réseaux sociaux  
+</h4>
+<p>
+Il y a désormais cinq ans que les révolutions du printemps arabe se sont déroulées et le plus difficile a été la reconstruction. Les réseaux sociaux ont eu, de nouveau, un rôle important dans ce mouvement mais ce fut un rôle négatif qui a divisé le peuple au lieu de le garder uni.<br>  
+L’horizontalité et la puissance du numérique, vantées par les médias, ont montré ses faiblesses. Lors d’une conférence, Wael Ghonim revient sur les défauts des réseaux sociaux qui ont conduit le peuple égyptiens à se diviser après la révolution. Pendant cette révolution il vivait l’effervescence du mouvement et était ébloui par la force des réseaux sociaux. Quand il s’exprimait il vantait les mérites d’internet et des effets de réseaux, mais en 2016, cinq ans après la révolution il porte un tout autre discours, beaucoup plus nuancé :
+</p>
+<p class="citation1 hideme">
+« J’ai dit dans le passé : « Si vous voulez libérer une société, Internet est la seule chose dont vous ayez besoin. » J’avais tort. »
+</p>
+<p>
+  Il explique que l’après-révolution a été terrible. Une fois l’euphorie dissipée,  il n’y a pas eu de consensus et les luttes politiques ont mené à une forte polarisation. Les réseaux sociaux ont amplifié ce phénomène, en facilitant la circulation de fausses informations et de rumeurs qui ont agi comme des caisses de résonance de discours de haine. Ce qu’on appelle les trolls, qui font circuler des mensonges, sont apparus en même temps que les commentaires haineux. <br>
+Deux grands courants ont immergé, les islamistes et les partisans de l’armée. Chacun des groupes demandait de les rejoindre et si vous n’étiez pas avec eux vous étiez contre eux. Le 3 juillet 2013, l’armée a chassé du pouvoir le premier président égyptien démocratiquement élu après trois jours de manifestations populaires pour réclamer sa démission.
+</p>
+<p>
+  Wael Ghonim a choisi de garder le silence pendant deux ans, considérant cette situation comme une terrible défaite. Et il explique que son rapport aux réseaux sociaux a changé : 
+
+</p>
+<p class="citation1 hideme">
+« J’en ai profité pour réfléchir sur les événements passés et j’ai essayé d’en comprendre les raisons. J’ai réalisé que, s’il est vrai que la polarisation est influencée avant tout par notre comportement, les réseaux sociaux déterminent ce comportement et en amplifient les effets. Vous pouvez affirmer quelque chose sans preuve, déclencher une bagarre ou ignorer quelqu’un que vous n’aimez pas. Ce sont des impulsions naturelles et humaines. Mais avec la technologie, il est devenu très facile d’agir par impulsion, en un seul clic. »1  
+</p>
+<p>
+  D’après lui les réseaux sociaux doivent faire face à cinq défis majeurs qui nuisent à la démocratie. Premièrement, il explique qu’il faut trouver un moyen de gérer les rumeurs. En effet, les rumeurs sont facilement partagées et crues par des millions de personnes. Dans un mouvement naissant comme cette post-révolution, elles ont été destructrices et incontrôlables tout en renforçant les préjugés. <br>
+Deuxièmement, les réseaux sociaux forment des bulles. C’est-à-dire que nous avons tendance à communiquer uniquement avec ceux qui sont d’accord avec nous. De cette façon nous créons notre propre caisse de résonance. Les autres qui ne pensent pas comme nous peuvent être ignorés, on peut les bloquer ou décider de ne pas les suivre.<br> 
+Troisièmement, les débats en ligne se transforment facilement en altercation plutôt qu’en échange d’arguments. On le constate aussi dans les commentaires, on oublie que des personnes sont derrière les écrans et non pas des avatars. <br>
+Quatrièmement, il est de plus en plus difficile de changer d’avis. À cause de la vitesse et de l’aspect éphémère des réseaux sociaux, nous devons arriver rapidement à des conclusions et exprimer des idées pointues en 140 signes sur des affaires internationales complexes. Une fois postées en ligne, nos opinions vivent pour toujours sur Internet. C’est pour cela que nous changeons difficilement d’avis, même lorsque de nouvelles preuves nous parviennent.<br>
+Cinquième point, notre expérience avec les réseaux sociaux est ainsi faite, que nous préférons la diffusion plutôt que l’engagement, la publication plutôt que la discussion, les commentaires futiles plutôt que les conversations profondes. Comme si nous nous étions mis d’accord pour parler les uns par-dessus les autres, plutôt que les uns aux autres.
+</p>
+<p>
+  De nombreux débats ont lieu pour résoudre ces problèmes afin que la technologie soit une partie de la solution. Il n’existe, par exemple, aucun moyen de favoriser la gentillesse sur les réseaux. Un message qui tend vers le sensationnel, qui prend part, avec de la colère et de l’agressivité sera lu par plus de gens, il attirera plus l’attention. Wael Ghonim insiste sur ce point :
+</p>
+<p class="citation1 hideme">
+  « Mais pourquoi ne pas nous concentrer sur la qualité ? Qu’est-ce qui est le plus important ? Que beaucoup de personnes lisent ce que vous écrivez ou que des personnes influentes le lisent ? Ne pouvons-nous pas inciter les gens à engager la conversation, plutôt qu’à constamment répandre leurs opinions ? Ou bien récompenser les gens qui lisent et répondent aux avis avec lesquels ils ne sont pas d’accord ? Et aussi, rendre socialement acceptable le fait de changer d’avis, voire le récompenser ? On pourrait créer un outil qui calculerait combien de personnes ont changé d’avis, et qui ferait partie intégrante de notre expérience des réseaux sociaux. Si je pouvais savoir combien de gens changent d’avis, j’écrirais certainement de façon plus réfléchie, pour essayer de les convaincre, plutôt que d’écrire pour ceux qui sont déjà de mon avis et qui vont approuver car je confirme leurs préjugés. »
+</p>
+<p>
+  Un des défis majeurs d’internet est de repenser l’écosystème des réseaux sociaux en améliorant les expériences pour promouvoir la gentillesse, la civilité et la compréhension mutuelle. Il faut aussi réfléchir à une méthode participative pour vérifier les informations en ligne et récompenser ceux qui y prendront part. Une personne sur trois, aujourd’hui, a accès à internet. Malheureusement une partie de l’internet est prise en otage par les aspects les moins nobles du comportement humain. 
+
+</p>
+<p class="citation1 hideme">
+
+   « Il y a cinq ans, j’ai dit : « Si vous voulez libérer la société, Internet est la seule chose dont vous ayez besoin. » Je pense, maintenant, que si nous voulons libérer la société, nous devons tout d’abord libérer Internet. »1
+</p>
+<h3>Conclusion : 
+</h3>
+<h4>La Révolution n’a pas eu lieu 
+</h4>
+<p>
+ On constate qu’internet peut favoriser le développement de la démocratie autant qu’il peut en présenter des dangers. Mais il serait faux de dire que les organisations horizontales en réseau sont uniquement issues du numérique. Si l’on regarde l’histoire de l’économie et de l’écologie, on constate que les solutions horizontales se sont développées bien plus tôt comme une réponse à des manières de gouverner. Les réseaux numériques ont fourni l’apparence d’une infrastructure dans laquelle les modes de gouvernance horizontales peuvent être adoptés. La sociologue David Harvey se plaint d’ailleurs que ce mouvement prône l’horizontalité comme étant toujours la meilleure option possible : 
+ 
+</p>
+<p class="citation1 hideme">
+  « Malheureusement l’idée de la hiérarchie est un repoussoir pour de nombreux éléments de l’opposition. Une obsession pour un genre d’organisation en particulier (l’horizontalité pure, par exemple) bloque trop souvent la recherche de solutions appropriées et efficaces. »
+
+</p>
+<p>
+  Alex Ross qui est un haut responsable du département d’État chargé d’encadrer la technologie et l’innovation, s’est montré très optimiste quant au Printemps arabe : 
+</p>
+<p class="citation1 hideme">
+  « Songez aux héros révolutionnaires du passé - Lech Walesa en Pologne, Vaclav Havel en République tchèques ou Nelson Mandela en Afrique du Sud -, nous ne voyons pas de tels personnages dans les révolutions du Moyen-Orient et c’est en partie grâce à internet et son partage du pouvoir. »
+</p>
+<p>
+  Mais Evegeny Morozov explique que si l’on regarde la situation avec du recul, sans confondre la fin du soulèvement avec celle de la révolution elle-même, il n’est plus si évident que ces révolutions sans leader soient une perspective réjouissante. 
+
+</p>
+<p class="citation1 hideme">
+  « Comprimée entre deux hiérarchies (l’armée et les Frères musulmans), la jeunesse libérale et pro-occidentale, avec sa croyance inflexible selon laquelle la politique est comparable à Wikipédia, était en majeure partie tenue à l’écart du processus politique. Par ailleurs, l’absence évidente d’une direction et d’objectifs communs fragmentera davantage ce réseau, facilitant considérablement la tâche de leurs opposants. » 
+</p>
+<p>
+  Le sociologue en politique et expert de l’Égypte, Hazem Kandil remarque : 
+</p>
+<p class="citation1 hideme">
+  « Tant que les révolutionnaires ne se montrent pas capables d’organiser leurs rangs et d’encourager leurs citoyens à prendre des décisions difficiles, des risques et à accepter une instabilité à court terme, il y a peu d’espoir que les gens soient en mesure de transformer eux-mêmes leur vaillant soulèvement en une véritable révolution. »
+</p>
+<p>
+  La foi aveugle et inébranlable en la supériorité des réseaux horizontaux décentralisés a peut-être rendu les révolutions du printemps arabe possibles, mais également très difficiles à mener. Toute la difficulté réside dans la post-révolution et les médias ne sont pas une alternative à la rue comme le dit Ahmed Maher, un leader du mouvement de la jeunesse du 6 Avril. L’objectif le plus difficile à accomplir est de transformer un mouvement politique capable de dépasser les limites d’un réseau.<br> 
+La démocratie du numérique permet d’envisager la levée d’un tel mouvement qui reposerait clairement la question du fonctionnement démocratique. Il est évident qu’il ne faut pas comparer la politique et Wikipédia, mais ce que l’on constate, c’est que des modèles horizontaux émergent sous des formes diverses et variées et imprègnent les citoyens de ce modèle de pensée. La question de la démocratie est très complexe et il est évident qu’un simple outil ne fournira jamais une réponse toute faite. Néanmoins, on constate que d’innombrables mouvements citoyens émergent et qu’ils tentent de mettre en place une nouvelle démocratie. Ces mouvements expérimentent de nouveaux systèmes pour créer de l‘innovation démocratique.
+
+</p>
+<p>
+  
+</p>
+<p>
+  
+</p>
+<p>
+  
+</p>
+<p>
+  
+</p>
+<p>
+  
+</p>
+<p>
+  
+</p>
+<p>
+  
+</p>
+<p>
+  
+</p>
+<p>
+  
+</p>
+<p>
+  
+</p>
+<p>
+  
+</p>
+<p>
+  
+</p>
+<p>
+  
+</p>
+<p>
+  
+</p>
+<p>
+  
+</p>
+<p>
+  
+</p>
+<p>
+  
+</p>
+<p>
+  
+</p>
+<div class="footer">
+<p><a href="#">< précédent</a><a href="#">Menu</a><a href="#">suivant ></a></p>
+</div>
+
+
+
+
+  </body>
+</html>

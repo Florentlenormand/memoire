@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="Florent Lenormand - Currently student designer at EnsAD - Email me to see my work">
+    <meta name="author" content="Florent Lenormand">
+    <link rel="icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">    
+
+
+    <title>Mémoire - Vers une nouvelle démocratie
+</title>
+
+
+    <!-- Bootstrap core CSS -->
+    <link href="../../dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/cssmemoire.css" rel="stylesheet">
+
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="../../assets/js/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+     <script src="js/memoire.js"></script>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  </head>
+
+  <body> 
+
+  <script>
+
+
+
+$(document).ready(function(){
+    $(".link").click(function(event){
+      event.stopPropagation();
+        $(".youtube").empty();
+        $(".youtube").append('<iframe width="728" height="422" src="https://www.youtube.com/embed/rfGyRJMxRLw?autoplay=1" frameborder="0" allowfullscreen></iframe>');
+        $(".youtube").toggle();
+    });
+     $(document).click( function(){
+        $('.youtube').hide();
+        $('.youtube').empty();
+    });
+});
+
+
+
+$(document).ready(function(){
+   $('.linkarticle').click( function(event){
+        event.stopPropagation();
+        $('.article').toggle();
+    });
+
+    $(document).click( function(){
+        $('.article').hide();
+    });
+});
+
+//add overlay if it does not exist
+if( $('.overlay').length == 0 ){
+    $('body').append('<div class="overlay"></div>');
+} 
+
+$(document).ready(function(){
+    var clicks = 0;
+    $(".videolepen").click(function(event){
+      event.stopPropagation();
+        $(".youtubelepen").empty();
+        $(".youtubelepen").append('<iframe width="728" height="422" src="https://www.youtube.com/embed/JLPilAzV5dA?autoplay=1" frameborder="0" allowfullscreen></iframe>');
+        $(".youtubelepen").toggle();
+    });
+
+     $(document).click( function(){
+        $('.youtubelepen').hide();
+        $('.youtubelepen').empty();
+    });
+});
+
+
+$(document).ready(function(){
+    var clicks = 0;
+    $(".link02").click(function(event){
+      event.stopPropagation();
+        $(".youtube02").empty();
+        $(".youtube02").append('<iframe width="728" height="422" src="https://www.youtube.com/embed/ihuxnVxEpl8?autoplay=1" frameborder="0" allowfullscreen></iframe>');
+        $(".youtube02").toggle();
+    });
+
+     $(document).click( function(){
+        $('.youtube02').hide();
+        $('.youtube02').empty();
+    });
+});
+
+$(document).ready(function(){
+    var clicks = 0;
+    $(".link03").click(function(event){
+      event.stopPropagation();
+        $(".youtube03").empty();
+        $(".youtube03").append('<iframe width="728" height="422" src="https://www.youtube.com/embed/FdOnWu1qdoo?autoplay=1" frameborder="0" allowfullscreen></iframe>');
+        $(".youtube03").toggle();
+    });
+
+     $(document).click( function(){
+        $('.youtube03').hide();
+        $('.youtube03').empty();
+    });
+});
+
+$(document).ready(function(){
+    var clicks = 0;
+    $(".link04").click(function(event){
+      event.stopPropagation();
+        $(".youtube04").empty();
+        $(".youtube04").append('<iframe width="728" height="422" src="https://www.youtube.com/embed/BxemczLqgsk?autoplay=1" frameborder="0" allowfullscreen></iframe>');
+        $(".youtube04").toggle();
+    });
+
+     $(document).click( function(){
+        $('.youtube04').hide();
+        $('.youtube04').empty();
+    });
+});
+
+$(document).ready(function(){
+    var clicks = 0;
+    $(".link05").click(function(event){
+      event.stopPropagation();
+        $(".youtube05").empty();
+        $(".youtube05").append('<iframe width="728" height="422" src="https://www.youtube.com/embed/vSOxdz93jRI?autoplay=1" frameborder="0" allowfullscreen></iframe>');
+        $(".youtube05").toggle();
+    });
+
+     $(document).click( function(){
+        $('.youtube05').hide();
+        $('.youtube05').empty();
+    });
+});
+
+
+
+
+$(document).ready(function(){
+    $(".sommaire").click(function(event){
+      event.stopPropagation();
+        $(".sidemenu").toggle(100);
+
+    $(".sidemenu").click(function(event){
+      $(".sidemenu").hide(500);
+       });
+     $("html").click( function(){
+        $('.sidemenu').hide(500);
+    });
+
+
+
+    });
+    
+});
+
+// Scipt apparition citations FADE IN 
+$(document).ready(function() {
+    
+    /* Every time the window is scrolled ... */
+    $(window).scroll( function(){
+    
+        /* Check the location of each desired element */
+        $('.hideme').each( function(i){
+            
+            var bottom_of_object = $(this).offset().top + $(this).outerHeight();
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+            
+            /* If the object is completely visible in the window, fade it it */
+            if( bottom_of_window > bottom_of_object ){
+                
+                $(this).animate({'opacity':'1'},1000);
+                    
+            }
+            
+        }); 
+    
+    });
+    
+});
+
+// Scipt apparition citations FADE IN 
+
+</script>
+
+
+ <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js" type="text/javascript"></script>
+ <script type="text/javascript">
+        $(document).ready(function() {
+            $(".sidemenu").append('<p></p>')
+            $("h1, h2, h3").each(function(i) {
+                var current = $(this);
+                current.attr("id", "title" + i);
+
+                $(".sidemenu").append("<a id='link" + i + "' href='#title" + i + "' title='" + current.attr("tagName") + "'>" + current.html() + "</a>");
+            });
+        });
+    </script>
+
+
+
+
+
+  <!--
+   <script>
+    $(function() { // < handler start
+        $(".link").on({
+            click: function() {
+                $(".youtube").stop().hide(500);
+            },
+            
+            click: function() {
+                $(".youtube").stop().show(500);
+            }
+           
+            
+        })
+    }); // < handler end
+</script>
+-->
+
+<!-- Top Bar -->
+<div class="topbar">
+<p><div class='sommaire'>
+Sommaire de la page
+</div>
+<div class="sidemenu">
+  <div class="sommairetitle">
+    Sommaire de la page
+  </div>
+</div>
+</p>
+</div>
+<!-- Top Bar -->
+<!-- Sommaire -->
+
+<!-- Sommaire -->
+
+
+<div class="gauche">
+
+<h2>IV - Vers une nouvelle démocratie</h2>
+<h3>Introduction</h3>
+<p>
+De nombreux mouvements s’efforcent de bâtir une nouvelle démocratie et le rôle du design y est fondamental. Des designers travaillent dans des associations, au service de l’État ou dans de jeunes entreprises et la définition de leur pratique prend un nouveau sens car l’objectif est de placer le citoyen au cœur de leurs méthodologies. 
+
+</p>
+<p>
+Ces initiatives civiques sont considérées comme des innovations démocratiques. C’est en ces termes que Loïc Blondiaux décrit ces expériences qui testent de nouvelles formes de démocraties. On constate qu’elles partagent une vision très proche de la démocratie liquide. La démocratie liquide tire les avantages de la démocratie directe et représentative pour élaborer un modèle plus souple et plus adapté à cette période de transition numérique. Nous expliquerons en détail les enjeux et le fonctionnement de cette nouvelle démocratie.    
+</p>
+<p>
+Mais un évènement est venu perturber la rédaction de ce mémoire. Le 31 mars, un rassemblement a eu lieu sur la place de la République avant de s’étendre dans toute la France. Des citoyens écœurés du système politique étaient résolus à se réapproprier la parole et l’espace public. Ce mouvement citoyen appelé « Nuit Debout » cherche une libération de la parole individuelle et questionne en profondeur le système démocratique de notre pays.
+
+</p>
+<p>
+Ce rassemblement de milliers d’individus a réussi à transformer des questionnements en action politique. Il est défini par un espace dans lequel chacun est libre de s’exprimer et de débattre ; il semble illustrer la conclusion de mon mémoire. De ce besoin d’être écouté et de se sentir soutenu, émerge une nouvelle forme de démocratie pensée par et pour les individus. J’ai commencé par décrire la crise démocratique que nous traversons pour en dresser le profil du nouveau citoyen. J’ai aussi expliqué le rôle d’internet et la puissance de la multitude au sein des nouvelles entreprises qui renversent le statut quo et bouleversent nos institutions. Je termine la dernière partie de mon mémoire en décrivant ces différents mouvements qui sont en marche pour une nouvelle démocratie. Ils sont la conséquence d’une convergence de crises, d’idéaux et de culture. Nuit Debout illustre en partie cette conclusion même s’il est difficile de comprendre un mouvement encore au centre de l’actualité et qui s’étend de jour en jour. Je vais démontrer dans cette dernière partie que ces différents mouvements sont la démonstration qu’une nouvelle démocratie est nécessaire et que les citoyens ont décidé de s’emparer du problème.
+</p>
+
+<h3>1) La démocratie Liquide : le numérique au secours de la démocratie</h3>
+<h4>Introduction</h4>
+<p>
+Le numérique a donné naissance à de nouvelles préoccupations démocratiques à travers le monde. Des partis politiques, mais aussi des gouvernements, des chercheurs ou des designers se sont demandés comment inventer une nouvelle démocratie ? Quels outils concevoir pour permettre aux citoyens de participer ? La plupart de ces expériences se regroupent sour le nom de démocratie liquide, démocratie participative ou parfois démocratie 2.0. L’objectif de ces initiatives ne se forment pas contre notre démocratie actuelle mais cherche à la reformuler pour l’améliorer et imaginer de nouvelles solutions. 
+</p>
+<h4>a) L’origine de la démocratie liquide :</h4>
+<p>
+Le mot démocratie liquide renvoie directement à l’ouvrage de Zigmunt Bauman : Liquid Modernity.<br>
+Il introduit le concept de « société liquide » en expliquant que nous entrons dans une postmodernité fluide, ce qu’il appelle la « modernité liquide ». Cette nouvelle société s’oppose à la société « solide » où les structures de l’organisation commune sont créées collectivement. Dans une société liquide l’unique référence est l’individu. Ces individus échappent aux positions fixes et les trajectoires deviennent « liquides », nous changeons de place, de métier, de partenaire affectif, de valeurs. L’identité ou la réussite sont définies en termes de choix individuels et sont beaucoup plus flexibles, ce qui affaiblit les protections traditionnelles, d’appauvrir les valeurs familiales et d’atténuer les engagements. D’après Zigmunt Bauman, les individus vont désormais privilégier le changement, la mutation, la disruption, plutôt que le statu quo.
+</p>
+<p>
+La démocratie liquide adapte cette théorie à la sphère politique. L’objectif est de redonner un sens aux relations politiques entre tous les citoyens en ouvrant le jeu démocratique. Cette démocratie utilise des avantages de la démocratie représentative et de la démocratie directe ainsi que l’esprit de la déocratie participative. La politique ressemblerait à une industrie comme une autre, en train d’être dévorée par la puissance du numérique et de la multitude.
+</p>
+<h4>b) Entre démocratie directe, représentative et participative</h4>
+<p>
+La démocratie liquide combine les avantages de la démocratie représentative, directe et participative. Elle crée un système de vote démocratique qui autorise les électeurs, soit à voter directement, soit à déléguer son droit de vote à un tiers de confiance. Les personnes à qui les citoyens délèguent leur droit de vote sont des experts dans un domaine spécifique, ou sont en mesure d’influencer le résultat des décisions. Ainsi, la démocratie liquide évolue vers une méritocratie où les décisions sont prises principalement par ceux qui ont les connaissances et l’expérience nécessaires pour prendre des décisions éclairées. Il existe de nombreuses formes de démocraties et celles qui sont utilisées aujourd’hui sont la démocratie directe et la démocratie représentative. 
+</p>
+<p>
+  - La démocratie représentative :<br>
+La démocratie représentative est une contradiction dans les termes. Elle se compose d’un gouvernement représentatif dans lequel les gouvernants sont élus et elle s’est construite au XVIIIe siècle ; contre la démocratie qui était considérée comme un régime archaïque et dangereux car le peuple était considéré comme incapable de se gouverner lui-même. C’est au XIXe siècle que les deux notions se sont rapprochées : démocratie et représentative ; démocratie et représentation. <br>
+Cette forme de démocratie implique de déléguer son droit de vote à des représentants qui agissent en notre nom pour la prise de décision. Les représentants sont ou deviennent des experts dans le domaine débattu où ils sont prêts à servir et à représenter les intérêts de la communauté dans un organisme d’État. Les démocraties représentatives fonctionnent à grande échelle, mais les intérêts des citoyens ne sont pas parfaitement représentés car ils ont un choix limité de leurs représentants qui ne partagent pas forcément leurs idéologies ou leurs intérêts. <br>
+Ensuite, les représentants ne sont pas tenus responsables de leurs actions au cours de leur mandat. C’est-à-dire qu’il n’existe pas de contrat entre les citoyens et les représentants. Leurs promesses n’ont pas besoin d’être tenues et elles deviennent un appât pour les électeurs. Enfin, la concentration du pouvoir peut conduire à la corruption et aux conflits d’intérêts. Il est donc plus facile d’agir dans l’intérêt d’un acteur qui offre des avantages économiques que dans celui de la population. 
+
+</p>
+<p>
+  - La démocratie directe :<br>
+En démocratie direct l’électeur est directement impliqué dans les décisions de l’État. Chaque électeur exprime son opinion par le vote, il possède ainsi un contrôle total et une responsabilité dans les décisions. Mais il est évident que ce système n’est pas applicable à grande échelle. Les électeurs devraient être experts dans tous les sujets et ils seraient sans cesse sollicités. Il est impossible pour les citoyens d’être infirmés de tous les problèmes car ils n’ont pas le temps, l’envie ou l’expertise. Le taux de participation serait extrêmement faible et les électeurs insatisfaits. <br>
+Sans tenir compte de ces défauts il devient évident que ce système démocratique n’est plus en accord avec son temps. Ne serait-ce que dans le processus de vote, on constate qu’il est totalement périmé à l’heure du numérique et des services qu’internet est capable de procurer. Si la démocratie était considérée comme une expérience, elle mériterait beaucoup de changements et c’est ce qui est en train de se passer.
+</p>
+<p>
+  - La démocratie participative :<br>
+La démocratie participative une invention beaucoup plus récente. Elle apparaît pour la première fois en Angleterre en 1962 dans le contexte de l’activisme des étudiants pour les droits civiques. Ce sont des citoyens qui demandent une vraie réforme politique et qui exigent que le citoyen puisse participer activement à la vie politique. C’est une notion qui a eu beaucoup de succès, mais qui est devenue de plus en plus floue au fil du temps. Elle désigne globalement aujourd’hui toutes les formes d’association plus ou moins directe des citoyens dans le processus de décision. C’est une notion qui est aujourd’hui très dévoyée notamment par les usages qu’en font les autorités politiques. Aujourd’hui, la démocratie participative signifie à peu près tout et n’importe quoi. Comme la démocratie liquide, elle relève d’une participation citoyenne, mais ne relève pas de principes démocratiques aussi clairs1.
+</p>
+<h4>c) La démocratie liquide qu’est-ce que c’est ? </h4>
+<p>
+Le principe de la démocratie liquide est de confier le pouvoir du vote à un représentant. C’est une nouvelle forme de prise de décision collective qui donne aux électeurs le contrôle complet du processus. Les électeurs peuvent voter directement ou donner leur droit de vote à des délégués qui votent en leur nom. Cette délégation peut être spécifique par domaine, ce qui signifie que les électeurs peuvent déléguer leur droit de vote à différents experts de différents domaines. 
+</p>
+<p>
+Déléguer un vote est un signe de confiance envers un délégué qui est chargé de représenter l’électeur dans certaines décisions. Si la confiance est rompue, l’électeur a le droit de révoquer la délégation et de voter personnellement ou de déléguer à quelqu’un d’autre. Cette notion de confiance provisoire est importante car elle responsabilise le délégué. Mais la délégation est aussi transitive, c’est-à-dire que les délégués peuvent donner leur droit de voter à d’autres délégués. Cette transitivité assure que les experts peuvent déléguer la confiance qu’ils ont accumulée, à d’autres délégués sur certaines questions dans lesquelles ils ont moins de connaissances.
+</p>
+<p>
+De cette manière, la démocratie liquide est réellement démocratique. Dans les démocraties d’aujourd’hui les électeurs votent pour eux-mêmes ou élisent un représentant à chaque cycle électoral. Les électeurs sont donc dépassés par le travail nécessaire pour participer ou sont déçus et ne sont pas inclus dans la prise de décision du gouvernement. La démocratie liquide donne aux électeurs la liberté de choisir leur niveau d’implication, tout en étant capable de le modifier à tout moment. Cela signifie que la prise de décision pour un pays est directement dans les mains de l’ensemble de la population.
+</p>
+<p>
+La démocratie liquide supprime les barrières à l’entrée. Le minimum requis pour devenir un délégué est la confiance d’une autre personne. Tous ceux qui sont prêts à prendre cette responsabilité peuvent devenir des délégués. Les partis politiques n’ont plus besoin de gagner sur le nombre de votes, c’est la capacité et les compétences d’une personne qui comptent. Avec ce système, la prise de décision comprend la collecte des idées, des commentaires et des débats. Ils seront beaucoup plus vifs, pleins d’idées et de points de vue divers. Le résultat des décisions sera beaucoup plus favorable pour satisfaire une grande partie de la population et conduire à une meilleure gouvernance du pays.
+</p>
+<p>
+C’est aussi un processus coopératif et non compétitif. Pour les démocraties représentatives, la compétition dans les élections se joue avec des sommes d’argent considérables afin de récolter un maximum d’électeurs. Les candidats font plus d’efforts dans l’élaboration de leurs campagnes politiques que dans leur programme politique. À l’inverse, dans la démocratie liquide les délégués gagnent la confiance des électeurs grâce à des efforts continus et la preuve de leur capacité. Ainsi, on ne peut pas tromper les électeurs sur la volonté et la capacité à améliorer les décisions.
+</p>
+<p>
+La démocratie liquide permet aussi la représentation directe des minorités. C’est en effet, une représentation directe de la structure de la société, de cette façon elle rend possible pour les minorités et groupes ethniques de toutes tailles d’avoir un mot à dire dans la gouvernance du pays.
+</p>
+<h3>Conclusion : </h3>
+<p>
+La démocratie liquide n’est pas encore utilisée en pratique car son implémentation est difficile.<br> 
+Elle nécessite une infrastructure qui permet aux participants de voter ou de déléguer leurs voix. Cette plate-forme qui fonctionnerait grâce à la force de la multitude est parfaitement envisageable grâce à l’effet de réseau et à la cryptographie. L’argument que la démocratie liquide à grande échelle ne peut pas fonctionner n’est aujourd’hui plus valable d’après Loïc Blondiau : 
+</p>
+<p class="citation1 hideme">
+« Un certain nombre d’applications numériques, quand on arrivera vraiment à garantir la loyauté du dispositif, peuvent nous permettre de mener des débats à grande échelle et de produire de la participation à grande échelle. Cet argument technique masque un préjugé démophobe, beaucoup plus massif, qui est que les citoyens ne sont pas à la hauteur et qu’il faut des gens sages pour les gouverner. Cette floraison d’innovation démocratique sur le numérique contribue à me rendre de plus en plus perplexe à l’égard de cet argument. »   
+</p>
+<p>
+La démocratie ne peut pas se réduire à une élection ou un système de gouvernement. De nombreuses initiatives convergent dans le sens de la démocratie liquide. Elles montrent que la démocratie est une expérience, une expérience qui exige de la part des citoyens de la responsabilité. Ces nombreuses expérimentations renouvellent profondément notre imagination démocratique. Nous avons appris à penser que les citoyens étaient de simples consommateurs de politique et qu’ils n’étaient pas à la hauteur de ce qu’on pouvait exiger d’un gouvernant. Nous avons appris à penser que la politique en démocratie devait être une profession avec des spécialistes, des gens qui y consacraient toute leur vie alors que le reste des citoyens était mis à l’écart. D’après Loïc Blondiaux ce qui est en train de changer c’est ce retour à l’imagination démocratique. Nous allons étudier ces mouvements qui participent  à l’élaboration d’une nouvelle démocratie et qui actent pour construire des formes de démocraties liquides.
+</p>
+<h3>2) Le mouvement Nuit debout</h3>
+<h4>Introduction : </h4>
+<p>
+À l’heure où j’écris ces lignes, le mouvement Nuit debout est encore trop jeune pour deviner ce qu’il va devenir. Je comptais décrire dans cette partie les mouvements citoyens qui remettent en question la démocratie et qui prouvent que la vie politique actuelle n’est pas inévitable. Je souhaitais expliquer le rôle de la culture numérique dans ces mouvements qui se disent ouverts, accessibles à tous et qui répondent aux même fonctionnements que les systèmes de démocraties coopératives, comme Wikipédia précédemment illustré. Je voulais parler du mouvement des indignés en Espagne qui ont longtemps refusé un système de leadership et qui ont mis en place des ressources importantes dans leurs prises de décisions. 
+
+</p>
+<p>
+Mais à Paris, place de la République, est né un mouvement très similaire. Nuit debout réunit chaque soir des milliers de personnes dans toute la France depuis le 31 mars. Des assemblées se forment où les gens discutent et échangent. En prenant la parole les citoyens se réapproprient l’espace public. 
+</p>
+<p class="citation1 hideme">
+« Ni entendues, ni représentées, des personnes de tout horizons reprennent possession de la réflexion sur l’avenir de notre monde. La politique n’est pas une affaire de professionnels, c’est l’affaire de tous. L’humain devrait être au cœur des préoccupations de nos dirigeants. Les intérêts particuliers ont pris le pas sur l’intérêt général. »
+</p>
+<p>
+Ce mouvement illustre le désir de politique du peuple, cette multitude citoyenne. Le dégoût de la politique est exprimé mais il semble faire référence à la politique actuelle de nos dirigeants. Des milliers de personnes se rassemblent pour parler et pour échanger autour de la politique, d’une autre politique. C’est aussi la preuve que les citoyens manifestent une envie et un désir de participation. Certains viennent pour parler, d’autres viennent pour écouter. Il réside sur la place de la République un respect mutuel qui dessine peut-être la première ébauche d’une nouvelle démocratie. 
+</p>
+<p>
+Il n’est pas évident d’écrire sur ce mouvement puisqu’il est encore en marche et que personne n’a de recul suffisant pour analyser ce qui se passe. J’ai lu beaucoup d’articles de presse qui se sont empressés de le commenter sans arriver à véritablement le comprendre. J’ai aussi passé beaucoup de temps place de la République pour vivre l’ambiance qui y régnait. Enfin, j’ai rejoint le mouvement en proposant mes services en tant que designer pour comprendre comment il fonctionnait et nous avons constitué une petite équipe. Mais il me semble toujours difficile d’expliquer l’ampleur de Nuit debout tant il y règne une atmosphère bouillonnante d’idées et une forme de chaos organisé. J’espère que Nuit debout pose la première pierre d’une nouvelle démocratie qui mérite d’être à l’ordre du jour des politiques.   
+</p>
+<h4>a) L’origine du mouvement : </h4>
+<p>
+Le mouvement est né suite à la manifestation contre la loi El Khomri et la diffusion du film Merci patron réalisé par François Ruffin. À ce moment, le seul objectif est de faire converger des luttes dispersées, de manière spontanée un mouvement social occupe la place pour « ne pas rentrer chez soi ». 
+
+</p>
+<p>
+Immédiatement un collectif appelé Convergence des luttes s’est créé en appelant les manifestants à prolonger leur mobilisation le soir du 31 mars. Les participants sont environ 500, sous la pluie place de la République. Et les soirs suivants ils reviennent toujours plus nombreux. Très vite il ne s’agit plus de la loi travail mais simplement de politique. La place de la République accueille toutes sortes d’individus, la plupart étaient des étudiants, mais aussi des salariés, des retraités, des familles etc.  
+
+</p>
+<p class="citation1 hideme">
+« Nous ne sommes pas là suite à un appel d’un syndicat ou d’un parti. Nous sommes simplement des hommes et des femmes venus pour échanger, partager nos griefs et parler de ce que nous reprochons à la situation française actuelle. »
+</p>
+<p>
+
+Cette spontanéité dans ce mouvement participe à montrer que les citoyens sont capables de prendre la parole et de penser par eux-mêmes. Ce ne sont pas de simples consommateurs de politique, ils produisent de l’action et montrent qu’ils méritent d’être consultés autrement que par le simple vote. 
+</p>
+<h4>b) Que s’y passe t-il ? </h4>
+<p>
+Les citoyens se retrouvent sur cette grande place et débattent autour de la politique, de la démocratie, mais aussi du travail ou du logement. Tous les sujets peuvent être abordés. Chaque sujet correspond à une commission et il en existe deux types. <br>
+D’abord, on trouve les commissions structurelles qui permettent l’organisation de la place et du mouvement de manière opérationnelle. Elles comprennent l’accueil, la logistique, l’infirmerie, la communication etc. <br>
+Ensuite, on trouve les commissions thématiques permettent d’organiser les débats. Évidemment on retrouve toutes sortes de thèmes, allant de la commission démocratie, droit de l’homme ou éducation jusqu’à la commission jardin potager bio ou poésie. Il est important de noter qu’il n’y a pas de sélection à l’entrée ni de hiérarchie entre ces commissions, chacun peut créer la sienne et organiser un débat. 
+</p>
+<p>
+L’autre rendez-vous quotidien, c’est l’assemblée générale qui s’exécute en deux parties.<br> 
+La première partie consiste en un rapide compte rendu de l’actualité politique de la journée puis les différentes commissions structurelles viennent expliquer leurs réflexions et exposer leurs idées et besoins. C’est à ce moment-là que des décisions sont votées à l’aide d’un système le plus juste et le plus représentatif possible.<br>
+La deuxième partie invite les citoyens à s’exprimer devant la foule. Un tour de parole, qui respecte des consignes strictes, est organisé et ceux qui décident de s’exprimer doivent le faire en deux minutes. La réaction du public est sollicitée à travers des gestes utilisés précédemment par Podemos ou Syriza. Un peu partout sur la place on retrouve des pictogrammes qui permettent à la foule de s’exprimer face à la personne qui a le micro. Par exemple, on secoue les mains en l’air pour approuver, on croise les bras pour montrer son désaccord.  
+</p>
+<p>
+Il règne sur cette place une égalité radicale à la fois dans la prise de parole et dans l’écoute. Les scènes politiques nous ont habitué à un orateur qui parle devant un public. Ici, l’ambiance est beaucoup plus souple et dynamique, chacun peut parler, intervenir ou écouter. La dimension symbolique de ce mouvement est extrêmement forte et on ne peut pas lui reprocher son ambition et la qualité du débat démocratique. Néanmoins, cette qualité demande beaucoup d’organisation ce qui se révèle très difficile et chaotique car aucun leader ne se dégage.  
+</p>
+<h4>c) L’organisation démocratique
+</h4>
+<p>
+C’était déjà le cas avec les indignés, il réside derrière Nuit debout une organisation et une forme d’ingénierie de la démocratie complexe. Les différentes commissions structurelles s’attellent à leur tâche dans ce qu’on pourrait résumer par un vaste chaos organisé. Mais le refus de la personnalisation et du leadership peut freiner le mouvement dans son évolution, a contrario, il permet au mouvement d’empêcher l’instrumentalisation. L’ampleur est différente chaque jour, au point qu’il s’étend maintenant dans le monde. Cette croissance est possible grâce au travail des citoyens, à une nouvelle forme de participation et grâce aux outils numériques employés.
+</p>
+<p>
+Quand on prend la parole sur la place de la République, il existe des règles importantes à respecter. Il ne faut pas parler plus de trois minutes, si un orateur en demande cinq, un vote doit être procédé comme pour l’ancien ministre des finances grec : Yanis Varoufakis.<br>
+Il faut aussi respecter une parité pour ne pas sectariser les débats et éviter toute forme d’instumentalisation ou de récupération politique. Le travail de l’organisation démocratique sur cette place cherche à prendre le temps de former une parole collective où l’on s’assure que tout le monde se reconnaît dans ces discussions, tout en refusant le leader ship et la représentation. 
+
+</p>
+<p>
+Un principe démocratique a été élaboré à petite échelle pour permettre d’organiser le plus démocratiquement possible un débat sur la place public. Une personne a le rôle de modérateur et va décider de quelle personne va venir parler devant l’assemblée. Elle distribue la parole, y compris à elle et est désignée par tirage au sort. Avant le tirage, la personne qui tire au sort décide d’un nombre minimal de mandat pour le modérateur et d’un nombre minimal de personnes nécessaires pour relancer une élection. On lance la pièce, si elle tombe sur pile la première personne sur la gauche du lanceur devient modérateur, si c’est face, c’est la deuxième. On peut relancer cette élection dans deux cas : lorsque le modérateur démissionne ou lorsque la durée minimale du mandat est écoulée. Après la nouvelle élection, le modérateur devient le lanceur. 
+</p>
+<p>
+Pendant le débat, le public a la permission de réagir. Pour éviter que la foule ne se confonde dans un brouhaha permanent, un système de signe a été mis en place. Il permet de manifester son accord ou son désaccord de façon visible par l’orateur et par la foule. Mais il permet aussi de signaler que ce qui est train de se dire a déjà été dit ou qu’on ne comprend pas le débat. Ces signes permettent à la foule de rester active dans le débat sans le perturber. 
+</p>
+<p>
+L’organisation d’un débat répond donc à des règles claires, mais il devient beaucoup plus complexe de prendre des décisions de manière impartiale et parfaitement démocratique. La commission démocratie expérimente des solutions pour arriver, petit à petit, à trouver le modèle le plus démocratique possible et l’annonce clairement : 
+
+</p>
+<p class="citation1 hideme">
+« Notre mouvement est jeune et globalement inexpérimenté en matière de processus de vote et de création d’outils démocratiques. Mais nous sommes convaincus que la meilleure manière d’avancer consiste à assumer pleinement notre statut de novice et à tester en situation réelle différents processus de vote. »
+</p>
+<p>
+Trois assemblées sont constituées, une des propositions, une des commissions et une votante. Chacune de ces Assemblées doit être capable de rompre avec la forme classique de la prise de parole individuelle à la tribune, si elle en ressent le besoin. Elles sont donc très souples et s’adaptent en fonction du thème abordé. Elles peuvent se subdiviser en trois formes différentes :
+</p>
+<p>
+- la configuration classique : une prise de parole individuelle à la tribune (ex : lorsqu’une proposition ne suscite pas de réaction particulière) <br>
+- une discussion de voisinage au sein de l’Assemblée (ex : lorsqu’une proposition est très discutée) <br>
+- des groupes de travail parallèles (ex : lorsqu’une proposition doit être affinée, étudiée en détail, amendée)<br>
+</p>
+<p>
+La première assemblée est conçue comme un espace où chacun peut faire des propositions et en débattre. On ne vote pas, mais on peut débattre, amender et émettre un avis de validation sur les propositions qui sont faites en son sein. Elles sont ensuite validées selon un processus en cinq questions posées à l’assemblée : 
+</p>
+<p>
+- L’Assemblée estime-t-elle que la proposition est suffisamment claire pour être débattue ?<br>
+- L’Assemblée estime-t-elle que cette proposition est importante et doit être débattue ?<br>
+- L’Assemblée estime-t-elle que la proposition est respectueuse des grandes valeurs du mouvement ?<br>
+- L’Assemblée estime-t-elle que la proposition doit être approfondie ou amendée ?<br>
+- L’Assemblée estime-t-elle que cette proposition doit être validée ? <br>
+
+</p>
+
+<p>
+Une proposition est validée lorsque l’Assemblée s’est prononcée favorablement sur la dernière question, elle est ensuite publiée publiquement. 
+
+</p>
+<p>
+L’assemblée des commissions : <br>
+Cette assemblée réunie les membres volontaires ou tirées au sort des différentes commissions. Elle peut proposer des amendements aux propositions, débattre des différentes propositions, elle donne aussi un avis consultatif sur les propositions : les commissions adopteraient-elles ou non les propositions ? L’Assemblée votante sera informée de l’avis des Commissions et devra en tenir compte dans ses réflexions, cependant l’Assemblée des commissions n’émet qu’un avis consultatif et n’a aucun pouvoir contraignant.
+</p>
+<p>
+L’assemblée des votants :<br> 
+Cette dernière assemblée est l’espace où chacun peut débattre autour d’une proposition, l’amender et la voter. Après un vote, trois cas de figure se présentent. 
+</p>
+<p>
+- Si l’Assemblée se prononce en faveur de l’adoption de la proposition, celle-ci est adoptée et publiée et le mouvement sera tenu d’en tenir compte. Cependant, il est toujours possible, dans une Assemblée suivante, de revenir sur un vote.<br> 
+- Si l’Assemblée se prononce défavorablement la proposition est ajournée. Elle pourra néanmoins être à nouveau proposée en Assemblée des propositions. <br>
+- Si sa réponse est trop indécise, le modérateur propose à l’Assemblée une discussion de voisinage ou un groupe de travail puis soumet à nouveau la proposition au vote. Si la réponse reste indécise, la proposition est ajournée.
+
+</p>
+<p>
+De nombreux schémas très complexes ont tenté d’illustrer les possibilités de cette première expérience à grande échelle. On constate à quel point ce système démocratique qui place l’égalité au premier plan s’écarte de notre système démocratique actuel. On constate aussi qu’il existe une forme d’héritage de la démocratie liquide avec une souplesse, un report de vote issu aussi de la culture numérique. Le numérique a une place très importante dans ce mouvement, à la fois pour permettre l’échange et le débat avec ceux qui ne sont pas présents publiquement, mais aussi pour prendre des décisions de manière la plus démocratique possible. 
+</p>
+<h4>d) Les outils numériques de Nuit debout
+</h4>
+<p>
+Quand j’ai commencé à m’intéresser à ce mouvement je me suis inscrit sur un chat qui regroupait tous les acteurs en fonction de leurs compétences. J’ai été surpris par les ressources impressionnantes de développeurs et de designers. On comptabilise à ce jour plus d’une centaine de développeurs prêts à mettre en place une infrastructure et de nouveaux outils pour aider le mouvement. Si l’on essaye de comprendre où se place le numérique dans ce système à travers les médias, ils ne mentionnent que Périscope, l’application qui permet de diffuser des vidéos en direct. Mais ce qui se construit et qui est utilisé actuellement sont de nouveaux outils collaboratifs pour servir et amplifier le mouvement. 
+
+</p>
+<p>
+Pour commencer, un wiki a été crée. Le wiki est issu du modèle de Wikipédia, il permet de hiérarchiser tout ce qui touche de près ou de loin au mouvement de la même manière qu’une encyclopédie. On y retrouve la liste de toutes les villes qui accueillent une Nuit debout, une rubrique d’aide, une liste de tous les outils utilisés... On y trouve absolument tout et chacun peut y ajouter un article, c’est d’ailleurs de cette manière que se créent les différentes commissions. Cette mine d’information est considérable et elle est très utile pour la diffusion de l’information, mais aussi pour que chacun puisse ajouter une pierre à l’édifice en respectant exactement le même modèle que Wikipédia. <br>
+Un document collaboratif Framapad est aussi mis en commun, à la disposition de tous. C’est simplement une longue page de texte qui regroupe les décisions, les questions, les informations de toutes les commissions dans un désordre parfait. 
+</p>
+<p>
+Pour les débats et les organisations démocratiques, de nombreux outils sont utilisés. Lumio, par exemple est une application collaborative qui aide à la prise de décision. Elle permet de débattre sur un sujet : il suffit de lancer une discussion et y inviter des personnes qui vont partager divers points de vue et développer ensemble des idées. Ensuite, les personnes peuvent se mettre d’accord, s’abstenir, exprimer un désaccord ou poser un veto. De cette manière on comprend comment chacun se positionne et pourquoi. Enfin, il suffit de faire ressortir la proposition qui convient à tous, que l’on visualise à l’aide de graphiques qui éclaircissent la complexité du débat. Évidemment, il n’est pas rare de voir sur Lumio un sujet ouvert pour questionner l’usage de Lumio. 
+</p>
+<p>
+Un autre outil collaboratif qui permet de voter pour des propositions concrètes s’appelle Stig. C’est une application de démocratie participative locale et nationale. Il faut sélectionner l’échelle de fonctionnement pour accéder aux idées qui concernent la France ou sa ville. L’utilisateur peut faire trois actions principales : proposer ses idées, voter pour ou contre chaque idée qui possède un score représentant son succès, ou encore contribuer aux idées des autres, grâce aux amendements qui sont des propositions d’amélioration. <br>
+Les idées sont classées différemment : les propositions les plus récentes, le top c’est-à-dire la volonté générale, les idées controversées et la recherche. De cette manière de nombreuses propositions pour Nuit Debout sont faites et les votes permettent de dégager une forme d’opinion publique très contrastée. Cet outil permet donc de créer en commun un programme politique en soumettant au vote chaque proposition.   
+
+</p>
+<p>
+Beaucoup d’autres outils pour la prise de décision sont utilisés comme Democracy OS qui est en open source et qui favorise la participation de tous à la fabrique de décisions politiques. Ou encore Discourse, lui aussi en open source qui permet la gestion d’une communauté. 
+
+</p>
+<p>
+Le mouvement a toujours mis un point d’honneur à utiliser des outils open source et chiffrables. L’adoption d’un nouvel outil est souvent soumise à un vote pour savoir s’il est accord avec les valeurs du mouvement. Par exemple l’application Telegram a été choisi pour communiquer plutôt que Whats app, de manière à garantir des échanges indéchiffrables. Pour les mêmes raisons, le chat utilisé est Rocket chat plutôt que Slack, encore une fois pour la confidentialité des échanges.   
+
+</p>
+<p>
+La liste des outils est à l’image du mouvement, très riche et chaotique. Mais elle a le mérite de poser toutes les questions et de faire le tri dans ce qui mérite d’être utilisé ou non et pourquoi. Le numérique possède ici un rôle-clé qui est celui de changer l’échelle et de faciliter les démarches. Il permet aussi de hiérarchiser et de simplifier la participation, accessible à tous les partisans du mouvement. 
+</p>
+<h3>Conclusion : </h3>
+<p>
+Les mouvements comme Nuit debout ou les Indignés expérimentent une nouvelle forme de démocratie. Elle répond à des règles d’égalité stricte comme le temps de parole, la parité, éviter toute forme d’instrumentalisation, formuler une parole collective, ainsi que le refus du leadership et de la représentation. Ce sont des expériences démocratiques qui fonctionnent, mais elles ont un coût. 
+
+</p>
+<p>
+C’est d’abord un coût en organisation, faire fonctionner un tel mouvement demande énormément d’énergie. Il serait beaucoup plus simple de nommer un représentant et de fonctionner à la majorité, mais par principe d’égalité stricte, le mouvement ne désigne pas de leader. L’organisation est donc massive et chaotique, il faut arriver à canaliser ces énergies pour avancer. 
+
+</p>
+<p>
+Ensuite, il existe une volonté pour le moment de n’arrêter aucun point de vue commun qui serait forcément partiel et contesté. C’est aussi ce qui rend le mouvement difficile à comprendre de l’extérieur. La volonté est de garder constamment la parole ouverte en revenant sans cesse sur ce qu’on dit. Cela empêche clairement de cristalliser une parole commune. 
+
+</p>
+<p>
+Enfin le refus de la personnalisation et d’un leader à un coût majeur. Une fois de plus c’est ce qui rend de l’extérieur le mouvement difficile à comprendre. Les personnes qui ne sont pas présentes et qui ne participent pas, n’arrivent pas à se projeter sur un visage et une vision. La politique est clairement une affaire d’incarnation. Si le mouvement des indignés s’est transformé c’est au travers du visage d’Iglesias, qui a réussi à représenter une posture et un discours clair à travers cet individu qui a incarné le mouvement. 
+
+
+</p>
+<p>
+Pour terminer le système médiatique ne cesse d’interpeller et de surveiller le mouvement. Quand va-t-il cesser ? Que ressort de ce mouvement ? Quels sont ses débordements ? Le mouvement doit faire face à une masse critique très forte qui exige ce qu’on ne demande pas à d’autres manifestations politiques. Cela s’explique à la fois par l’incapacité à le comprendre si on y prend pas part et aussi par le fait que le mouvement soit si précoce. 
+
+</p>
+<p>
+Loïc Blondiaux explique que le risque pour Nuit Debout est de se contenter de vivre le présent sans se projeter dans l’avenir. Il faut arriver à faire vivre cette forme démocratique temporaire pour qu’elle devienne action politique.   
+</p>
+<h3>3 - Les autres mouvements en place pour une nouvelle démocratie </h3>
+<p>
+Pour terminer cette partie, nous allons analyser les autres mouvements qui expérimentent notre démocratie grâce au numérique. On retrouve de nombreuses initiatives qui permettent de faire entendre les voix inaudibles, qui permettent de rendre la politique plus transparente ou qui permettent d’unir les forces citoyennes. 
+</p>
+<h3>a) Faire entendre sa voix :</h3>
+<p>
+Liquid Feedback est une application très célèbre qui a été réalisé par le Parti pirate allemand. Elle cherche à mettre en œuvre un idéal de démocratie liquide en regroupant par thème des sujets de débats et en invitant les utilisateurs à voter. C’est un logiciel open source et ses développeurs sont membres d’une association qui promeut l’utilisation de médias numériques pour les processus démocratiques.
+
+</p>
+<p>
+Certaines applications proposent des primaires accessibles à tous comme LaPrimaire.org. C’est une forme de primaire ouverte, organisée pour permettre aux Français de choisir librement, de manière transparente et démocratique, les candidats qu’ils souhaitent voir se présenter à l’élection présidentielle de 2017. Il suffit de s’inscrire en tant que citoyen ou candidat pour permettre une véritable élection aux présidentielles de 2017. 
+</p>
+<p>
+Ma voix cherche à faire élire des anonymes à l’Assemblée nationale. Le collectif crée un nouvel espace de débat, dans lequel des participants tirés au sort deviendraient députés, afin d’essayer de faire entrer la démocratie participative directement au Parlement.
+</p>
+<p class="citation1 hideme">
+« Nous voulons nous réapproprier ce lieu qu’est l’Assemblée nationale, la maison du peuple, notre maison. Nous ne partons pas à la conquête du pouvoir pour nous, puisque nous savons qu’un tirage au sort désignera les candidats. Si je suis désignée, je serai heureuse de me mettre en disponibilité, mais ce qui compte vraiment, c’est que certaines et certains d’entre nous gagnent quelques sièges pour expérimenter la démocratie avec des outils du XXIe siècle», précise le collectif dans un texte rédigé «à plein de mains »
+
+</p>
+<p>
+
+Une startup Argentine fondée par Pia Mancini s’appelle democracyOs. Ce sont des outils démocratiques en open source qui permettent de s’adapter à n’importe quel usage grâce à sa flexibilité. On peut les utiliser pour organiser des débats, des votes ou encore pour cristalliser un mouvement. Tout un système est mis en place, qui permet, par exemple, de filtrer les meilleurs arguments des moins bons et de voter à la fin d’un débat.   
+
+</p>
+<p>
+Il existe aussi des outils extrêmement simples comme Turbo Vote qui aide le citoyen dans ses démarches. L’objectif de ce service est de rendre le vote plus facile. Selon votre localité, il vous tient au courant des élections qui vous concernent, qu’elles soient locales ou nationales. Il permet aussi de vous montrer toutes les démarches nécessaires si vous êtes absent lors d’un vote.   
+</p>
+<h4>b)  Rendre la politique transparente :</h4>
+<p>
+On retrouve aussi des associations, comme Voxe.org, qui permettent de comprendre plus simplement la politique. La plate-forme met à disposition des citoyens un système de comparaison des programmes électoraux. Le site est international et offre un comparatif des programmes électoraux des élections en Russie, au Brésil, en Guinée Conakry etc.  <br>
+Dans le même esprit, aux États-Unis, Voting Information Project aide les électeurs à trouver les bonnes informations qui concernent les élections à l’aide d’outils collaboratifs et open source. 
+</p>
+<p>
+
+Des initiatives comme le service Follow the money, favorisent une démocratie responsable et militent pour plus de transparence. Ils mettent à disposition des citoyens les dons de campagne, les lobbyistes et d’autres informations liées au gouvernement. Ils les mettent en ligne et accessibles au citoyen.   
+</p>
+<p>
+Smartvote est une plate-forme d’aide au vote en ligne. Sur la base d’un questionnaire politique, Smartvote compare les positions politiques des électeurs avec celles des partis et des candidats. Les électeurs reçoivent ainsi une recommandation de vote contenant les partis ou les candidats qui leur sont les plus proches.
+</p>
+<p>
+L’application Gov se décrit comme la météo de l’opinion publique. Le service permet de distribuer chaque jour un bonus ou un malus à toutes les personnalités politiques, aux sujets d’actualité et l’on peut y proposer ses propres sujets. Cette application démocratise les instituts de sondage et ouvre le débat public au citoyen. 
+</p>
+<h4>c) Agir ensemble :</h4>
+<p>
+Le système de la pétition est aussi remis au goût du jour. On connaît le célèbre site change.org qui permet à n’importe qui de créer sa pétition et d’y rassembler des signatures. On retrouve la pétition contre la loi El Khomry qui rassemble plus d’un million de signataires, lancée par Caroline de Haas. Il existe aussi une pétition contre la modernisation des présidentielles par Axelle Tessandier. Ces pétitions d’un nouvel âge deviennent facilement virales et permettent de quantifier les voix pour que les citoyens s’empare d’une décision démocratique. 
+
+</p>
+<p>
+Mysociety inventent des outils directement pour les citoyens. Ces outils permettent de demander des informations au gouvernement aussi simplement qu’en rédigeant un email. Ils permettent aussi de rapporter un problème rencontré dans sa ville à travers des photos et une simple description. Ce dernier outil, Fix my street est utilisé dans de nombreuses villes avec beaucoup d’efficacité. Enfin, Mysociety a inventé une application pédagogique qui permet de comprendre toutes les actions des politiciens. Ces méthodes de surveillance parlementaire permettent pour le citoyen de comprendre pour ensuite avoir les moyens d’exercer une influence sur les représentants.    
+</p>
+<p>
+Neighborly est une forme de budget participatif. Cette plate-forme permet à la fois de connaître les dépenses d’une ville dans ses projets de construction, mais fonctionne aussi comme un budget participatif. Les citoyens votent pour les projets qu’ils préfèrent pour que la ville sache précisément où investir. Dans cet esprit, la ville de Paris a décidé de proposer à ses habitants un budget participatif, aujourd’hui mis en place dans beaucoup de villes françaises. L’idée est de donner une somme d’argent disponible pour les citoyens et c’est à eux de proposer et de voter pour les projets qu’ils préfèrent. C’est ainsi que 67 000 parisiens ont participé, proposant 654 projets.   
+</p>
+<h4>d) Pour l’État :</h4>
+<p>
+On constate que ces questions ne sont pas posées uniquement par les citoyens, mais aussi par l’État. Il y a une volonté pour le gouvernement français de moderniser l’action publique et la démocratie est peut-être prochainement à l’ordre du jour. 
+
+</p>
+<p>
+Des designers travaillent pour les politiques publiques un peu partout dans le monde. Le plus célèbre est sûrement le Mind Lab au Danemark. Son rôle est de rendre l’état amical, c’est-à-dire simplifier le fonctionnement de l’État. Cela passe par appliquer des méthodologies de design pour simplifier les lourdeurs administratives. Plus largement, ce laboratoire d’innovation publique utilise les méthodes du design en utilisant les problèmes des citoyens comme un point de départ. 
+</p>
+<p>
+ll existe aussi Gov.uk en Angleterre qui possède le même rôle. Cette équipe de design a révolutionné les méthodes du gouvernement. Les citoyens ont beaucoup gagné en clarté administrative ou politique. 
+
+</p>
+<p>
+En France, nous avons la 27e région qui est un laboratoire pour les politiques publiques. Elle conduit des programmes de « recherche-action » visant à tester de nouvelles méthodes d’innovation avec les acteurs publics. Ce ne sont pas que des designers, mais une équipe pluridisciplinaire composée de sociologue, d’ethnographe ou de simple citoyen. Leur objectif est de privilégier l’expérience vécue par les utilisateurs, agents et citoyens, comme un point de départ pour réinterroger les politiques publiques.  
+
+</p>
+<p>
+Il existe aussi beaucoup d’entreprises qui créent des outils pour permettre un meilleur fonctionnement de l’État. Par exemple NationBuilder se définit comme le premier système d’organisation de communauté au monde. Ce logiciel peut être utilisé pour piloter des ONG, des associations, des groupes d’activistes, mais démontre toute sa puissance lors des campagnes électorales. Il permet à la fois de construire et mettre à jour son site de campagne, gérer sa base de contacts et ses finances, adresser mails et SMS à ses partisans, organiser des campagnes ciblées, communiquer sur les réseaux sociaux… Cet outil a été utilisé pour la campagne de Barack Obama en 2008, il est depuis devenu indispensable aux candidats se présentant à une élection. 
+
+
+</p>
+<p>
+En ce qui concerne l’utilisation des données, le logiciel Socrata propose des solutions aux gouvernements pour transformer leurs données en informations pour un usage public. Cela permet de prendre des décisions à partir de ces données et d’agir plus efficacement. En utilisant cette application pour les finances publiques par exemple, les citoyens sont en mesure de comprendre comment leurs impôts sont dépensés, les développeurs peuvent tirer parti des données pour créer des applications innovantes, les entreprises sont aidées pour mieux comprendre la concurrence et les opportunités, et les journalistes peuvent obtenir un accès direct à des informations vérifiées sur les opérations et les programmes gouvernementaux.   
+
+</p>
+<h3>Conclusion : 
+</h3>
+<p>
+Nous assistons actuellement à une nouvelle forme d’activisme politique. Ces engagements qui semblent puissants en France se propagent à travers le monde. Ils veulent renouveler de fond en comble les institutions politiques ordinaires en allant de l’avant et parfois en retournant en arrière. <br>
+En effet, ces « nouvelles » pratiques sont parfois très anciennes. Le tirage au sort par exemple, a été pendant des siècles, considéré comme une forme démocratique de désignation des gouvernants. L’élection, quant à elle, était considérée comme une forme aristocratique de désignation. Ces nouveaux outils, internet et les effets de réseaux transforment ces pratiques pour leur donner une nouvelle actualité. <br>
+Le mandat impératif est aussi de nouveau d’actualité, il consiste à contrôler et suivre la réalisation du mandat. C’est-à-dire obliger nos dirigeants à retourner devant les représentés pour expliquer son avancement. Notre constitution de 1958 déclare que tout mandat impératif est nul. Ces principes sont remis en question aujourd’hui et permettent d’envisager une démocratie pensée par et pour les citoyens. On peut aussi imaginer retrouver l’esprit d’une assemblée constituante : un processus dans lequel le peuple élaborerait les principes qui lui apparaissent importants de respecter et qui doivent s’imposer aux gouvernants. On retrouve beaucoup de nouvelles propositions d’assemblée citoyennes, d’assemblée tirée au sort ou des sénats citoyens qui tentent de réinventer l’idée même de l’assemblée. L’Argentine Pia Mancini explique : 
+
+</p>
+<p class="citation1 hideme">
+« Nous sommes des citoyens du 21e siècle, qui devons interagir avec des institutions du 18e siècle lesquelles sont fondées sur des bases techniques du 15e siècle. »
+</p>
+<p>
+On comprend qu’à travers l’univers du numérique une possibilité de transformation radicale de la démocratie prend forme. 
+</p>
+<p>
+Ces initiatives convergent vers l’idée d’une démocratie liquide, en accord avec son époque.<br> 
+Cependant, il est facile de foncer tête baissée vers ces mouvements qui semblent apporter des solutions toutes faites à des problèmes ancestraux. Le besoin de démocratie clairement mentionné par le mouvement Nuit debout est aujourd’hui en train de subir les mêmes déboires que les révolutions arabes précédemment mentionnées. Le mouvement n’arrive pas, à ce jour, à définir des objectifs politiques clairs et à dépasser les limites d’un réseau. L’assimilation aux casseurs commence à détruire le mouvement et sans direction et objectif commun il risque de disparaître. Tous ces mouvements horizontaux sont possibles, mais ils demandent une énergie et une organisation considérables, incomparable à notre schéma démocratique actuel. 
+</p>
+<p>
+En dehors de ce mouvement citoyen de masse, Nuit debout, d’innombrables propositions expérimentent la démocratie. Il est important de les considérer avec attention, même si ces expériences ne seront pas toutes concluantes. Parfois elles reprennent de vieilles idées avec une infrastructure radicalement différente qui est celle des effets de réseau. Même si l’on peut rester sceptique face à ces initiatives qui comparent la politique à Wikipédia, il est évident qu’un mouvement « bottom up » est en marche pour requestionner la démocratie. L’avenir nous dira peut-être si le numérique arrivera à rendre concluante ces expérimentations. 
+</p>
+</div>
+<div class="footer">
+<p><a href="#">< précédent</a><a href="#">Menu</a><a href="#">suivant ></a></p>
+</div>
+
+
+
+
+  </body>
+</html>

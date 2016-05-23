@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="Florent Lenormand - Currently student designer at EnsAD - Email me to see my work">
+    <meta name="author" content="Florent Lenormand">
+    <link rel="icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">    
+
+
+    <title>Mémoire</title>
+
+
+    <!-- Bootstrap core CSS -->
+    <link href="../../dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/cssmemoire.css" rel="stylesheet">
+
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="../../assets/js/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+     <script src="js/memoire.js"></script>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  </head>
+
+  <body> 
+
+  <script>
+
+$(function() {
+    $('.citation1').hover(function() { 
+        $('.reference').show(); 
+    }, function() { 
+        $('.reference').hide(); 
+    });
+});
+
+
+<!-- Wikipedia cards -->
+$(function() {
+    $('.sieyes').click(function() { 
+        $('.sieyes2').toggle(); 
+    });
+});
+
+$(function() {
+    $('.president').click(function() { 
+        $('.president2').toggle(); 
+    });
+
+});
+
+$(function() {
+    $('.juppe').click(function() { 
+        $('.juppe2').toggle(); 
+    });
+});
+
+
+
+
+$(document).ready(function(){
+    $(".participatif").click(function(event){
+      event.stopPropagation();
+        $(".participatif2").empty();
+        $(".participatif2").append('<iframe width="728" height="422" src="https://www.youtube.com/embed/rvtoY6ouCfk?autoplay=1" frameborder="0" allowfullscreen></iframe>');
+        $(".participatif2").show();
+    });
+     $(document).click( function(){
+        $('.participatif2').attr('src','');
+        $('.participatif2').hide();
+        $('.participatif2').empty();
+    });
+});
+
+
+$(document).ready(function(){
+    $(".link").click(function(event){
+      event.stopPropagation();
+        $(".youtube").empty();
+        $(".youtube").append('<iframe width="728" height="422" src="https://www.youtube.com/embed/rfGyRJMxRLw?autoplay=1" frameborder="0" allowfullscreen></iframe>');
+        $(".youtube").toggle();
+    });
+     $(document).click( function(){
+        $('.youtube').hide();
+        $('.youtube').empty();
+    });
+});
+
+
+
+$(document).ready(function(){
+   $('.linkarticle').click( function(event){
+        event.stopPropagation();
+        $('.article').toggle();
+    });
+
+    $(document).click( function(){
+        $('.article').hide();
+    });
+});
+
+//add overlay if it does not exist
+if( $('.overlay').length == 0 ){
+    $('body').append('<div class="overlay"></div>');
+} 
+
+$(document).ready(function(){
+    var clicks = 0;
+    $(".videolepen").click(function(event){
+      event.stopPropagation();
+        $(".youtubelepen").empty();
+        $(".youtubelepen").append('<iframe width="728" height="422" src="https://www.youtube.com/embed/JLPilAzV5dA?autoplay=1" frameborder="0" allowfullscreen></iframe>');
+        $(".youtubelepen").toggle();
+    });
+
+     $(document).click( function(){
+        $('.youtubelepen').hide();
+        $('.youtubelepen').empty();
+    });
+});
+
+
+$(document).ready(function(){
+    var clicks = 0;
+    $(".link02").click(function(event){
+      event.stopPropagation();
+        $(".youtube02").empty();
+        $(".youtube02").append('<iframe width="728" height="422" src="https://www.youtube.com/embed/ihuxnVxEpl8?autoplay=1" frameborder="0" allowfullscreen></iframe>');
+        $(".youtube02").toggle();
+    });
+
+     $(document).click( function(){
+        $('.youtube02').hide();
+        $('.youtube02').empty();
+    });
+});
+
+$(document).ready(function(){
+    var clicks = 0;
+    $(".link03").click(function(event){
+      event.stopPropagation();
+        $(".youtube03").empty();
+        $(".youtube03").append('<iframe width="728" height="422" src="https://www.youtube.com/embed/FdOnWu1qdoo?autoplay=1" frameborder="0" allowfullscreen></iframe>');
+        $(".youtube03").toggle();
+    });
+
+     $(document).click( function(){
+        $('.youtube03').hide();
+        $('.youtube03').empty();
+    });
+});
+
+$(document).ready(function(){
+    var clicks = 0;
+    $(".link04").click(function(event){
+      event.stopPropagation();
+        $(".youtube04").empty();
+        $(".youtube04").append('<iframe width="728" height="422" src="https://www.youtube.com/embed/BxemczLqgsk?autoplay=1" frameborder="0" allowfullscreen></iframe>');
+        $(".youtube04").toggle();
+    });
+
+     $(document).click( function(){
+        $('.youtube04').hide();
+        $('.youtube04').empty();
+    });
+});
+
+$(document).ready(function(){
+    var clicks = 0;
+    $(".link05").click(function(event){
+      event.stopPropagation();
+        $(".youtube05").empty();
+        $(".youtube05").append('<iframe width="728" height="422" src="https://www.youtube.com/embed/vSOxdz93jRI?autoplay=1" frameborder="0" allowfullscreen></iframe>');
+        $(".youtube05").toggle();
+    });
+
+     $(document).click( function(){
+        $('.youtube05').hide();
+        $('.youtube05').empty();
+    });
+});
+
+
+
+
+$(document).ready(function(){
+    $(".sommaire").click(function(event){
+      event.stopPropagation();
+        $(".sidemenu").toggle(100);
+
+    $(".sidemenu").click(function(event){
+      $(".sidemenu").hide(500);
+       });
+     $("html").click( function(){
+        $('.sidemenu').hide(500);
+    });
+
+
+
+    });
+    
+});
+
+// Scipt apparition citations FADE IN 
+$(document).ready(function() {
+    
+    /* Every time the window is scrolled ... */
+    $(window).scroll( function(){
+    
+        /* Check the location of each desired element */
+        $('.hideme').each( function(i){
+            
+            var bottom_of_object = $(this).offset().top + $(this).outerHeight();
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+            
+            /* If the object is completely visible in the window, fade it it */
+            if( bottom_of_window > bottom_of_object ){
+                
+                $(this).animate({'opacity':'1'},1000);
+                    
+            }
+            
+        }); 
+    
+    });
+    
+});
+
+// Scipt apparition citations FADE IN 
+
+</script>
+
+
+ <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js" type="text/javascript"></script>
+ <script type="text/javascript">
+        $(document).ready(function() {
+            $(".sidemenu").append('<p></p>')
+            $("h1, h2, h3").each(function(i) {
+                var current = $(this);
+                current.attr("id", "title" + i);
+
+                $(".sidemenu").append("<a id='link" + i + "' href='#title" + i + "' title='" + current.attr("tagName") + "'>" + current.html() + "</a>");
+            });
+        });
+    </script>
+
+
+<!-- Progress bar -->
+
+<!-- Progress bar -->
+
+
+
+  <!--
+   <script>
+    $(function() { // < handler start
+        $(".link").on({
+            click: function() {
+                $(".youtube").stop().hide(500);
+            },
+            
+            click: function() {
+                $(".youtube").stop().show(500);
+            }
+           
+            
+        })
+    }); // < handler end
+</script>
+-->
+
+<!-- Top Bar -->
+<div class="topbar">
+<p><div class='sommaire'>
+Sommaire de la page
+</div>
+<div class="sidemenu">
+  <div class="sommairetitle">
+    Sommaire de la page
+
+ 
+
+  </div>
+</div>
+</p>
+</div>
+<!-- Top Bar -->
+<!-- Sommaire -->
+
+<!-- Sommaire -->
+
+
+<div class="gauche">
+<h2>Avant-Propos</h2>
+
+<p>
+En tant qu’étudiant en design, mon rôle est d’essayer de définir ce terme qui deviendra mon futur métier. Je ne cherche pas à trouver la définition du design car il doit en exister au moins autant qu’il existe de designers. Je cherche ma définition personnelle, ma vision du design qui doit se construire au milieu de celles des autres. 
+</p>
+<p>
+Cette définition personnelle, j’étais persuadé l’avoir trouvée pendant mon séjour à San Francisco, au cœur de la Silicon Valley. Accompagné de trois types capables de tout renverser sur leur passage et en évitant chaque barrière à l’entrée, je mettais les pieds dans un écosystème encore inconnu : celui des startups. Comme tous les jeunes résidant à San Francisco, nous voulions ajouter notre startup à l‘économie du solutionnisme technologique encensée par les médias. <br>
+Ce séjour m’a énormément appris sur mon futur métier de designer et sur un d’état d’esprit à adopter. Chaque jour, nous forcions le destin et chaque problème devenait une source d’apprentissage, chaque action était effectuée avec beaucoup d’énergie, de souplesse et d’efficacité. Ces trois garçons m’apprenaient que rien n’était impossible, qu’il suffisait d’essayer, d’expérimenter et d’échouer pour finalement y arriver. Suite à cette aventure, je m’efforçais d’appliquer cet état d’esprit dans tout ce que j’entreprenais. 
+</p>
+
+<p>
+À San Francisco, mon travail consistait à rendre l’expérience des utilisateurs la plus simple, la plus fluide possible en répondant à leurs besoins. En rentrant en France, je me suis confronté à des démarches administratives dont l’expérience utilisateur était un désastre. Je me suis donc posé une question simple : que se passerait-il si l’on insufflait l’état d’esprit des startups et les méthodologies du design au cœur des institutions publiques ? <br>
+J’ai concrétisé ce questionnement en écrivant un article de blog intitulé : “<a class="president">J’ai demandé un stage en design au président de la République</a>”
+</p>
+ <div class="president2 media hideme"><a class="embedly-card" data-card-key="8a58d66c966a42a4b04530725b747949" data-card-controls="0" data-card-type="article-full" href="https://medium.com/france/j-ai-demand%C3%A9-un-stage-en-design-au-pr%C3%A9sident-de-la-r%C3%A9publique-f9458fdd0a1e#.nihd2rbyu">J'ai demandé un stage en design au Président de la République - Officielle France</a>
+<script async src="//cdn.embedly.com/widgets/platform.js" charset="UTF-8"></script></div>
+
+ 
+<p>
+Dans cet article je posais avec beaucoup de naïveté des questions simples qui ont trouvé échos dans deux sphères différentes.<br> 
+D’abord, des designers m’ont contacté pour m’expliquer leur travail ou pour me montrer les initiatives qui allaient dans ce sens. J’ai ainsi découvert la 27e région, qui applique les méthodologies du design aux politiques publiques. Territoires hautement citoyens qui propose des outils, des méthodes et des réseaux pour améliorer la démocratie. Ou encore le Secrétariat Général à la Modernisation de l’Action Publique qui encourage les acteurs publics à s’approprier de nouvelles manières de concevoir et mener les politiques publiques. 
+</p>
+<p>
+La deuxième sphère, concernait des personnes travaillant dans la fonction publique. Elles étaient éloignées de l’univers du design, mais comprenaient l’intérêt de telles méthodologies. Nous avons beaucoup échangé sur le travail du designer et le rôle qu’il pourrait remplir au sein de l’administration. 
+</p>
+
+<p>
+Je ne pensais pas que cet article, rapidement rédigé, serait autant partagé. J’ai ainsi réalisé que c’était le travail de beaucoup de personnes, spécialisé depuis longtemps dans ces domaines. Cette lettre a été le point de départ d’un sujet dont je prenais conscience de l’ampleur à mesure que je m’y intéressais. Je comprenais petit à petit la complexité du système et du rôle évident du designer au cœur de l’action publique. 
+</p>
+
+<p>
+J’ai précisé le sujet de mon mémoire en m’intéressant à la nouvelle conception de la démocratie dans la transition numérique. C’est un sujet politique car la politique semble désormais faire partie de ma définition du design. Elle a bien changé depuis ce séjour dans la Silicon Valley, ce qui faisait parfaitement sens me semble aujourd’hui un peu futile. Je reste aujourd’hui persuadé que le designer peut clairement améliorer le fonctionnement des systèmes. Enfin, c’est ce que je pense pour l’instant…
+</p>
+
+<h2>Introduction</h2>
+<h3>Erreur 404, démocratie introuvable</h3>
+
+<p>
+  Le mot démocratie a tendance à nous rendre perplexe. « C’est un vaste sujet », voilà ce que l’on me répond souvent quand j’explique que c’est le thème de mon mémoire. Vaste sujet car chacun semble définir la démocratie différemment, elle ne fait pas seulement référence au vote et elle est employée dans beaucoup de contextes éloignés les uns des autres. 
+
+</p>
+<p>
+« La démocratie, c’est l’égalité de possibilité de chaque citoyen d’influencer la vie collective. » C’est ainsi que Loïc Blondiaux la définit en expliquant que l’idéal démocratique se traduit dans les institutions et dans la société. C’est un régime et un système d’institution, mais c’est aussi une forme de vie et une expérience humaine. Du point de vue du designer ce dernier point est pertinent puisque l’un des rôles du design est de comprendre les usages pour en concevoir des expériences. Si la démocratie est considérée comme telle, le design va la redéfinir pour créer un système qui place au centre de la réflexion, non pas l’utilisateur, mais le citoyen. Une multitude de projets innovants vont dans ce sens, en expérimentant de nouvelles formes démocratiques pour redéfinir cette expérience. Le citoyen a besoin d’un renouvellement institutionnel en accord avec les nouveaux enjeux de notre époque.
+  
+</p>
+<p>
+La société française n’est pas démocratique car ses institutions structurantes ne fonctionnent pas selon des principes démocratiques, mais selon des principes hiérarchiques.   
+Si l’on s’intéresse à l’histoire de ces institutions et de la démocratie française, elle commence au XVIIIe siècle par des personnes qui haïssaient la démocratie. Si un gouvernement représentatif a été mis en place c’est par opposition à la démocratie, comme l’explique l’un des pères fondateurs, <a class="sieyes">l’abbé Sieyès</a> :  
+</p>
+    <div class="sieyes2"> 
+    <a class="embedly-card" data-card-key="8a58d66c966a42a4b04530725b747949" data-card-controls="0" data-card-type="article" href="https://fr.wikipedia.org/wiki/Emmanuel-Joseph_Siey%C3%A8s">Emmanuel-Joseph Sieyès - Wikipédia</a>
+    <script async src="//cdn.embedly.com/widgets/platform.js" charset="UTF-8"></script>
+    </div>
+</div>
+<div class="reference">Sieyès EJ.<br><i>Discours du 7 septembre 1789</i></div>
+<div class="gauche">
+<p class="citation1 hideme">
+  « Les citoyens qui se nomment des représentants renoncent et doivent renoncer à faire eux-mêmes la loi ; ils n’ont pas de volonté particulière à imposer. S’ils dictaient des volontés, la France ne serait plus cet État représentatif ; ce serait un État démocratique. Le peuple, je le répète, dans un pays qui n’est pas une démocratie (et la France ne saurait l’être), le peuple ne peut parler, ne peut agir que par ses représentants. »
+</p>
+<p>
+ Il existe à cette époque une forme très claire de dénis et de refus de la souveraineté du peuple, il ne peut pas participer activement au processus de décision. L’argument principal c’est que les grands pays, les grandes nations n’ont pas la possibilité de réunir le peuple pour chaque décision. De plus, le peuple, à l’époque, était jugé indisponible, inintelligent et surtout dangereux.  
+</p>
+<p>
+  En 1848, il y eut un tournant décisif dans l’histoire de la démocratie : on vote le suffrage universel et l’on débat de la forme de la République que l’on décide de mettre en place. À ce moment, deux camps s’affrontent. Le premier représente la République démocratique sociale. D’après eux, il fallait faire participer le peuple en multipliant les instances de représentation et le consulter sur les sujets importants. L’autre camp, qui constituait la majorité de l’assemblée, militait contre cette idée. D’après eux, les citoyens devaient confier la responsabilité aux représentants à travers l’élection et le vote, qui étaient considérés comme des moyens d’expression suffisants. C’est ce camp qui était majoritaire, depuis nous sommes dans ce régime qui date de 1848. 
+</p>
+<p>
+Loïc Blondiaux explique que notre régime, appelé démocratie représentative, est en fait un oxymore. Le pouvoir perd de sa réalité d’après lui, puisqu’il règne une confusion entre le pouvoir économique et politique. Cela contribue à l’effacement du pouvoir politique et en conséquence à l’effacement de l’élection qui ne détermine plus de changement dans nos vies individuelles. Il existe une crise de la légitimité majeure qui se traduit en une indifférence citoyenne. Les gens se désintéressent de la scène politique ce qui provoque une fracture entre les citoyens d’un côté et les représentants de l’autre. Cette fracture tend vers deux extrêmes, l’un demande plus de démocratie et de pouvoir citoyens quand l’autre demande un pouvoir plus fort avec un schéma clair de puissance. 
+</p>
+
+<p>
+On assiste en France à une montée d’une exigence démocratique, les citoyens expriment un besoin de plus de démocratie représentative. On le constate par exemple, à travers le mouvement Nuit debout, qui montrent des individus se considérant comme acteurs de politique plutôt que consommateurs. En effet, nous sommes les héritiers d’une société qui a favorisé les comportements de consommation. Le leitmotiv ordinaire du système capitaliste qui s’est imposé c’est : « consommez, vous serez heureux et laissez-nous gouverner ». Les partis politiques monopolisent la vie politique : ils sélectionnent eux-mêmes les candidats et sélectionnent ceux qui participent au gouvernement. Les citoyens n’ont donc aucune emprise sur ce système qui ne les consulte qu’à la date d’une élection. 
+</p>
+<p>
+Quand le citoyen refuse cette position d’électeur cela trouble le fonctionnement politique et remet en question la démocratie. C’est le rôle de ces rassemblements populaires, les citoyens montrent qu’ils sont capables de penser, prendre la parole et la transformer en action. Comment se traduit cette nouvelle action politique ? Qu’est-ce que signifie aujourd’hui être citoyen ? 
+
+</p>
+
+<p>Dans ce mémoire, je verrai comment la transition numérique dérange l’ordre établi et change la définition du citoyen, des institutions et de la démocratie. Quel est ce nouvel esprit de la démocratie ? Quelle est la nouvelle conception de la démocratie à l’heure de la transition numérique ?   </p>
+
+<p>Je vais répondre à ces questions en étudiant l’origine de ce besoin démocratique qui est la crise représentative. Elle s’illustre à travers une fracture de plus en plus grande entre les représentants et les représentés. Ensuite, je dresserai un portrait de cette nouvelle génération de citoyens qui n’a plus grand-chose en commun avec celle de ses aînés et qui a grandi dans d’une société en transition, bouleversée par la révolution numérique. Dans un troisième temps, je vais déterminer le rôle du numérique dans une démocratie en étudiant ses bienfaits et ses dangers. Pour terminer, je verrai sous quelle forme le numérique redéfinit en profondeur la démocratie.    </p>
+
+<h3>La tentative d’un mémoire participatif :</h3>
+
+<p>Quand j’ai commencé la rédaction de ce mémoire j’ai pris conscience que je pouvais explorer la démocratie par l’action. Je me suis dit qu’il était absurde de parler de démocratie seul et j’ai envisagé la rédaction participative, la plus démocratique possible, de ce mémoire. Je n’avais pas encore une idée claire de ma problématique, mais plutôt celle d’un thème qui était le design et la démocratie et qui a un peu changé depuis. Pour savoir si le projet d’un mémoire participatif était envisageable, j’ai publié un nouvel article accompagné d’une simple <a class="participatif">vidéo</a>. 
+</p>
+<div class="participatif2"></div>
+
+<p>
+Cet article a suscité des réactions très diverses. Beaucoup ont salué l’ambition de cette idée en affirmant très simplement qu’elle était bonne et qu’ils avaient hâte d’en voir le résultat. D’autres m’ont conseillé des lectures et des auteurs pour alimenter mes sources et d’une certaine manière pour m’aider dans ma rédaction. Enfin, certains m’ont mis en garde. C’était des personnes qui semblaient avoir de l’expertise dans le domaine de la démocratie et qui en connaissait sa complexité. J’ai pris en compte leurs remarques, mais j’ai persisté à vouloir expérimenter cette forme démocratique, quitte à rencontrer des échecs.
+</p>
+<p>
+ Au fil de la rédaction de mon mémoire, je me suis tenu à ce que j’avais proposé en publiant au fur et à mesure des extraits de mon mémoire. Ils sont soumis aux réactions du public qui peut débattre ou compléter les articles. Ce mémoire n’est donc pas, en premier lieu, destiné à une version papier. Vous verrez au fil de la lecture que chaque partie est reliée à une version en ligne qui propose un contenu interactif. Vous trouverez des interviews, des vidéos, des références complémentaires et aussi des débats et des commentaires du public. Vous pourrez aussi y ajouter vos propres remarques ou commenter celles des autres. En mettant ce mémoire en ligne, je souhaitais l’ouvrir le plus possible à la participation pour explorer la démocratie à travers un projet. 
+</p>
+
+<p>
+Je reviendrai en conclusion de ce mémoire sur cette expérimentation participative qui s’est révélée riche d’enseignements sur le fonctionnement démocratique lié au numérique.
+</p>
+</div>
+<div class="footer">
+<p><a href="#">< précédent</a><a href="#">Menu</a><a href="#">suivant ></a></p>
+</div>
+
+
+<script>
+  (function(w, d){
+   var id='embedly-platform', n = 'script';
+   if (!d.getElementById(id)){
+     w.embedly = w.embedly || function() {(w.embedly.q = w.embedly.q || []).push(arguments);};
+     var e = d.createElement(n); e.id = id; e.async=1;
+     e.src = ('https:' === document.location.protocol ? 'https' : 'http') + '://cdn.embedly.com/widgets/platform.js';
+     var s = d.getElementsByTagName(n)[0];
+     s.parentNode.insertBefore(e, s);
+   }
+  })(window, document);
+</script>
+
+  </body>
+</html>

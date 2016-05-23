@@ -1,0 +1,50 @@
+* {
+font-family: 'Open Sans', sans-serif;
+font-size: 18px;
+color: #000000;
+}
+
+/*Les titre*/
+
+h1 {
+	font-size: 64px;
+	font-weight: 100;
+	font-family: 'AbrilW01-DisplayRegular', serif;
+	text-transform: uppercase;
+	margin-bottom: 0px;
+	margin-top: 150px;
+}
+
+h2 {
+	margin-top: 70px;
+	font-size: 32px;
+	font-family: 'AbrilW01-DisplayRegular', serif;
+	font-weight: 200;
+}
+
+h3{
+	margin-left: 35px;
+	margin-top: 25px;
+	margin-bottom: 0px;
+	font-size: 24px;
+	font-family: 'Brandon Grotesque', sans-serif;
+	font-weight: bold;
+}
+
+h4{
+	margin-left: 55px;	
+	margin-top: 0px;
+	margin-bottom: 0px;
+	font-size: 22px;
+	font-family: 'Brandon Grotesque', sans-serif;
+	font-weight: 100;
+}
+
+.gauche{
+width: 728px;
+margin: 0 auto;
+}
+
+.footer{
+	height: 100px;
+}

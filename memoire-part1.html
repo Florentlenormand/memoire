@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="Florent Lenormand - Currently student designer at EnsAD - Email me to see my work">
+    <meta name="author" content="Florent Lenormand">
+    <link rel="icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">    
+
+
+    <title>Mémoire</title>
+
+
+    <!-- Bootstrap core CSS -->
+    <link href="../../dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/cssmemoire.css" rel="stylesheet">
+
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="../../assets/js/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+     <script src="js/memoire.js"></script>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  </head>
+
+  <body> 
+
+  <script>
+
+//citation
+
+$(function() {
+    $('.citation1').hover(function() { 
+        $('.reference').show(); 
+    }, function() { 
+        $('.reference').hide(); 
+    });
+});
+
+$(function() {
+    $('.citation1').hover(function() { 
+        $('.reference2').show(); 
+    }, function() { 
+        $('.reference2').hide(); 
+    });
+});
+
+//Wikipedia cards
+$(function() {
+    $('.enarque').click(function() { 
+        $('.enarque2').toggle(); 
+    });
+});
+
+$(function() {
+    $('.pierre').click(function() { 
+        $('.pierre2').toggle(); 
+    });
+});
+
+$(function() {
+    $('.invisible').click(function() { 
+        $('.invisible2').toggle(); 
+    });
+});
+
+
+$(function() {
+    $('.raconter').click(function() { 
+        $('.raconter2').toggle(); 
+    });
+});
+
+$(function() {
+    $('.electeur').click(function() { 
+        $('.electeur2').toggle(); 
+    });
+});
+
+$(function() {
+    $('.reforme').click(function() { 
+        $('.reforme2').toggle(); 
+    });
+});
+
+$(function() {
+    $('.juppe').click(function() { 
+        $('.juppe2').toggle(); 
+    });
+});
+
+$(function() {
+    $('.enarque3').click(function() { 
+        $('.enarque4').toggle(); 
+    });
+});
+
+$(function() {
+    $('.bonneraison').click(function() { 
+        $('.bonneraison2').toggle(); 
+    });
+});
+
+$(function() {
+    $('.reel').click(function() { 
+        $('.reel2').toggle(); 
+    });
+});
+
+$(function() {
+    $('.mediapart').click(function() { 
+        $('.mediapart2').toggle(); 
+    });
+});
+
+$(function() {
+    $('.cahuwiki').click(function() { 
+        $('.cahuwiki2').toggle(); 
+    });
+});
+
+$(function() {
+    $('.nul').click(function() { 
+        $('.nul2').toggle(); 
+    });
+});
+
+$(function() {
+    $('.lui').click(function() { 
+        $('.lui2').toggle(); 
+    });
+});
+
+$(function() {
+    $('.legrand').click(function() { 
+        $('.legrand2').toggle(); 
+    });
+});
+
+$(function() {
+    $('.mythe').click(function() { 
+        $('.mythe2').toggle(); 
+    });
+});
+
+$(document).ready(function(){
+    $(".link").click(function(event){
+      event.stopPropagation();
+        $(".youtube").empty();
+        $(".youtube").append('<iframe width="728" height="422" src="https://www.youtube.com/embed/rfGyRJMxRLw?autoplay=1" frameborder="0" allowfullscreen></iframe>');
+        $(".youtube").toggle();
+    });
+     $(document).click( function(){
+        $('.youtube').hide();
+        $('.youtube').empty();
+    });
+});
+
+
+
+$(document).ready(function(){
+   $('.linkarticle').click( function(event){
+        event.stopPropagation();
+        $('.article').toggle();
+    });
+
+    $(document).click( function(){
+        $('.article').hide();
+    });
+});
+
+//add overlay if it does not exist
+if( $('.overlay').length == 0 ){
+    $('body').append('<div class="overlay"></div>');
+} 
+
+$(document).ready(function(){
+    var clicks = 0;
+    $(".videolepen").click(function(event){
+      event.stopPropagation();
+        $(".youtubelepen").empty();
+        $(".youtubelepen").append('<iframe width="728" height="422" src="https://www.youtube.com/embed/JLPilAzV5dA?autoplay=1" frameborder="0" allowfullscreen></iframe>');
+        $(".youtubelepen").toggle();
+    });
+
+     $(document).click( function(){
+        $('.youtubelepen').hide();
+        $('.youtubelepen').empty();
+    });
+});
+
+
+$(document).ready(function(){
+    var clicks = 0;
+    $(".link02").click(function(event){
+      event.stopPropagation();
+        $(".youtube02").empty();
+        $(".youtube02").append('<iframe width="728" height="422" src="https://www.youtube.com/embed/ihuxnVxEpl8?autoplay=1" frameborder="0" allowfullscreen></iframe>');
+        $(".youtube02").toggle();
+    });
+
+     $(document).click( function(){
+        $('.youtube02').hide();
+        $('.youtube02').empty();
+    });
+});
+
+$(document).ready(function(){
+    var clicks = 0;
+    $(".link03").click(function(event){
+      event.stopPropagation();
+        $(".youtube03").empty();
+        $(".youtube03").append('<iframe width="728" height="422" src="https://www.youtube.com/embed/FdOnWu1qdoo?autoplay=1" frameborder="0" allowfullscreen></iframe>');
+        $(".youtube03").toggle();
+    });
+
+     $(document).click( function(){
+        $('.youtube03').hide();
+        $('.youtube03').empty();
+    });
+});
+
+$(document).ready(function(){
+    var clicks = 0;
+    $(".link04").click(function(event){
+      event.stopPropagation();
+        $(".youtube04").empty();
+        $(".youtube04").append('<iframe width="728" height="422" src="https://www.youtube.com/embed/BxemczLqgsk?autoplay=1" frameborder="0" allowfullscreen></iframe>');
+        $(".youtube04").toggle();
+    });
+
+     $(document).click( function(){
+        $('.youtube04').hide();
+        $('.youtube04').empty();
+    });
+});
+
+$(document).ready(function(){
+    var clicks = 0;
+    $(".link05").click(function(event){
+      event.stopPropagation();
+        $(".youtube05").empty();
+        $(".youtube05").append('<iframe width="728" height="422" src="https://www.youtube.com/embed/vSOxdz93jRI?autoplay=1" frameborder="0" allowfullscreen></iframe>');
+        $(".youtube05").toggle();
+    });
+
+     $(document).click( function(){
+        $('.youtube05').hide();
+        $('.youtube05').empty();
+    });
+});
+
+
+
+
+$(document).ready(function(){
+    $(".sommaire").click(function(event){
+      event.stopPropagation();
+        $(".sidemenu").toggle(100);
+
+    $(".sidemenu").click(function(event){
+      $(".sidemenu").hide(500);
+       });
+     $("html").click( function(){
+        $('.sidemenu').hide(500);
+    });
+
+
+
+    });
+    
+});
+
+// Scipt apparition citations FADE IN 
+$(document).ready(function() {
+    
+    /* Every time the window is scrolled ... */
+    $(window).scroll( function(){
+    
+        /* Check the location of each desired element */
+        $('.hideme').each( function(i){
+            
+            var bottom_of_object = $(this).offset().top + $(this).outerHeight();
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+            
+            /* If the object is completely visible in the window, fade it it */
+            if( bottom_of_window > bottom_of_object ){
+                
+                $(this).animate({'opacity':'1'},1000);
+                    
+            }
+            
+        }); 
+    
+    });
+    
+});
+
+// Scipt apparition citations FADE IN 
+
+</script>
+
+
+ <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js" type="text/javascript"></script>
+ <script type="text/javascript">
+        $(document).ready(function() {
+            $(".sidemenu").append('<p></p>')
+            $("h1, h2, h3").each(function(i) {
+                var current = $(this);
+                current.attr("id", "title" + i);
+
+                $(".sidemenu").append("<a id='link" + i + "' href='#title" + i + "' title='" + current.attr("tagName") + "'>" + current.html() + "</a>");
+            });
+        });
+    </script>
+
+
+<!-- Progress bar -->
+
+<!-- Progress bar -->
+
+
+
+  <!--
+   <script>
+    $(function() { // < handler start
+        $(".link").on({
+            click: function() {
+                $(".youtube").stop().hide(500);
+            },
+            
+            click: function() {
+                $(".youtube").stop().show(500);
+            }
+           
+            
+        })
+    }); // < handler end
+</script>
+-->
+
+<!-- Top Bar -->
+<div class="topbar">
+<p><div class='sommaire'>
+Sommaire de la page
+</div>
+<div class="sidemenu">
+  <div class="sommairetitle">
+    Sommaire de la page
+
+ 
+
+  </div>
+</div>
+</p>
+</div>
+<!-- Top Bar -->
+<!-- Sommaire -->
+
+<!-- Sommaire -->
+
+<div class="img-cover1">
+<div class="bigtitle">I - La déconnexion des élites</div>
+</div>
+<div class="gauche">
+
+
+<h2>I - La déconnexion des élites</h2>
+
+<h3>Introduction</h3>
+<h4>Je dois être un terrible fils et un terrible citoyen</h4>
+
+<p>Au mois de décembre 2015, je reçois un mail de mon père qui me dit :</p>
+<p class="citation1 hideme" >« J’espère que tu as prévu de rentrer voter Dimanche parce que c’est très<br> chaud ! Tu imagines que le FN passe et que tu n’aies pas voté ? »</p>
+<p>
+Je suis un terrible fils et un terrible citoyen car je ne suis pas allé voter. Je n’ai voté à aucun tour des élections régionales comme <a class="electeur">66 % des électeurs de mon âge</a>. <br>
+Des excuses, je n’en ai pas vraiment : je suis inscrit sur les listes électorales de ma région natale donc il faut que j’y retourne pour déposer mon bulletin ; il y avait la queue à la gendarmerie pour signer une procuration ; je n’ai pas eu le temps de m’informer sur l’enjeux de ces élections...<br> 
+Ce sont des excuses techniques plutôt qu’idéologiques. Détaché de tout sentiment d’appartenir à un courant de pensée, je n’ai pas l’impression de m’être abstenu par militantisme mais par simple désintérêt, ce qui est bien plus triste. 
+</p>
+<div class="electeur2"><a class="embedly-card" data-card-key="8a58d66c966a42a4b04530725b747949" data-card-controls="0" data-card-type="article-full" href="http://www.francetvinfo.fr/elections/regionales/elections-regionales-qui-sont-les-abstentionnistes_1209285.html">Elections régionales : qui sont les Français qui se sont abstenus au premier tour ?</a>
+<script async src="//cdn.embedly.com/widgets/platform.js" charset="UTF-8"></script></div>
+<p>
+Le sociologue Raymond Boudon expliquait que l’on devait s’efforcer, pour comprendre les actions humaines, de rejeter les explications irrationnelles. En d’autres termes : les individus agissent parce qu’ils ont de bonnes raisons de le faire. Mais quelles serait les bonnes raisons de ne pas aller voter ? Pourquoi je ne suis pas allé voter ? Ce non-vote est-il irrationnel ?
+</p>
+
+<p>
+Les justifications sont nombreuses et semblent définir une profonde crise idéologique. En essayant de comprendre ces raisons qui nous poussent à s‘abstenir, on prend conscience de l’ampleur de cette crise. Je vais analyser ses différents aspects en écoutant des témoignages que j’ai enregistrés, de personnes qui répondent à cette question : « Pourquoi vous n’êtes pas allés voter ? » Leurs réponses sont utilisées comme point de départ pour permettre d’expliquer différentes théories de sociologues, d’économistes, de philosophes ou de personnalités politiques.
+</p>
+
+ <div class="hideme"><iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/250840827&color=ff5500"></iframe></div>
+
+ <h3>1) C'est tous les mêmes !</h3>
+ <p>
+ J’ai passé quelques de repas de famille où une conversation politique qui débute est conclue très vite par cette phrase assassine : « c’est tous les mêmes ». 
+Si l’on s’intéresse de plus près à cette remarque, on comprend qu’une souffrance de la mal-représentation essaye d’être exprimée.
+ </p>
+ </div>
+<div class="juppe2"><img src="memoireimg/juppe.jpg"/></div>
+<div class="gauche">
+ <p>
+ Nous voyons depuis des années les mêmes figures politiques. Alain Juppé, qui se présente à la primaire des Républicains, a traversé <a class="juppe">trois décennies</a> de la vie politique française. Même si l’âge n’est pas important, Charles De Gaulle avait 75 ans lors de sa première élection et Bernie Sanders à 74 ans, il faut comprendre qu’il existe un immobilisme politique dans notre pays. Cet immobilisme correspond à l’inertie des idées.<br>    
+La durée trop longue des mandats, ajoutée à la possibilité de les cumuler empêche une certaine respiration politique. Un représentant du peuple devrait transmettre l’idée d’un homme missionné pour le bien commun, au lieu de ça, il minimise les risques pour assurer sa réélection. De cette manière, un système de caste tourne en vase clos au détriment de l’intérêt collectif. <br>
+Pour cumuler, la sphère politique est imperméable. Si nous y retrouvons toujours les mêmes visages, c’est que pour faire partie de cette classe il faut un bagage culturel et intellectuel important. Regardez le parcours scolaire de nos dirigeants vous constaterez un manque cruel de diversité.
+ </p>
+ 
+<h4>a) L'ENA</h4>
+</div>
+<div class="reference2"><i>Le Pen M. L’ENA et les aux fonctionnaires</i> (vidéo en ligne), 2015.</div> 
+
+<div class="gauche">
+
+<p class="citation1 hideme">“On préfère être entre <a class="videolepen">énarques</a> à l’UMP” Marine Le Pen</p><div class="youtubelepen"></div>
+</div>
+<div class="enarque4"><img src="memoireimg/ena.jpg"/></div>
+<div class="gauche">
+<p>
+Le mot “<a class="enarque3">énarque</a>” a été inventé par Jean-pierre Chevènement. Il est employé dans son livre <i><a class="enarque"> L’Énarchie ou les Mandarins de la société bourgeoise</a></i> où il critique « la sélection sociale des élèves, la logique du classement et la faiblesse de la formation » de son ancienne école. Cette école est devenue un symbole de rupture entre le pouvoir et les citoyens. Le terme d’énarque est devenu un argument politique et démagogique. 
+</p>
+<div class="enarque2"><a class="embedly-card" data-card-key="8a58d66c966a42a4b04530725b747949" data-card-controls="0" data-card-type="article" href="http://www.gallimard.fr/Catalogue/Table-Ronde/La-Table-Ronde-de-Combat/L-Enarchie-ou-Les-mandarins-de-la-societe-bourgeoise">L'Enarchie ou Les mandarins de la société bourgeoise - La Table Ronde de "Combat" - Table Ronde - Site Gallimard</a>
+<script async src="//cdn.embedly.com/widgets/platform.js" charset="UTF-8"></script></div>
+<p>
+À l’image d’un bouc-émissaire, la figure d’énarque représente le manque de diversité d’une élite uniforme, censée représenter les citoyens. Mais sommes-nous bien représentés ? Votons-nous vraiment pour une élite ? Nos responsables politiques sont-ils représentatifs de la société ? 
+</p>
+
+<h4>b) La mal-représentation</h4>
+<p>
+En étudiant les instances départementales, Thomas Amadieu et Nicolas Fremont expliquent qu’il est sociologiquement compréhensible que des ouvriers ou des employés peinent à se reconnaître dans des assemblées composées majoritairement d’individus aux revenus, aux patrimoines et donc aux intérêts différents des <a class="bonneraison">leurs</a>. Observons quelques chiffres livrés par l’émission #Datagueule :
+</p>
+
+<div class="bonneraison2"> <a class="embedly-card" data-card-key="8a58d66c966a42a4b04530725b747949" data-card-controls="0" data-card-type="article-full" href="http://www.lemonde.fr/idees/article/2015/03/23/les-citoyens-ont-de-bonnes-raisons-de-ne-pas-voter_4599484_3232.html">Les citoyens ont de bonnes raisons de ne pas voter</a>
+<script async src="//cdn.embedly.com/widgets/platform.js" charset="UTF-8"></script>
+</div>
+
+</div>
+<div class="reference">Datagueule. <i>Démocratie représentative : suffrage, Ô désespoir !</i> (vidéo en ligne), 2016.</div>
+<div class="gauche">
+<p class="citation1 hideme">« Moins de 4 % des membres de l’Assemblée nationale ont entre 25 et 40 ans. Dans la population française cette tranche d’âge représente 19 % c’est-à-dire 4,5 fois plus. 
+À l’inverse 32 % des députés ont entre 60 et 70 ans, là où cette génération représente à peine 11 % des Français, presque trois mois moins. Au sénat 80 % des élus sont des hommes, les sénateurs ne sont pas élus par le peuple, mais par 162 000 grands électeurs soit 0,3 % des inscrits sur les listes électorales en 2014. »</p>
+<p>
+Le sociologue <a class="pierre">Pierre Rosanvallon</a> a appelé ce déficit de la représentation « <a class="invisible">la mal-représentation</a> ». Il explique : 
+</p>
+<div class="pierre2"><a class="embedly-card" data-card-key="8a58d66c966a42a4b04530725b747949" data-card-controls="0" data-card-type="article" href="https://fr.wikipedia.org/wiki/Pierre_Rosanvallon">Pierre Rosanvallon</a>
+<script async src="//cdn.embedly.com/widgets/platform.js" charset="UTF-8"></script></div>
+<div class="invisible2"><a class="embedly-card" data-card-key="8a58d66c966a42a4b04530725b747949" data-card-controls="0" data-card-type="article-full" href="https://lectures.revues.org/13865">Pierre Rosanvallon, Le Parlement des invisibles</a>
+<script async src="//cdn.embedly.com/widgets/platform.js" charset="UTF-8"></script></div>
+</div>
+<div class="reference">Rosanvallon P. <i>Le parlement des invisibles.</i> Paris : Raconter la vie, 2014. 68 p.</div>
+<div class="gauche">
+<p class="citation1 hideme">
+« D’un côté, la constitution d’une société d’individus a consolidé les fondements de l’égalité, mais de l’autre, la société moderne a payé le prix fort de cette mutation qui a conduit à une altération de sa visibilité. Tout un pan de la société ne dispose plus des structures adéquates permettant d’organiser et de relayer les revendications du peuple. »
+</p>
+<p>
+Cette théorie l’a poussé à créer le projet <a class="raconter">Raconter la vie</a> qui a l’ambition de créer un Parlement des invisibles. À travers des livres et un site internet participatif naît le besoin de voir les vies ordinaires racontées, les voix de faible ampleur écoutées, les aspirations quotidiennes prises en compte. En faisant sortir de l’ombre des existences et des lieux, Raconter la vie contribue à rendre plus lisible la société d’aujourd’hui et à aider les individus qui la composent à s’insérer dans une histoire collective.
+</p>
+<div class="raconter2"><a class="embedly-card" data-card-key="8a58d66c966a42a4b04530725b747949" data-card-controls="0" data-card-type="article" href="http://raconterlavie.fr/">Raconter la vie</a>
+<script async src="//cdn.embedly.com/widgets/platform.js" charset="UTF-8"></script></div>
+
+<h4>Conclusion :</h4>
+<p>
+Les citoyens sont mal-représentés et l’on constate que les initiatives comme la limite de la durée des mandats, l’organisation de primaires ou la parité ne suffisent pas à réparer les mécanismes de la représentation. Je démontrerai que l’image massive du peuple se transforme en multitude. Les citoyens cherchent à affirmer leur individualité dans une société où voter consiste à choisir un camp, un choix à la signification collective.  
+</p>
+<p>
+Si les citoyens ont le sentiment que les politiques sont les mêmes, c’est qu’en fait ils le sont ! Les mêmes personnes reviennent sans cesse sur la même scène politique. La crise de la représentation amplifie la rupture entre citoyens et élites politiques. Cette crise est à l’origine d’un danger profond pour notre pays : l’absence de regard neuf sur les problèmes à résoudre. Que se passerait-il si la scène politique s’ouvrait à d’autres métiers ? Comment un designer s’attaquerait aux problèmes que doit résoudre un homme politique ?
+</p>
+
+<h3>2) Les politiques ? C’est des voleurs et des menteurs !</h3>
+
+<p>
+Préférez-vous un homme politique malhonnête ou incompétent ? Dans notre paysage politique les citoyens s’accordent à penser que ces deux fonctions sont bien remplies. Aux yeux de l’opinion publique, il est préférable de passer pour un incompétent plutôt que pour un malhonnête. 
+</p>
+<p>
+La fraude, c’est servir ses intérêts ou ceux de son parti avant ceux des citoyens. L’incompétence c’est l’inaptitude à accomplir le travail pour lequel on a été élu. Le mot gouverner vient de gouvernail qui signifie diriger une embarcation, un vaisseau. L’incompétence en politique c’est donc l’inaptitude à mener la barque de la nation.
+</p>
+<div class="hideme">
+<iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/251167951&color=ff5500"></iframe>
+</div>
+
+<h4>a) Incompétent</h4>
+<div class="reforme2"><a class="embedly-card" data-card-key="8a58d66c966a42a4b04530725b747949" data-card-controls="0" data-card-type="article-full" href="http://www.huffingtonpost.fr/2015/11/04/valls-code-travail-temps-reforme-emploi-chomage-droit-entreprise_n_8472700.html">Manuels Valls annonce une refonte "inédite" du code du travail sur deux ans</a>
+<script async src="//cdn.embedly.com/widgets/platform.js" charset="UTF-8"></script></div>
+<p>
+Le lendemain de la présentation du projet de <a class="reforme">réforme du Code du travail</a> par Manuel Valls, Myriam El Khomri <a class="link">est interrogée sur le nombre de renouvellements du CDD</a> par Jean-jacques Bourdin. Très mal à l’aise elle se balance sur sa chaise comme une enfant qui ne connaît pas sa leçon. Elle répond <i>“trois fois”</i> et la réponse était deux.
+</p>
+<div class="youtube"></div>
+<div class="youtube02"></div>
+<p>
+Évidemment ce n’est pas la première responsable politique prise au dépourvue face à une question précise d’un journaliste. Mais ces mauvaises réponses blessent personnellement les citoyens quand elles sont si éloignées de leur réalité. Comme la réponse de Christian Estrosi pour <a class="link02">le prix d’un timbre</a> ou celle de Nathalie Kosciusko-Morizet pour <a class="link03">un ticket de métro</a>. Ces mauvaises réponses renforcent le sentiment de déconnexion des élites qu’éprouve les citoyens. Quand un ministre ne connait pas sa leçon il remet en question sa crédibilité et les Français estiment qu’ils ont élu des personnalités incompétentes.
+</p>
+<div class="youtube03"></div>
+<p>
+Ces fausses notes semblent insignifiantes mais ne cachent-elles pas une inaptitude plus conséquente ? Si l’incompétence politique c’est ne pas savoir tenir le cap, c’est changer la direction du vaisseau.
+</p>
+<p>
+Ces fausses notes semblent insignifiantes, mais ne cachent-elles pas une inaptitude plus conséquente ? L’incompétence politique est de ne pas savoir tenir le cap et changer la direction du vaisseau. Un politique doit servir l’intérêt général il doit être capable de tenir une mesure contre vent et marée si elle est bénéfique pour le peuple. Mais une mesure impopulaire est mauvaise pour les prochaines élections ; il est plus important pour un politique d’être le personnage au centre de l’attention, quitte à changer de cap à la moindre protestation, que de faire passer une réforme impopulaire. C’est faire preuve d’incompétence de penser être incapable d’<a class="reel">influencer le réel</a>. Comme l’explique Vincent Lebiz : 
+</p>
+<div class="reel2">
+<a class="embedly-card" data-card-key="8a58d66c966a42a4b04530725b747949" data-card-controls="0" data-card-type="article-full" href="http://www.lefigaro.fr/vox/politique/2014/07/29/31001-20140729ARTFIG00132-en-politique-vaut-il-mieux-etre-malhonnete-ou-incompetent.php">En politique, vaut-il mieux être malhonnête ou incompétent ?</a>
+<script async src="//cdn.embedly.com/widgets/platform.js" charset="UTF-8"></script>
+</div>
+</div>
+<div class="reference2"> Lebiz V. <i>En politique, vaut-il mieux être malhonnête ou incompétant ?</i> (en ligne) 2014.</div>
+<div class="gauche">
+
+<p class="citation1 hideme"> 
+“L’incompétence de nos élus c’est aussi le manque de vertus politiques qui se traduit par la généralisation du renoncement et du cynisme.”
+</p>
+
+<h4>b) Voleur</h4>
+</div>
+<div class="reference2">Cahuzac J. <i>Cahuzac dément l’existence d’un compte Suisse à l’Assemblée nationale</i>, 2012</div>
+<div class="gauche">
+<p class="citation1 hideme">“Je n’ai pas, monsieur le député, je n’ai jamais eu de compte à l’étranger, ni maintenant, ni avant.” Jérome Cahuzac</p>
+<p>
+Mais le sentiment de déception et de dégoût de la politique dans l’opinion publique est beaucoup plus violent quand il s’agit de fraude. De nombreuses affaires alimentent l’idée que les élus sont au-dessus des lois et en profitent pour servir leurs intérêts. La plus célèbre d’entre elles est sans doute l’affaire Cahuzac qui, pour de multiples raisons, illustre cette rupture grandissante entre élus et citoyens. 
+</p>
+
+<div class="mediapart2"><a class="embedly-card" data-card-key="8a58d66c966a42a4b04530725b747949" data-card-controls="0" data-card-type="article-full" href="https://www.mediapart.fr/journal/france/dossier/dossier-le-compte-cahuzac">Dossier: le compte Cahuzac | Mediapart</a>
+<script async src="//cdn.embedly.com/widgets/platform.js" charset="UTF-8"></script></div>
+
+<div class="youtube04"></div>
+<p>Jérome Cahuzac est ministre délégué chargé du budget. En décembre 2012, il est accusé par le site <a class="mediapart">Mediapart</a> de posséder des fonds non déclarés sur un compte en Suisse, puis à Singapour. Immédiatement, l’ancien ministre clame son innocence sur les plateaux télé ainsi que <a class="link04">devant les députés dans l’hémicycle de l’Assemblée Nationale</a>.  <br>
+Le 2 avril 2013, après avoir été mis en examen pour « blanchiment de fraude fiscale et blanchiment de fonds », il annonce, sur son site internet, détenir 600 000 euros sur un compte à l’étranger et demande « pardon » au président de la République et au Premier ministre, pour le « <a class="cahuwiki">dommage causé</a> ».<br>
+Cette affaire terrible choque les citoyens, mais ce n’est malheureusement qu’une étape parmi d’autres dans les grands scandales de la politique. Une étape qui révèle les dysfonctionnements de notre démocratie et qui participe à encrer dans la tête des électeurs que nos représentants sont « tous pourris ». 
+</p>
+<div class="cahuwiki2"><a class="embedly-card" data-card-key="8a58d66c966a42a4b04530725b747949" data-card-controls="0" data-card-branding="0" data-card-type="article" href="https://fr.wikipedia.org/wiki/Affaire_Cahuzac">Affaire Cahuzac - Wikipédia</a>
+<script async src="//cdn.embedly.com/widgets/platform.js" charset="UTF-8"></script></div>
+
+<p>
+En démocratie nous devons exiger des dirigeants qu’ils se comportent de manière honnête, un devoir d’exemplarité s’impose donc à eux. Mais aux yeux de l’opinion publique, l’incompétence est préférable à la malhonnêteté. Comme le dit Arnaud Lagardère accusé en 2006 de délit d’initié après avoir vendu au plus haut ses actions : 
+</p>
+</div>
+<div class="reference2"> Lebiz V. <i>En politique, vaut-il mieux être malhonnête ou incompétant ?</i> (en ligne) 2014.</div>
+<div class="gauche">
+<p class="citation1 hideme">« J’ai le choix entre passer pour quelqu’un de malhonnête ou d’incompétent, qui ne sait pas ce qui s’est passé dans ses usines, j’assume cette deuxième version » </p>
+<p>
+Le journaliste Vincent Le Bize explique que le citoyen dépolitisé entend <a class="reel">juger les responsables politiques</a> sur des caractéristiques facilement appréhendables que sont la morale individuelle et le comportement privé.
+</p>
+<div class="reel2">
+<a class="embedly-card" data-card-key="8a58d66c966a42a4b04530725b747949" data-card-controls="0" data-card-type="article-full" href="http://www.lefigaro.fr/vox/politique/2014/07/29/31001-20140729ARTFIG00132-en-politique-vaut-il-mieux-etre-malhonnete-ou-incompetent.php">En politique, vaut-il mieux être malhonnête ou incompétent ?</a>
+<script async src="//cdn.embedly.com/widgets/platform.js" charset="UTF-8"></script>
+</div>
+
+
+<h4>Conclusion</h4>
+<p>
+La fraude est intolérable, mais l’opinion publique doit être intransigeante face à l’incompétence de nos dirigeants. Il s’agit de juger des qualités strictement politiques comme le sens de l’intérêt général, l’aptitude à apporter des réponses efficaces aux problèmes posés ou encore la capacité d’entraînement vers un cap bien défini. 
+</p>
+<p>
+Les responsables politiques aujourd’hui n’ont pas la compétence pour comprendre et gérer la complexité des dossiers qui s’imposent dans le monde moderne. Jean-Marc Sylvestre explique que même s’ils sont entourés d’une batterie de conseillers, l’incompétence efface la responsabilité politique et l’administration prend le dessus alors qu’elle n’a aucune <a class="nul">responsabilité</a>.
+</p>
+<div class="nul2">
+<a class="embedly-card" data-card-key="8a58d66c966a42a4b04530725b747949" data-card-controls="0" data-card-type="article" href="http://www.jeanmarc-sylvestre.com/2013/06/28/mais-pourquoi-nos-politiques-francais-sont-ils-si-nuls">Mais pourquoi nos politiques français sont-ils si nuls ?</a>
+<script async src="//cdn.embedly.com/widgets/platform.js" charset="UTF-8"></script></div>
+<p>
+Notre monde n’est plus le même, c’est une réalité que beaucoup de citoyens ont adopté. Mais nos représentants semblent être en décalage, combien d’entre eux ont fait l’expérience de notre réalité ? Ils sont désormais jugés comme inadaptés aux problèmes. Cette crise de la compétence pourrait se résoudre s’ils étaient capables d’emporter le peuple dans leur élan. Jean-Marc Sylvestre explique que ce n’est plus le cas. Les moyens de la communication moderne nécessitent d’autres qualités charismatiques. L’importance des réseaux sociaux fait que l’information ne descend plus du haut vers le bas. Mais circule de façon transversale. Le chef doit donc travailler autrement s’il veut rester en lien.
+</p>
+
+<h3>3) Les politiques ? C’est que des promesses !</h3>
+<p>
+  J’aimerais commencer ce paragraphe en expliquant que de nombreuses promesses politiques ne sont pas respectées, mais j’ai l’impression de décrire une évidence. La fracture entre élus et citoyens est-elle grande, au point de ne plus croire en l’engagement de nos politiques ?
+</p>
+<div class="hideme">
+<iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/251318394&color=ff5500"></iframe>
+</div>
+
+<h4>a) Comme un tatoo, une promesse c’est pour la vie</h4>
+<p>
+Lors de des élections fédérales au Canada, de jeunes tatoueurs ont défié les candidats en leur proposant de tatouer leurs promesses. À travers cet incroyable slogan : <a class="link05">« comme un tatoo, une promesse c’est pour la vie »</a> ils ont réussi leur opération marketing mais ont surtout illustré un ras-le-bol général : le non-respect des promesses politiques. 
+</p>
+<div class="youtube05"></div>
+<p>
+Le site <a class="lui"><i>Lui président de la République</i></a> passe au crible les promesses de François Hollande pour leur attribuer un verdict. On constate que sur 541 promesses : 51 ont été brisées, non atteintes ou reportées et 252 n’ont pas encore été tenues.
+</p>
+<div class="lui2">
+<a class="embedly-card" data-card-key="8a58d66c966a42a4b04530725b747949" data-card-controls="0" data-card-image="http://www.luipresident.fr/sites/default/files/ministres/cazeneuve.jpg" data-card-type="article" href="http://www.luipresident.fr/">Lui président | Les promesses de François Hollande passées au crible</a>
+<script async src="//cdn.embedly.com/widgets/platform.js" charset="UTF-8"></script>
+</div>
+<p>
+Ce site, réalisé par des étudiants en journalisme explique deux choses : <br>
+La première c’est que ces outils liés au numérique permettent de classifier, hiérarchiser et comprendre simplement. Il est aujourd’hui facile de tout mesurer et d’en tirer des conclusions. La <a class="legrand">durée de vie d’une promesse électorale</a> a profondément changé. Thomas Legrand explique : 
+</p>
+<div class="legrand2">
+<a class="embedly-card" data-card-key="8a58d66c966a42a4b04530725b747949" data-card-controls="0" data-card-type="article-full" href="http://www.franceinter.fr/emission-l-edito-politique-des-promesses-en-politique">Des promesses en politique / France Inter</a>
+<script async src="//cdn.embedly.com/widgets/platform.js" charset="UTF-8"></script>
+</div>
+</div>
+<div class="reference">Legrand T. <i>Des promesses en politique</i> (audio en ligne), 2012</div>
+<div class="gauche">
+<p class="citation1 hideme">« La mémoire politique, le souvenir des mots prononcés par les candidats, s’est considérablement démocratisé et toutes les anciennes paroles des prétendants à l’Élysée sont disponibles par un clic pour tous les citoyens et a fortiori pour tous les journalistes sur n’importe quel sujet. »</p>
+<p>
+Ces étudiants exercent une pression indispensable et de plus en plus redoutable sur les pouvoirs établis en mettant nos dirigeants face à leurs responsabilités et en donnant accès la parole politique au peuple. 
+</p>
+<p>
+La deuxième chose que l’on constate, c’est que la plupart des promesses n’ont pas été tenues. Même si nous avons grand espoir avant la fin du mandat de François Hollande, il semble évident qu’un grand nombre des promesses annoncées seront brisées ou non atteintes.
+</p>
+
+<h4>b) La simplicité des promesses cache une grande complexité</h4>
+<p>
+L’économiste Jacques Bichot explique que beaucoup de candidats font des promesses que tout le monde a envie de voir réalisées. Ce sont des promesses très simples, destinées à attirer des voix en promettant monts et merveilles à la majorité de la population. Une fois élu, toute la difficulté est d’accomplir moins que ce qui était annoncé, sans donner l’impression d’abandonner sa promesse. Ainsi, une promesse simple engendre une grande complexité souvent due à des contraintes financières. Jacques Bichot explique :
+</p>
+</div>
+<div class="reference2">Bichot J. <i>Le labyrinthe, compliquer pour régner</i>, Manitoba, 2014. 242 p.</div>
+<div class="gauche">
+<p class="citation1 hideme">« Autrement dit, le simplisme des promesses ne garantit nullement la simplicité des réalisations : c’est au contraire le point de départ d’une course à la complication. »</p>
+
+<p>
+Le cas de la retraite à 60 ans en est l’exemple parfait, appliquer simplement la promesse aurait coûté trop cher et son application partielle a considérablement compliqué la retraite de la sécurité sociale.<br> 
+Dans le mythe grec, Thésée sort vainqueur du labyrinthe qui représente la dictature et la complication. Après cette victoire, Thésée applique la première législation démocratique. Jacques Bichot propose de suivre sa voie en prenant conscience des effets délétères de la complexité inutile engendrée par les pouvoirs publics. Les promesses simples sont sources de complexité et si elles ont le pouvoir d’élire, elles sont utilisées comme techniques de dissimulation de la vérité et comme instrument de pouvoir sur les citoyens.
+</p>
+
+<h4>Conclusion :</h4>
+</div>
+<div class="reference2">Pasqua C. Discours de 1988.</div>
+<div class="gauche">
+<p class="citation1 hideme">
+« Les promesses n’engagent que ceux qui y croient ! » Charles Pasqua 
+</p>
+<p>
+Quand un président promet c’est une erreur politique, il doit faire. Les promesses concernent les candidats, la fonction présidentielle doit les exécuter. Quand on est Président, ce que l’on dit n’est plus entendu comme une promesse mais comme une commande ferme. Si ce n’est pas réalisé ce n’est pas une promesse non tenue, c’est la parole de l’État qui est en cause.
+</p>
+<p>
+Or, cette parole est remise en doute à mesure que les promesses ne sont pas respectées. Cette crise de la confiance est un facteur qui renforce l’écart entre représentants et représentés ; les citoyens se sentent lésés et humiliés quand on ne s’occupe pas de leurs problèmes. Ce qui se dessine aujourd’hui c’est l’éclatement du peuple en une multitude d’individualités. Nous ne voulons pas appartenir à un seul groupe, mais nous souhaitons affirmer notre identité particulière et que nos dirigeants en prennent compte. Je pense que l’avenir de la promesse politique ne peut se faire sans une forme de personnalisation de l’expérience. 
+</p>
+
+<p>
+Les promesses sont au cœur d’une campagne politique. Elles défendent des idées fortes qui définissent un engagement pris devant les Français. Quand elles sont brisées, l’homme politique est taxé de menteur ; quand elles sont tenues, elles sont censées impacter directement la vie des citoyens. Un citoyen ira peut-être voter s’il constate un changement dans sa vie quotidienne à l’issue d’un vote, mais tant que les promesses resteront en suspens, il sera impossible de le vérifier. 
+</p>
+<p>
+Les promesses politiques peuvent être autant dangereuses quand elles sont appliquées que lorsqu’elles ne le sont pas. Lorsque que les responsables politiques ne respectent pas leurs promesses, cela doit signifier que le citoyen n’en ressent pas l’impact sur sa vie quotidienne. Mais l’acte collectif d’aller voter ne doit pas être individualisé, car aller voter ce n’est pas exprimer ses opinions personnels et individuels, c’est s’exprimer comme un membre d’un groupe. Nous sommes des citoyens qui agissent ensemble pour décider de notre avenir commun. Dans le cas de la cité des cosmonautes, analysée pendant cinq ans par Cécile Braconnier et Jean-Yves Dormagen, le choix électoral des citoyens les renvoie à leur appartenance aux classes populaires, aux habitants des cités, des quartiers défavorisés, mais aussi aux Français d’immigration récente.</p>
+
+<h3>4) Je ne comprends rien à la politique ! </h3>
+<p>Je termine ces témoignages en abordant un problème pédagogique. On constate que la plupart des gens veulent s’intéresser à la politique, mais il leur est souvent difficile de comprendre un système qui semble réservé aux initiés.
+</p>
+<div class="hideme">
+<iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/259664844&color=ff5500"></iframe>
+</div>
+
+<h4>a) Un apprentissage collectif</h4>
+<p>Céline Braconnier et Jean-yves Dormagen expliquent que voter n’a rien d’un geste spontané mais qu’il relève d’un apprentissage collectif. Ils ont ainsi observé dans la cité des cosmonautes, un milieu populaire qu’ils ont étudié pendant cinq ans, que c’est en groupe, en couple ou en famille que l’on se rend aux urnes. 
+</p>
+</div>
+<div class="reference">Braconnier C. Dormagen JY. <i>La démocratie de l’abstention</i>, Paris : Folio Gallimard, 2007. 120 p.</div>
+<div class="gauche">
+<p class="citation1 hideme">« C’est sous l’influence directe de ses proches qu’on se retrouve à consacrer une partie de son dimanche à remplir un devoir dont les fondements politiques et moraux sont très imparfaitement maîtrisés. L’influence des proches s’apparente à de la contrainte ou du contrôle – le mari qui entraîne sa femme, le père qui surveille ses enfants, la jeune femme qui va chercher sa sœur – mais aussi à de la conviction, voire de la construction de sens. »
+</p>
+<p>Ces personnes, issues d’un milieu populaire vont voter en pensant que l’élection aura un impact réel sur leur vie de famille. Les promesses peuvent donc jouer en la faveur ou en la défaveur de cette communauté. Le vote a donc un double sens :</p>
+</div>
+<div class="reference2">Braconnier C. Dormagen JY. <i>La démocratie de l’abstention</i>, Paris : Folio Gallimard, 2007. 120 p.</div>
+<div class="gauche">
+<p class="citation1 hideme">« en allant voter, les électeurs vont dire doublement qui ils sont, non pas comme une personne aux opinions privées, mais comme membres de groupes : ils sont citoyens et agissent ensemble pour décider de l’avenir de la nation. »
+</p>
+<p>Mettre un bulletin dans l’urne n’a rien de spontané mais relève d’un apprentissage collectif. L’éducation politique est un enjeu pédagogique important, mais il devient difficile de justifier l’importance du vote face à cette crise grandissante de la démocratie. Sans éducation politique, les électeurs se réfugient en votant pour des personnes avant des programmes.   
+</p>
+
+<h4>b) La peopolisation politique</h4>
+<p>On parle aujourd’hui d’une politique des programmes, qui se déplace vers une politique des personnes. C’est la peopolisation de la vie politique. L’homme se montre et se vend lui-même pour montrer aux français qu’il est comme eux. Christian Delporte explique :</p>
+</div>
+<div class="reference">Delporte C. <i>Une histoire de la séduction politique</i>, Paris : Éditions Flammarion, 2012. 381 p.</div>
+<div class="gauche">
+<p class="citation1 hideme">« On s’intéresse assez peu à ce que les hommes politiques disent et de plus en plus qu’à ce qu’ils sont. On ne demande plus seulement à un homme politique d’être compétent : on lui demande également d’être chaleureux, sympathique, proche…, ce qui l’amène à devoir créer un lien affectif avec l’opinion pour se faire élire »
+</p>
+
+<p>Cette exposition de la vie privée transforme peu à peu notre démocratie. En mettant en avant des personnes, les démocraties se présidentialisent. Le pouvoir exécutif devient le pouvoir central, ce qui est un énorme changement car c’est la loi qui a toujours été la plus importante à ce jour. Pierre Rosanvallon explique :  </p>
+</div>
+<div class="reference">Rosanvallon P. <i>Le bon gouvernement</i>, Paris : Seuil, 2015. 416 p.</div>
+<div class="gauche">
+<p class="citation1 hideme">« Être simplement gouvernés par la loi, c’était la vision des révolutionnaires français, l’exécutif n’avait qu’une mission technique. Mais il est devenu un pouvoir central et c’est lui qu’il s’agit aujourd’hui de faire rentrer en démocratie. »</p>
+
+<h4>Conclusion</h4>
+<p>Essayer de comprendre la politique nous renvoie souvent à la compréhension des personnalités politiques. C’est un fait qui pose clairement un problème à nos démocraties. De plus, la seule interaction qui existe entre gouvernants et gouvernés sont les rendez-vous électoraux. La présidentialisation de notre démocratie semble être une nouvelle conséquence de l’abstention et met en évidence ce nouveau dysfonctionnement. Il devient de plus en plus important, mais de plus en plus difficile de convaincre et se convaincre d’aller voter. 
+</p>
+
+<h3>Conclusion</h3>
+<h4>C'était mieux avant !</h4>
+<p>Je ne suis pas allé voter et je semble manifester un désintérêt pour la politique au même titre que les personnes qui ont répondu à mes questions. Pourtant, j’ai consacré du temps à récolter ces témoignages, à comprendre la raison de ces désintérêts et à en dresser des analyses. Je m’apprête aussi à écrire un mémoire qui parle de politique. Quelque part, je suis forcé de dire que je ne suis finalement pas si désintéressé par la question ; je me demande même si nous n’avons pas une vision négative de la polLa hausse de l’abstention est la conséquence d’une crise de confiance, de représentation, de compétence et d’information. Cette hausse de l’abstention m’a beaucoup questionné, j’ai le sentiment d’assister à l’effondrement de la démocratie et du devoir civique. Mais le bilan est-il si négatif qu’il en a l’air ? Finalement, est-ce que cette non-prononciation ne veut pas dire autre chose, plus haut et plus fort ? </p>
+<div class="mythe2"><a class="embedly-card" data-card-key="8a58d66c966a42a4b04530725b747949" data-card-controls="0" data-card-type="article-full" href="http://www.lemonde.fr/international/article/2004/06/19/le-mythe-du-citoyen-passif_369640_3210.html">Le mythe du citoyen passif</a>
+<script async src="//cdn.embedly.com/widgets/platform.js" charset="UTF-8"></script></div>
+<p>Pour Pierre Rosanvallon, l’idée que le nouveau citoyen est passif n’est qu’un <a class="mythe">mythe</a>. Il explique que le recul de la participation électorale a souvent été accompagné d’un développement plus général de l’activité démocratique. Il explique aussi qu’un mouvement est émergeant et que les citoyens ne participent plus à une politique « polarisée » mais à des formes de « démocraties civiles » plus disséminées.</p>
+<p>D’après lui, le vote est la forme la plus visible de la citoyenneté. Il mêle trois dimensions de l’interactivité entre le peuple et la sphère politique : l’expression, l’implication et l’intervention :</p>
+</div>
+<div class="reference">Rosanvallon P. <i>Le mythe du citoyen passif</i> (en ligne), 2004</div>
+<div class="gauche">
+
+<p class="citation1 hideme">« La démocratie d’expression correspond à la prise de parole de la société, à la formulation de jugements sur les gouvernants et leurs actions ou encore à l’émission de revendications.
+La démocratie d’implication englobe l’ensemble des moyens par lesquels les citoyens se concertent et se lient entre eux pour produire un monde commun. La démocratie d’intervention est constituée, quant à elle, de toutes les formes d’action collective pour obtenir un résultat désiré. La vie démocratique s’articule autour de ces trois formes de l’activité politique. »
+</p>
+<p>
+La démocratie est dans une phase de mutation : si la démocratie d’élection s’est incontestablement érodée, les démocraties d’expression, d’implication et d’intervention se sont affermies.<br>
+Plus de Français ont signé des pétitions (pour 68 % d’entre eux en 2000, contre 53 % en 1990), ils prennent plus part à des manifestations  (40 %, contre 33 %). Ils sont de plus en plus nombreux à s’impliquer dans des activités collectives en participants à des associations, les associations humanitaires, de défense de l’environnement ou de lutte contre le racisme se sont beaucoup développées ces dix dernières années. 
+</p>
+<p>Du côté institutionnel, la participation plus directe et plus décentralisée au niveau local s’est beaucoup développée. La loi Voynet de 1999 a donné un cadre et un encouragement à ce type d’expression des citoyens en favorisant la mise en place de conseils locaux de développement.<br>
+Enfin, l’action collective a elle-même progressé. Les indicateurs de participation à des grèves, des boycottages, le prouvent.</p>
+</div>
+<div class="reference2">Rosanvallon P. <i>Le mythe du citoyen passif</i> (en ligne), 2004</div>
+<div class="gauche">
+<p class="citation1 hideme">« Nous ne sommes pas rentrés dans un nouvel âge de l’apathie politique. » Pierre Rosanvallon</p>
+<p>Mais ces chiffres ne suffisent pas à dresser un bilan parfaitement optimiste. Cette nouvelle démocratie peut vite devenir une « démocratie civile » qui pourrait diviser la nation plutôt qu’affirmer une unité. Il existe un progrès pratique de l’action civique, mais il devient de plus en plus difficile d’exprimer un point de vue général sur la société. 
+</p>
+<p>La figure qui se dessine à travers ces chiffres et ces témoignages, c’est un nouveau citoyen actif qui reformule la question de la démocratie. Ce citoyen affirme de plus en plus fort le décalage qui réside entre le peuple et les dirigeants. Il est aussi l’enfant d’un nouvel âge que le numérique a dessiné. Son rapport à l’unité, à la société et à la démocratie est modifié par cette transition liée au numérique. </p>
+<p>
+Cette génération du nouveau citoyen que décrit Pierre Rosanvallon j’ai le sentiment d’en faire partie. Je manifeste un désintérêt pour la politique, pourtant je ne me reconnais pas comme un citoyen passif. Je suis aussi cet enfant du numérique qui est au cœur d’une transition bouleversant tous les secteurs en crise. Comment ma génération qui cherche à affirmer son individualité et qui est habituée aux effets de réseaux va appréhender cette démocratie ? L’abstention est-elle une révolution passive avant une transition républicaine ? Si je fais ce mémoire c’est pour comprendre qui est ce nouveau citoyen dont je fais partie et c’est aussi pour connaître l’avenir d’une démocratie qui est désormais entre nos mains. </p>
+
+
+
+</div>
+<div class="footer">
+<p><a href="#">< précédent</a><a href="#">Menu</a><a href="#">suivant ></a></p>
+</div>
+
+<script>
+  (function(w, d){
+   var id='embedly-platform', n = 'script';
+   if (!d.getElementById(id)){
+     w.embedly = w.embedly || function() {(w.embedly.q = w.embedly.q || []).push(arguments);};
+     var e = d.createElement(n); e.id = id; e.async=1;
+     e.src = ('https:' === document.location.protocol ? 'https' : 'http') + '://cdn.embedly.com/widgets/platform.js';
+     var s = d.getElementsByTagName(n)[0];
+     s.parentNode.insertBefore(e, s);
+   }
+  })(window, document);
+</script>
+
+
+  </body>
+</html>

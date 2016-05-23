@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="Florent Lenormand - Currently student designer at EnsAD - Email me to see my work">
+    <meta name="author" content="Florent Lenormand">
+    <link rel="icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">    
+
+
+    <title>Mémoire - Conclusion</title>
+
+
+    <!-- Bootstrap core CSS -->
+    <link href="../../dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/cssmemoire.css" rel="stylesheet">
+
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="../../assets/js/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+     <script src="js/memoire.js"></script>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  </head>
+
+  <body> 
+
+  <script>
+
+
+
+$(document).ready(function(){
+    $(".link").click(function(event){
+      event.stopPropagation();
+        $(".youtube").empty();
+        $(".youtube").append('<iframe width="728" height="422" src="https://www.youtube.com/embed/rfGyRJMxRLw?autoplay=1" frameborder="0" allowfullscreen></iframe>');
+        $(".youtube").toggle();
+    });
+     $(document).click( function(){
+        $('.youtube').hide();
+        $('.youtube').empty();
+    });
+});
+
+
+
+$(document).ready(function(){
+   $('.linkarticle').click( function(event){
+        event.stopPropagation();
+        $('.article').toggle();
+    });
+
+    $(document).click( function(){
+        $('.article').hide();
+    });
+});
+
+//add overlay if it does not exist
+if( $('.overlay').length == 0 ){
+    $('body').append('<div class="overlay"></div>');
+} 
+
+$(document).ready(function(){
+    var clicks = 0;
+    $(".videolepen").click(function(event){
+      event.stopPropagation();
+        $(".youtubelepen").empty();
+        $(".youtubelepen").append('<iframe width="728" height="422" src="https://www.youtube.com/embed/JLPilAzV5dA?autoplay=1" frameborder="0" allowfullscreen></iframe>');
+        $(".youtubelepen").toggle();
+    });
+
+     $(document).click( function(){
+        $('.youtubelepen').hide();
+        $('.youtubelepen').empty();
+    });
+});
+
+
+$(document).ready(function(){
+    var clicks = 0;
+    $(".link02").click(function(event){
+      event.stopPropagation();
+        $(".youtube02").empty();
+        $(".youtube02").append('<iframe width="728" height="422" src="https://www.youtube.com/embed/ihuxnVxEpl8?autoplay=1" frameborder="0" allowfullscreen></iframe>');
+        $(".youtube02").toggle();
+    });
+
+     $(document).click( function(){
+        $('.youtube02').hide();
+        $('.youtube02').empty();
+    });
+});
+
+$(document).ready(function(){
+    var clicks = 0;
+    $(".link03").click(function(event){
+      event.stopPropagation();
+        $(".youtube03").empty();
+        $(".youtube03").append('<iframe width="728" height="422" src="https://www.youtube.com/embed/FdOnWu1qdoo?autoplay=1" frameborder="0" allowfullscreen></iframe>');
+        $(".youtube03").toggle();
+    });
+
+     $(document).click( function(){
+        $('.youtube03').hide();
+        $('.youtube03').empty();
+    });
+});
+
+$(document).ready(function(){
+    var clicks = 0;
+    $(".link04").click(function(event){
+      event.stopPropagation();
+        $(".youtube04").empty();
+        $(".youtube04").append('<iframe width="728" height="422" src="https://www.youtube.com/embed/BxemczLqgsk?autoplay=1" frameborder="0" allowfullscreen></iframe>');
+        $(".youtube04").toggle();
+    });
+
+     $(document).click( function(){
+        $('.youtube04').hide();
+        $('.youtube04').empty();
+    });
+});
+
+$(document).ready(function(){
+    var clicks = 0;
+    $(".link05").click(function(event){
+      event.stopPropagation();
+        $(".youtube05").empty();
+        $(".youtube05").append('<iframe width="728" height="422" src="https://www.youtube.com/embed/vSOxdz93jRI?autoplay=1" frameborder="0" allowfullscreen></iframe>');
+        $(".youtube05").toggle();
+    });
+
+     $(document).click( function(){
+        $('.youtube05').hide();
+        $('.youtube05').empty();
+    });
+});
+
+
+
+
+$(document).ready(function(){
+    $(".sommaire").click(function(event){
+      event.stopPropagation();
+        $(".sidemenu").toggle(100);
+
+    $(".sidemenu").click(function(event){
+      $(".sidemenu").hide(500);
+       });
+     $("html").click( function(){
+        $('.sidemenu').hide(500);
+    });
+
+
+
+    });
+    
+});
+
+// Scipt apparition citations FADE IN 
+$(document).ready(function() {
+    
+    /* Every time the window is scrolled ... */
+    $(window).scroll( function(){
+    
+        /* Check the location of each desired element */
+        $('.hideme').each( function(i){
+            
+            var bottom_of_object = $(this).offset().top + $(this).outerHeight();
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+            
+            /* If the object is completely visible in the window, fade it it */
+            if( bottom_of_window > bottom_of_object ){
+                
+                $(this).animate({'opacity':'1'},1000);
+                    
+            }
+            
+        }); 
+    
+    });
+    
+});
+
+// Scipt apparition citations FADE IN 
+
+</script>
+
+
+ <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js" type="text/javascript"></script>
+ <script type="text/javascript">
+        $(document).ready(function() {
+            $(".sidemenu").append('<p></p>')
+            $("h1, h2, h3").each(function(i) {
+                var current = $(this);
+                current.attr("id", "title" + i);
+
+                $(".sidemenu").append("<a id='link" + i + "' href='#title" + i + "' title='" + current.attr("tagName") + "'>" + current.html() + "</a>");
+            });
+        });
+    </script>
+
+
+
+
+
+  <!--
+   <script>
+    $(function() { // < handler start
+        $(".link").on({
+            click: function() {
+                $(".youtube").stop().hide(500);
+            },
+            
+            click: function() {
+                $(".youtube").stop().show(500);
+            }
+           
+            
+        })
+    }); // < handler end
+</script>
+-->
+
+<!-- Top Bar -->
+<div class="topbar">
+<p><div class='sommaire'>
+Sommaire de la page
+</div>
+<div class="sidemenu">
+  <div class="sommairetitle">
+    Sommaire de la page
+  </div>
+</div>
+</p>
+</div>
+<!-- Top Bar -->
+<!-- Sommaire -->
+
+<!-- Sommaire -->
+
+
+<div class="gauche">
+
+<h2>Conclusion</h2>
+<h3>Un mouvement est en marche</h3>
+<p>
+  J’ai constaté qu’il existe une multitude d’innovations numériques qui se forment à partir de valeurs communes. Ce sont des valeurs partagées par des communautés qui essayent de faire vivre de nouvelles formes de démocratie à travers un principe de transparence, d’égalité radicale, de coopération, de principe de la légitimité du faire et de contribution. Tous ces principes irriguent les innovations et sont disponibles aujourd’hui pour transformer la démocratie. J’ai aussi constaté que ces innovations technologiques peuvent engendrer des manifestations physiques, en se réunissant par exemple dans des forums ouverts. Cette réappropriation de l’espace public à travers des mouvements comme Nuit Debout témoigne du besoin pour les citoyens de débattre démocratiquement et de parler de politique.
+</p>
+<p>
+  Nous vivons une transition numérique qui aboutit vers la transition d’une démocratie de consommateur à une démocratie d’acteur. Les expériences citoyennes qui fleurissent à travers le monde démontrent que les gens sont prêts à prendre leurs responsabilités, comme s’ils avaient fait le deuil des institutions, le deuil de l’État.<br> 
+Ils se prennent en main, à l’échelle locale comme dans le village de Saillants, dans la Drôme où 1 199 habitants ont été élu au premier tour face au maire sortant. Le village est organisé par petits groupes dans lequel chacun imagine des idées et les réunions accueillent aujourd’hui un quart de la population ! Un schéma proche de la démocratie liquide a été co-construit pour faire fonctionner la municipalité d’une façon idéale. D’autres villages expérimentent une nouvelle manière de penser la politique et la représentation comme celui de Marinaleda en Espagne où les décisions sont prises par le village entier et validées seulement si elles avoisinent les 80 % d’accords.<br>
+À l’échelle nationale il y a des expériences plus importantes, la plus connue est l’écriture de la constitution Islandaise de manière participative. Suite à la crise financière de 2008, où les trois principales banques privées avaient bénéficié de la complicité de la droite au pouvoir pour mettre le pays en faillite, les citoyens islandais exigèrent le départ du gouvernement et l’écriture, par le peuple, d’une nouvelle Constitution. À travers une plate-forme, 4000 contributions et commentaires ont été consignés donnant naissance à la première constitution 2.0. Il existe aussi des dispositifs plus institutionnels qui fonctionnent comme le budget participatif qui est devenu une modalité de transformation importante de l’action publique. 
+
+</p>
+<p>
+  On constate aussi qu’une volonté de moderniser l’action publique émerge au sein de l’État. Les outils démocratiques se démocratisent pour réintroduire une parole citoyenne dans le débat. La loi d’Axelle Lemaire, par exemple, a été dévoilée aux citoyens sous la forme d’une plate-forme dans laquelle on pouvait exprimer son avis et y ajouter des suggestions.
+On entend aussi beaucoup parler d’un état plate-forme, comme il en existe déjà dans de nombreux pays. En France, il est dirigé par Henry Verdier et s’appelle data.gouv, l’objectif est d’ouvrir les données publiques aux citoyens pour qu’ils s’en emparent et qu’ils créent de nouveaux services. Le numérique est au cœur de cette démarche et les méthodes de création sont très inspirées par les méthodes du design et la souplesse des hackers. C’est la première fois qu’une démarche venant de l’État s’inspire de telles figures activistes. Henry Verdier rappelle : 
+</p>
+<p class="citation1 hideme" >
+« Une stratégie digitale étatique doit intégrer cette dimension stratégique de la révolution numérique, et intégrer, au cœur du système, les règles et les méthodes de cette révolution pour agir en permanence avec et comme les innovateurs numériques, start-ups, hackers, activistes. »
+</p>
+<p>
+  Ce principe démocratique infuse aujourd’hui à peu près toutes les activités citoyennes. Par exemple l’habitat partagé, les jardins partagés, le mouvement reclaim the street, où l’on se réapproprie la rue, tous les dispositifs de rencontre de consommation partagée se donnent des règles de gouvernance extrêmement démocratiques et pourtant ils ne se pensent pas comme tel. C’est pour cette raison que la démocratie recule sur de nombreux aspects, mais elle avance aussi de manière souterraine à travers ces activités citoyennes. 
+</p>
+<h3>Pourquoi mon mémoire participatif est un échec ? </h3>
+<p>
+  Lorsque j’ai commencé la rédaction de ce mémoire, je trouvais absurde d’écrire seul sur la démocratie. J’ai donc décidé de réaliser un mémoire participatif dans lequel les lecteurs deviendraient acteurs en rédigeant des commentaires, des opinions et des débats.  
+</p>
+<p>
+  Je suis forcé de reconnaître que c’est un échec. Lorsque j’ai annoncé ma volonté « d’ouvrir » mon mémoire, certaines personnes m’ont mis en garde en m’expliquant que c’était exactement ce qu’il ne fallait pas faire. J’ai pris en compte leurs remarques mais j’ai persisté à expérimenter cette forme démocratique, quitte à rencontrer des échecs.  
+
+</p>
+<p>
+J’ai compris que la démocratie participative avait perdu de son sens. L’idée de la participation est apparue en 1962 ; des étudiants militaient pour leurs droits civiques en demandant une vraie réforme politique. Ils voulaient que les citoyens puissent participer activement à la vie politique. La démocratie participative a ensuite été théorisée par Benjamin Barber, CB Macpherson et Carol Pateman. Ils fondent leur démarche sur une critique de la représentation et font de l’engagement de chacun dans les affaires de la cité une condition de la liberté et de l’épanouissement individuel. Ils préconisent la formation d’un « public actif », capable de déployer une capacité « d’enquête » et de rechercher lui-même une solution adaptée à ses problèmes.<p> 
+La démocratie participative est une notion qui a eu beaucoup de succès, mais qui est devenue de plus en plus floue au fil du temps. Elle désigne globalement aujourd’hui, toutes les formes d’association plus ou moins directe des citoyens dans le processus de décision. Le programme un peu subversif qu’elle contenait à l’origine s’est affadi et aujourd’hui il signifie tout et n’importe quoi. Penser qu’il suffisait de décrire quelque chose comme participatif pour qu’il le devienne est sûrement mon premier échec. Le deuxième a été de penser que la participation fonctionnerait toute seule.   
+</p>
+<p>
+L’enjeu principal de la participation porte sur la formation d’une citoyenneté active et informée. Elle est opposée au fonctionnement ordinaire des sociétés de masse modernes. Benjamin Barber écrit : 
+  
+</p>
+<p class="citation1 hideme" >
+« Les masses font du bruit, les citoyens délibèrent ; les masses ont un comportement, les citoyens agissent ; les masses se heurtent et se croisent, les citoyens s’engagent, partagent et contribuent. »
+</p>
+<p>
+  Dans mon cas, je n’ai pas interrogé les citoyens mais j’ai interrogé les masses. Mobiliser un public ne se fait pas avec un simple article. Des techniques sont employées pour engendrer une participation et doivent répondre à des règles claires. Jürgen Habermas et John Rawls introduisent l’idée qu’en démocratie :
+</p>
+<p class="citation1 hideme" >
+  « la légitimité et la rationalité des décisions collectives reposent sur un processus de délibération collective, conduit rationnellement et équitablement entre des individus libres et égaux. » 
+</p>
+<p>
+  L’accent est mis ici sur la capacité de la délibération à fonder la légitimité de la décision et sur les compétences déployées par les participants à la discussion, leur aptitude à formuler des arguments rationnels susceptibles de convaincre l’autre et de s’inscrire dans un processus de “compréhension subjective”, préalable à une “entente rationnellement motivée”, selon les termes de Habermas. Il ajoute : 
+</p>
+<p class="citation1 hideme" >
+  « En principe, nul ne peut en être exclu, toutes les personnes susceptibles d’être concernées par les décisions prises ont des chances égales d’y accéder et d’y participer. » 
+
+</p>
+<p>
+  Autant dire que j’avais tout faux. 
+
+</p>
+<p>
+Bien sûr, la participation de mon mémoire a abouti sur de nombreux commentaires et quelques débats. Non seulement aucun mouvement ne s’est créé, mais il était impossible tirer une substance qualitative de cette matière première, c’est le troisième échec que j’ai rencontré. La raison était finalement assez simple, la participation ne cherchait aucun consensus. L’une des visions de la participation citoyenne a pour objectif de trouver un accord à travers un échange argumenté dans lequel des groupes accepterait de débattre pour trouver un accord. J’étais peut-être plus proche d’une autre vision de la démocratie participative qui compte sur les capacités d’auto-organisation des acteurs qui configurent un « espace public oppositionnel » où serait libre de s’exprimer des « subjectivités rebelles ».   
+  
+</p>
+<p>
+Les raisons semblent évidentes aujourd’hui : j’étais loin de créer une démocratie participative. La participation est une structure complexe qui met en évidence des notions indispensables à respecter comme l’égalité, les compétences et aptitude à la discussion et bien sûr la nécessité d’une prise de décision. On constate que la démocratie participative est un terme abusif et que les outils numériques seuls ne suffisent pas à organiser une participation active et qualitative.   
+</p>
+<h3>Si une idée pouvait réparer la démocratie, 
+elle existerait déjà</h3>
+<p>
+  Joshua Tauberer se définit comme un hacker et activiste, il travaille sur les enjeux de la démocratie depuis 15 ans et reçoit sans cesse ce genre d’e-mail : 
+
+</p>
+<p class="citation1 hideme" >
+   « Si on mettait sur le marché un outil pratique, simple et séduisant qui rapproche l’avis des citoyens et l’action des élus, il trouverait son public rapidement. »  
+</p>
+<p>
+   ou encore :
+</p>
+<p class="citation1 hideme" >
+  « Avec cette application tout le monde va pouvoir suivre sur son smartphone, sa tablette ou sur Internet l’évolution des projets de lois au niveau local, régional et national. On peut voter pour un projet de loi après en avoir lu un résumé. Ça permet 1) aux citoyens d’être informés et impliqués, et 2) à nos élus d’avoir une image très claire de l’opinion de leurs concitoyens. » 
+</p>
+<p>
+  Ce genre d’e-mail qu’il reçoit a souvent pour objectif de :<br> 
+- convaincre les gens que la politique est intéressante.<br>
+- Demander des comptes au Congrès (l’équivalent de l’Assemblée Nationale et du Sénat en France) en mesurant ce que la population veut vraiment.<br>
+- Construire un réseau social pour les politiques ou les citoyens.<br>
+- Permettre aux Américains de rédiger ou de commenter des lois ou de voter les lois directement au Congrès.<br>
+
+</p>
+<p>
+   Joshua Tauberer partage l’avis que si une idée pouvait « réparer » la démocratie, elle existerait déjà. Il insiste sur le fait que beaucoup de citoyens espèrent améliorer le pays grâce aux technologies. Cependant, si une idée comme les précédentes n’a pas émergé quelque part dans le monde c’est parce qu’elle n’a pas fonctionné les cinquante autres fois que quelqu’un l’a eu.<br> 
+Il semble suffisant de penser qu’en disant aux élus ce que pensent les citoyens, ils prendront notre avis en compte. Mais les élus n’ont pas forcément envie de savoir ce que disent leurs concitoyens et s’ils le veulent, ils n’ont aucun mal à le savoir. Énormément de personnes écrivent à leurs représentants sans se priver de leur dire ce qu’ils pensent.  <br>
+On peut aussi penser, comme le suggère la loi d’Axelle Lemaire, que c’est au citoyen d’écrire ses lois puisqu’elles le concernent directement. Mais depuis la XIVe législature 1 465 propositions de loi ont été déposées à l’assemblée nationale, cela représente 547 jours de séance, une durée totale de 4 501 heures. Il est difficile d’avoir un avis sur une proposition de loi qui traite de “la clarification des règles encadrant les contrats d’assurance emprunteur.” ou “de nouvelle organisation territoriale de la République pour permettre, à titre exceptionnel, de différer d’un an la création d’une nouvelle intercommunalité.” Sommes-nous prêt à voter ces lois et à refuser d’élire des représentants qui décident pour nous et nous évitent d’avoir 2000 pages de projets de loi à lire ?
+</p>
+<p>
+ La conclusion de Joshua Tauberer est assez simple : le monde démocratique est complexe. Il est difficile de savoir clairement ce qui mérite d’être amélioré dans une démocratie quand on a peu de connaissances en politique ou en droit. Le pouvoir revient aux personnes organisées. Si les citoyens doivent reprendre le pouvoir, il faut les aider à se regrouper, à leur apprendre comment exercer des pressions ensemble. Les méthodes qui révolutionnent le système entier de la démocratie ont une approche globale. Chacun apporte sa pierre l’édifice et c’est en devenant un expert incontournable dans un sujet qui nous passionne que l’on peut tenter de l’améliorer. Les bonnes idées sont des conclusions, ne sont pas des points de départ. 
+
+ 
+</p>
+<p>
+De plus, si l’on donne plus de pouvoir à un groupe, il affaiblit forcément d’autres personnes. Les gens à qui on retire le pouvoir, ne vont pas rester assis sans rien faire. Comment vont-ils réagir à une vague démocratique citoyenne ? La démocratie peut être renouvelée, oui, mais avec qui ?    
+</p>
+<h3>Une démocratie avec qui ? </h3>
+<p>
+  La question de la démocratie n’existe pas encore très clairement dans l’agenda politique. Les citoyens sont de plus en plus nombreux à exiger une nouvelle démocratie et à demander plus aux institutions existantes ; mais ils restent une minorité. Il existe aussi une forte tentation autoritaire dans la société et des phénomènes de replis qui vont à l’encontre de ce que nous vivons et disons. Il y a aussi des catégories qui ont beaucoup trop à faire, à penser ou à craindre et qui ne se sentent pas légitimes de poser ces questions. Ce sont les classes populaires, par exemple, ou la jeunesse qui est très clivée sur ces questions. Enfin, si l’on utilise le numérique pour plus de démocratie, une partie de la société risque l’exclusion. La technologie exclue un certain nombre de citoyens qui sont souvent les plus fragiles, donc ceux qui ont le plus besoin d’aide. Il faut comprendre les limites de la légitimité de ce mouvement. 
+</p>
+<p>
+  Est-ce qu’on peut faire de la politique sans désigner des ennemis ? Sans établir des lignes de partage entre des amis et des ennemis ? La politique c’est la capacité de désigner des amis et des ennemis. Loïc Blondiaux explique que ce mouvement démocratique qui émerge ; parce qu’il affirme un principe radical d’inclusion, parce qu’il se veut démocratique y compris dans son acceptation relative de tous les points de vue, de tous les discours ; s’interdit de se poser cette question. L’inclusion, c’est formidable dans les commencements car c’est ce qui fait la force et la dynamique mais l’inclusion n’est pas tenable très longtemps si l’on veut transformer la démocratie. 
+</p>
+
+
+</div>
+<div class="footer">
+<p><a href="#">< précédent</a><a href="#">Menu</a><a href="#">suivant ></a></p>
+</div>
+
+
+
+
+  </body>
+</html>

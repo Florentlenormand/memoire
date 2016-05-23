@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="Florent Lenormand - Currently student designer at EnsAD - Email me to see my work">
+    <meta name="author" content="Florent Lenormand">
+    <link rel="icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">    
+
+
+    <title>Mémoire - Le nouveau citoyen du nouveau monde</title>
+
+
+    <!-- Bootstrap core CSS -->
+    <link href="../../dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/cssmemoire.css" rel="stylesheet">
+
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="../../assets/js/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+     <script src="js/memoire.js"></script>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  </head>
+
+  <body> 
+
+  <script>
+
+
+
+$(document).ready(function(){
+    $(".link").click(function(event){
+      event.stopPropagation();
+        $(".youtube").empty();
+        $(".youtube").append('<iframe width="728" height="422" src="https://www.youtube.com/embed/rfGyRJMxRLw?autoplay=1" frameborder="0" allowfullscreen></iframe>');
+        $(".youtube").toggle();
+    });
+     $(document).click( function(){
+        $('.youtube').hide();
+        $('.youtube').empty();
+    });
+});
+
+
+
+$(document).ready(function(){
+   $('.linkarticle').click( function(event){
+        event.stopPropagation();
+        $('.article').toggle();
+    });
+
+    $(document).click( function(){
+        $('.article').hide();
+    });
+});
+
+//add overlay if it does not exist
+if( $('.overlay').length == 0 ){
+    $('body').append('<div class="overlay"></div>');
+} 
+
+$(document).ready(function(){
+    var clicks = 0;
+    $(".videolepen").click(function(event){
+      event.stopPropagation();
+        $(".youtubelepen").empty();
+        $(".youtubelepen").append('<iframe width="728" height="422" src="https://www.youtube.com/embed/JLPilAzV5dA?autoplay=1" frameborder="0" allowfullscreen></iframe>');
+        $(".youtubelepen").toggle();
+    });
+
+     $(document).click( function(){
+        $('.youtubelepen').hide();
+        $('.youtubelepen').empty();
+    });
+});
+
+
+$(document).ready(function(){
+    var clicks = 0;
+    $(".link02").click(function(event){
+      event.stopPropagation();
+        $(".youtube02").empty();
+        $(".youtube02").append('<iframe width="728" height="422" src="https://www.youtube.com/embed/ihuxnVxEpl8?autoplay=1" frameborder="0" allowfullscreen></iframe>');
+        $(".youtube02").toggle();
+    });
+
+     $(document).click( function(){
+        $('.youtube02').hide();
+        $('.youtube02').empty();
+    });
+});
+
+$(document).ready(function(){
+    var clicks = 0;
+    $(".link03").click(function(event){
+      event.stopPropagation();
+        $(".youtube03").empty();
+        $(".youtube03").append('<iframe width="728" height="422" src="https://www.youtube.com/embed/FdOnWu1qdoo?autoplay=1" frameborder="0" allowfullscreen></iframe>');
+        $(".youtube03").toggle();
+    });
+
+     $(document).click( function(){
+        $('.youtube03').hide();
+        $('.youtube03').empty();
+    });
+});
+
+$(document).ready(function(){
+    var clicks = 0;
+    $(".link04").click(function(event){
+      event.stopPropagation();
+        $(".youtube04").empty();
+        $(".youtube04").append('<iframe width="728" height="422" src="https://www.youtube.com/embed/BxemczLqgsk?autoplay=1" frameborder="0" allowfullscreen></iframe>');
+        $(".youtube04").toggle();
+    });
+
+     $(document).click( function(){
+        $('.youtube04').hide();
+        $('.youtube04').empty();
+    });
+});
+
+$(document).ready(function(){
+    var clicks = 0;
+    $(".link05").click(function(event){
+      event.stopPropagation();
+        $(".youtube05").empty();
+        $(".youtube05").append('<iframe width="728" height="422" src="https://www.youtube.com/embed/vSOxdz93jRI?autoplay=1" frameborder="0" allowfullscreen></iframe>');
+        $(".youtube05").toggle();
+    });
+
+     $(document).click( function(){
+        $('.youtube05').hide();
+        $('.youtube05').empty();
+    });
+});
+
+
+
+
+$(document).ready(function(){
+    $(".sommaire").click(function(event){
+      event.stopPropagation();
+        $(".sidemenu").toggle(100);
+
+    $(".sidemenu").click(function(event){
+      $(".sidemenu").hide(500);
+       });
+     $("html").click( function(){
+        $('.sidemenu').hide(500);
+    });
+
+
+
+    });
+    
+});
+
+// Scipt apparition citations FADE IN 
+$(document).ready(function() {
+    
+    /* Every time the window is scrolled ... */
+    $(window).scroll( function(){
+    
+        /* Check the location of each desired element */
+        $('.hideme').each( function(i){
+            
+            var bottom_of_object = $(this).offset().top + $(this).outerHeight();
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+            
+            /* If the object is completely visible in the window, fade it it */
+            if( bottom_of_window > bottom_of_object ){
+                
+                $(this).animate({'opacity':'1'},1000);
+                    
+            }
+            
+        }); 
+    
+    });
+    
+});
+
+// Scipt apparition citations FADE IN 
+
+</script>
+
+
+ <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js" type="text/javascript"></script>
+ <script type="text/javascript">
+        $(document).ready(function() {
+            $(".sidemenu").append('<p></p>')
+            $("h1, h2, h3").each(function(i) {
+                var current = $(this);
+                current.attr("id", "title" + i);
+
+                $(".sidemenu").append("<a id='link" + i + "' href='#title" + i + "' title='" + current.attr("tagName") + "'>" + current.html() + "</a>");
+            });
+        });
+    </script>
+
+
+
+
+
+  <!--
+   <script>
+    $(function() { // < handler start
+        $(".link").on({
+            click: function() {
+                $(".youtube").stop().hide(500);
+            },
+            
+            click: function() {
+                $(".youtube").stop().show(500);
+            }
+           
+            
+        })
+    }); // < handler end
+</script>
+-->
+
+<!-- Top Bar -->
+<div class="topbar">
+<p><div class='sommaire'>
+Sommaire de la page
+</div>
+<div class="sidemenu">
+  <div class="sommairetitle">
+    Sommaire de la page
+  </div>
+</div>
+</p>
+</div>
+<!-- Top Bar -->
+<!-- Sommaire -->
+
+<!-- Sommaire -->
+
+
+<div class="gauche">
+<h2>II - Le nouveau citoyen du nouveau monde</h2>
+<h3>Introduction</h3>
+<p>
+J’ai toujours vécu avec un ordinateur. J’ai dessiné sur du papier et j’ai dessiné sur Paint, joué aux jeux de société et joué aux jeux vidéo, écrit des cartes postales et imprimé des cartons d’anniversaire. Naître avec un ordinateur semble supprimer l’idée d’une hiérarchie entre les outils du réel et ceux du virtuel. Vers l’âge de douze ans, mon oncle m’a appris les bases du langage HTML. J’ai ainsi pu créer mon premier site : un formulaire qui incitait les filles à m’envoyer un email. J’ai ensuite très vite possédé mon ordinateur personnel avec lequel je m’amusais à prendre le contrôle de celui de mon père quand il travaillait. Mon premier téléphone portable je l’ai obtenu en classe de quatrième, un Sagem myx3 avec écran couleur. Depuis je n’ai jamais vécu sans ordinateur et sans téléphone.  
+</p>
+
+<p>
+Michel Serres baptise cette génération « Petite Poucette », pour sa capacité à envoyer des SMS avec ses pouces. Il explique que notre génération a trouvé le sens réel du mot « maintenant ». Notre main tenant un smartphone, nous tenons tous les lieux du monde, toutes les informations et nous pouvons communiquer avec tous à tout moment. En quatre coups de téléphone nous sommes reliés à n’importe quelle autre personne sur la planète, c’est le nouveau théorème du petit monde. Et nous tenons en main ce nouveau monde.
+</p>
+ 
+<p>
+On appelle aussi notre génération des digital natifs : qui sont nés avec le numérique. Ce terme s’oppose à celui de digital immigrants, qui fait référence aux générations précédentes qui ont vu la naissance du numérique comme un bouleversement de leurs pratiques. Un digital native parlera de son nouvel « appareil photo » là où un  digital immigrant sera fier de son nouvel « appareil photo numérique ».
+</p>
+
+<p>
+Ce qui semble évident c’est qu’il existe une fracture entre cette génération native et la génération immigrante. Si l’on s’intéresse au problème en surface, on considère que nous sommes simplement plus à l’aise avec des nouveaux outils de communication. Mais l’enjeu est plus profond, c’est notre rapport au monde qui est complètement modifié. Qui est ce nouveau citoyen, enfant du numérique ? En quoi cette génération construit une nouvelle forme de citoyenneté ? Nous allons tenter de répondre à ces questions dans la première partie. 
+</p>
+<p>
+  Après avoir décrit le portrait d’une nouvelle génération de nouveaux citoyens, nous adopterons une vision plus large. Nous nous intéresserons à la révolution numérique qui semble bouleverser l’industrie, la société et les institutions de notre pays.<br>   
+Depuis qu’Apple présente ses nouveaux produits en les considérant comme révolutionnaires, la révolution est employée pour désigner un phénomène nouveau. La révolution du numérique, la révolution des communs, des réseaux, de la réalité virtuelle etc. Nicolas Colin insiste sur le fait que la révolution numérique est déjà passée et que nous vivons une transition. Cette transition ne touche plus des secteurs immatériels comme les industries culturelles ou les modes de distribution comme l’e-commerce. Elle s’attaque désormais à l’automobile, la santé, la finance ou l’énergie et continue de s’étendre. <br>
+Nous verrons que la manière de produire et de consommer est radicalement différente du paradigme Fordiste de l’économie de masse standardisée qui a régné. Nos institutions ont beaucoup de mal à s’adapter à ce changement de paradigme. La protection sociale par exemple, a été conçue pour des emplois stables alors qu’ils sont de plus en plus divers, discontinus et multiformes. Comme l’explique Nicolas Colin, les individus changent de plus en plus d’employeurs et vivent de la multiactivité.
+</p>
+
+<p class="citation1 hideme">
+  « De la fiscalité à la politique industrielle, du soutien à l’innovation au dialogue social, on pourrait multiplier les exemples de ce décalage croissant entre l’intensité de la transition en cours et l’anachronisme de politiques qui, pour l’essentiel, visent à perpétuer un monde révolu. »
+
+</p>
+
+<p>
+Comment le passage d’une industrie à l’autre modifie notre société ? Quelles sont les nouvelles valeurs que diffusent l’industrie du numérique ? C’est à ces questions que nous tenterons de répondre dans la deuxième partie. Nous analyserons notamment cette difficulté d’adaptation de nos institutions à un monde qui change à travers l’exemple d’Uber. La réaction du gouvernement face au géant américain qui vient détruire l’industrie des taxis a été d’entraver une évolution inéluctable. Cet exemple montre que nos institutions ne sont pas prêtes à considérer cette transition comme une opportunité plutôt que comme une menace.
+  
+</p>
+
+<p>
+Pour terminer, nous étudierons un concept clé de ce changement de paradigme qui est le concept de la multitude introduit par Henry Verdier et Nicolas Colin. Quand le web 2.0 a été inventé par Tim O’Reilly en 2004, il s’est banalisé pour remplacer le web de contenus. Ce qui a profondément changé c’est que les utilisateurs pouvaient remplir le Web tout seul. Les usages ont dépassé ce qui avait été envisagé par les développeurs de la technologie. Nous sommes aujourd’hui, sans le savoir, les principaux acteurs de l’économie numérique. Nos vies, nos interactions, nos créations sont la source déterminante de la valeur et de la croissance. Ce concept s’illustre à travers le livre L’âge de la multitude : 
+  
+</p>
+
+<p class="citation1 hideme">
+« Un monde nouveau, né de la révolution numérique, consacre le règne de milliards d’individus désormais instruits, équipés et connectés. Ensemble, ils forment une puissante multitude qui bouleverse l’ancien ordre économique et social. Loin d’être l’affaire des seules entreprises technologiques, l’économie numérique est au contraire dominée par ceux — entreprises, administrations, associations — qui ont su s’allier à cette multitude. Après la révolution numérique, l’enjeu stratégique est de susciter, de recueillir et de valoriser la créativité des individus. »
+  
+</p>
+
+<p>
+ Un nouveau citoyen est en train de grandir dans un monde en transition. Le problème réside dans un profond décalage entre nos institutions rigides et un peuple qui s’est transformé en une multitude d’individualités. À quels nouveaux défis doit se préparer notre démocratie ? L’émergence d’une nouvelle puissance, la multitude, exige désormais des politiques et des services publics personnalisés ainsi que des représentants politiques qui comprennent les enjeux en ne limitent pas le numérique à des questions d’outils, de tweets et de vote électronique. 
+</p>
+
+
+
+<h3>1) Citoyenneté et numérique l’inné et l’acquis </h3>
+<h4>a) Le Digital Native</h4>
+<p>
+Pierre Bourdieu définit le capital culturel de cette façon :
+</p>
+<p class="citation1 hideme">
+  « Le capital culturel est la possession de certaines compétences culturelles et de savoirs culturels qui prévoient des modes de consommation culturelle distingués. » 
+</p>
+<p>
+L’agilité numérique est un produit de capital culturel, c’est-à-dire qu’elle n’apparaît pas dès la naissance. Cette connaissance technologique et sa facilité d’utilisation se transforment en capital social pour permettre de progresser dans la société. Mais il y a plusieurs niveaux dans l’agilité numérique et il est important de nuancer le terme digital native. Hilary Putnam explique que les sujets humains ne sont pas des « cerveaux dans une cuve », nous sommes différents et généraliser une génération n’a aucun sens. S’il est vrai que cette génération est plus sensible au numérique c’est simplement parce qu’elle l’a toujours connu et n’a pas eu besoin de faire l’effort de s’y intéresser comme quelque chose de nouveau. 
+</p>
+<p>
+Viviana Rojas explique que les différents niveaux d’agilité numérique varient en fonction des pratiques, des perceptions et des attitudes, de l’enseignement technique, de la sensibilisation de la technologie. Une étude aux États-Unis a montré que, contrairement à la rhétorique du digital native, les « étudiants du statut socio-économique inférieur, les femmes, les étudiants d’origine hispanique et les Afro-Américains présentent des niveaux inférieurs de Web savoir-faire que d’autres ». 
+</p>
+
+<h4>b) Une mythologie contemporaine</h4>
+<p>
+ L’Ina a interrogé quelques digitals immigrants aux profils différents dans la région Nord pas de Calais. Voici quelques extraits de leurs témoignages :  
+</p>
+<p class="citation1 hideme">
+  « On a déjà essayé de lui offrir à Papy mais il n’y arrive pas et cela l’énerve. C’est générationnel tout ça. » Conseillère financière, 39 ans<br>
+
+« Le numérique ? Bah on est un peu largué » Employée, 58 ans<br>
+
+« Moi qui ne vis pas dans ce monde, je suis dépassée. » Guichetière, 51 ans<br>
+
+« Avec les enfants il faut s’adapter, je n’ai pas envie de passer pour la vieille conne. On passe déjà pour des vieux cons donc si on ne suit pas tout ça… » Factrice, 46 ans<br>
+</p>
+<p>
+  Quand on évoque ici le mot numérique les personnes interrogées l’associent au mot jeune. Comme s’il existait une échelle des âges et que le jeune en était la référence, il semble que plus on se place haut sur cette échelle, c’est-à-dire plus on avance en âge, moins on comprend le numérique. Par cette représentation culturelle les personnes interrogées se trouvent vieilles prématurément. 
+</p>
+<p>
+  C’est ce que Roland Barthes appelle le mythe. Un mythe change un signe en vérité éternelle, il détruit le langage pour le remplacer par des formules. Par exemple au cinéma, le gangster porte un chapeau et fume une cigarette. Fabriqué par les médias et la publicité, pour Roland Barthes, le mythe remplace l’explication. Dans cette conception, le numérique relève d’un monde juvénile. On constate que dans le mot digital native il y a une composante générationnelle et une autre virtuelle. Il est donc intéressant de constater que les personnes interrogées font instinctivement un blocage face aux préoccupations du numérique. Ce blocage empêche la construction d’une agilité numérique et d’une culture technologique qui pourrait se transformer en capital social. 
+</p>
+
+<h4>c) Passeurs d’usage</h4>
+<p>
+  Ce blocage générationnel peut justement s’estomper grâce à cette nouvelle génération. Si l’on s’intéresse aux digital natives, on constate qu’ils remplissent un rôle fonctionnel qui est celui de passeur d’usage. Ce rôle est illustré par la courbe d’adoption de Rogers, célèbre dans économie numérique. Elle représente la diffusion d’une innovation à travers chaque couche de population et symbolise le rôle de passeur d’usage.  
+</p>
+<p>
+  Cette courbe en cloche représente les différents profils de consommateurs qu’une innovation doit convaincre pour se diffuser dans la société. <br>
+Le premier profil est appelée « early adopter », ce sont des personnes sensibles et enthousiastes face à l’innovation : des geeks. Ils sont prêts à acheter un nouveau produit pour l’utiliser et le tester. C’est seulement dans un second temps qu’ils vont se demander si cet objet leur est véritablement utile.<br>  
+Le deuxième profil concerne des personnes plus rationnelles. Elles ont besoin de preuves tangibles que le produit leur sera utile ou attendent qu’un standard technologique soit choisi. L’enjeu d’une innovation est donc de passer du marché de niche à celui de masse. 
+</p>
+<p>
+L’exemple le plus clair pour illustrer ce concept est celui de l’iPhone. Si vous avez campé devant un Apple store pour être le premier à obtenir le nouvel iPhone  ou si vous voulez l’obtenir le plus vite possible vous faites partie de la première catégorie. En revanche, si vous achetez un iPhone après vous être longuement renseigné, comprendre comment telle ou telle personne l’utilise et après vous êtes senti rassuré, vous faites partie de la deuxième catégorie. <br>
+Le dernier profil est qualifié de “Jetlagué”, ce sont des personnes réfractaires aux nouvelles technologies, qui les acceptent seulement si elles sont devenues la norme.
+</p>
+<p>
+  Ce que l’on constate dans ce parcours d’usage c’est que l’âge est important, les plus jeunes font partie de la première catégorie alors que la deuxième concerne souvent des digital immigrants. Un témoignage de la même étude de l’INA explique :
+
+</p>
+<p class="citation1 hideme">
+« Le téléphone mobile avec le clavier non tactile, j’ai commencé à en être addict quand mes filles habitaient loin de moi. Ces messages courts, c’étaient ma seule façon de communiquer avec elles car au téléphone, elles ne répondaient pas. Elles faisaient 250 SMS par semaine. » Cadre territorial, 52 ans
+</p>
+<p>
+  On constate dans cet exemple que la jeune génération remplie son rôle de passeur d’usage : les parents adoptent les usages des enfants, ce qui est un phénomène inédit car jusqu’à présent l’usage se transmettait de l’ancienne génération à la nouvelle. C’est une des raisons qui prouve que cette jeunesse appréhende le monde différemment. Le mythe des digital natives se doit de remplir un rôle qui traverse les couches de notre société : transmettre des nouveaux usages entre les générations. Ensemble, ils délimitent et définissent les nouvelles pratiques du numérique.  
+</p>
+
+<h4>Conclusion : Les éprouvettes d’une nouvelle ère
+</h4>
+<p>
+  Je suis donc un digital native. Mais si nous regardons les choses que sous cet angle cela ne semble pas bouleverser le monde. Les anciennes générations auront simplement un téléphone un peu plus performant qu’avant. Mais sous couvert de la technologie, le digital native cache un bouleversement beaucoup plus important. Michel Serres en dresse d’ailleurs un portrait dans son livre Petite Poucette : 
+
+</p>
+<p class="citation1 hideme">
+« Cette génération habite la ville et ne va à la campagne que pendant les vacances. Elle habite aussi un monde avec sept autres milliards d’habitants et dont l’espérance de vie va atteindre les 100 ans. Cette génération n’a jamais connu la guerre, jamais eu faim ou souffert de mauvais soin. Elle habite le virtuel et peut manipuler plusieurs informations à la fois. Cette génération ne connaît, ni n’intègre, ni ne synthétise comme ses ascendants. Elle n’habite pas le même espace car sur un smartphone on accède à toute personne, à tous lieux et à tout savoir. »   
+</p>
+<p>
+  Michel Serres ajoute que nous vivons une troisième révolution. Après être passé de l’oral à l’écrit, de l’écrit à l’imprimé, c’est l’imprimé aux nouvelles technologies que nous vivons. Chacune de ces révolutions s’est accompagné d’une profonde mutation politique et sociale. Le digital native est au début d’une nouvelle ère. Il ajoute à ce propos :
+</p>
+<p class="citation1 hideme">
+  « (…) tout repose sur la tête de Petite Poucette, car les institutions, complètement dépassées, ne suivent plus. Elle doit s’adapter à toute allure, beaucoup plus vite que ses parents et ses grands-parents. C’est une métamorphose ! »
+</p>
+
+<h3>2) La métamorphose, le changement d’un paradigme à l’autre :</h3>
+<h4>Introduction : 
+</h4>
+<p>
+Cette génération décrite par Michel Serres grandit dans un monde en transition. La révolution dont il parle a déjà eu lieu et le passage de l’imprimé aux nouvelles technologies est aujourd’hui acquis. En effet, nous ne vivons pas une révolution numérique, mais une transition. La révolution est évènement bref et intense, parfois très violent. La transition, c’est modifier la société pour ne pas recommencer comme avant. On considère trop souvent que la révolution numérique est un processus qui est en cours, que l’on ne comprend pas très bien et on attend qu’elle se termine pour en tirer des conclusions et décider ce qu’il faut faire. Si l’on attend que la révolution numérique se termine, rien ne se passe. Comme l’expliquent Nicolas Colin et Henry Verdier dans L’âge de la multitude, en évoquant une transition nous estimons que la révolution est terminée est qu’il est temps d’en tirer des leçons.  
+</p>
+<p class="citation1 hideme">
+  « La transition incite à l’action et à construire en opposition face à ce qui existait avant. La transition c’est le passage d’un paradigme à l’autre. Elle évoque l’idée de mouvement, un mouvement qui nous incite à être acteur dans la construction du changement. » 
+</p>
+<p>
+On constate que cela fait plus d’une vingtaine d’années qu’internet a été adopté, pourtant le mot numérique semble évoquer encore le futur et l’on parle toujours de nouvelles technologies au sein de nos institutions. L’acceptation par le grand public a été fulgurante mais ce n’est pas le cas de grandes organisations. Les cercles de pouvoirs, s’ils s’y intéressent, se numérisent un peu pour essayer de conserver leur position. Mais les dirigeants voient encore les défis du numérique sous la forme d’infrastructure comme amener internet dans des zones reculées ou citent le numérique pour parler d’information ou de communication. Comment se dessine cette transition numérique ? Quel rôle joue-t-elle dans nos institutions archaïques ? Nous allons essayer de comprendre ce changement de paradigme qui bouleverse en profondeur chaque secteur auquel il s’attaque. Nous allons tenter de comprendre les enjeux de l’économie numérique et le concept de la multitude. Peut-être que nous comprendrons pourquoi il n’y a pas d’ordinateur sur le bureau du Président de la République.
+</p>
+<h4>a) Le Fordisme
+</h4>
+<p>
+La transition numérique implique un changement de paradigme comparable à celui provoqué par la révolution industrielle ; il y a beaucoup de similitudes entre ces deux révolutions. L’ère industrielle et la victoire du consumérisme s’illustrent dans la célèbre mécanisation des tâches d’Henry Ford alors que l’ère numérique s’illustre dans l’usage d’internet par des milliards d’utilisateurs.<br>
+À l’époque du fordisme, il s’agissait de produire en grande série des produits standardisés écoulés sur des marchés de consommation de masse. L’histoire du 20e siècle est celle de la conversion de tous les secteurs à cette nouvelle façon de produire et de consommer. Produire plus, pour vendre plus, tel était l’adage de l’époque non sans conséquence dans nos institutions, cette ère industrielle a modifié notre manière de percevoir le monde et surtout de le vivre. 
+</p>
+<p>
+La transition numérique implique un changement de paradigme comparable à celui provoqué par la révolution industrielle ; il y a beaucoup de similitudes entre ces deux révolutions. L’ère industrielle et la victoire du consumérisme s’illustrent dans la célèbre mécanisation des tâches d’Henry Ford alors que l’ère numérique s’illustre dans l’usage d’internet par des milliards d’utilisateurs.
+À l’époque du fordisme, il s’agissait de produire en grande série des produits standardisés écoulés sur des marchés de consommation de masse. L’histoire du 20e siècle est celle de la conversion de tous les secteurs à cette nouvelle façon de produire et de consommer. Produire plus, pour vendre plus, tel était l’adage de l’époque non sans conséquence dans nos institutions, cette ère industrielle a modifié notre manière de percevoir le monde et surtout de le vivre. 
+</p>
+<p class="citation1 hideme">
+« Le système bancaire a accompagné la naissance d’une économie d’endettement. La protection sociale a apporté des garanties financières aux ménages et sécurisé tout le système : les banques, dont les prêts sont remboursés quels que soient les aléas de la vie des emprunteurs (maladie, chômage, retraite) ; les entreprises, assurées de trouver des débouchés pour leurs produits. »
+</p>
+<p>
+Dans beaucoup de pays les institutions ont mis trop de temps à réagir et à s’adapter. On constate que les sociétés réagissent avec une grande violence face à ces excès du laisser-faire. Ils ont permis, entre autres, la montée du nazisme ainsi qu’un refuge dans les extrêmes dans beaucoup de pays. Il s’avère qu’un système s’affaiblit quand il est soumis à une pression de marché que l’on arrive plus à réguler correctement. À cette époque la manière de produire et la manière de consommer était en train de changer radicalement et sans réaction de l’état, ce changement de paradigme peut devenir très dangereux. 
+
+</p>
+<p>
+Cette montée des extrêmes, liée à ce changement de paradigme résonne étrangement aujourd’hui.<br> 
+La révolution Numérique semble avoir beaucoup de similitudes avec le fordisme. Il est évident que les citoyens ont aujourd’hui besoin de nouvelles institutions politiques et sociales en accord avec leur temps. Nicolas Colin et Henry Verdier expriment la nécessité de changer nos institutions :
+</p>
+<p class="citation1 hideme">
+« Si on ne crée pas rapidement les institutions adaptées à cette nouvelle économie, on va fabriquer une société où la demande sera bridée par l’accumulation des inégalités. »
+</p>
+<h4>b) La transition numérique, un changement de paradigme  </h4>
+<p>
+L’ancien paradigme que nous sommes en train de quitter est celui de la production et de la consommation de masse. Nous l’avons vu précédemment, le fordisme a entraîné une ère où les grandes usines produisent en série des produits standardisés et le moins cher possible. Ces produits étaient vendus abondamment sur les marchés et consommés par des consommateurs sécurisés par leur pouvoir d’achat. <br>
+Mais ce système fonctionnait car il était irrigué par une ressource indispensable : le pétrole. Si nous pouvions produire et consommer en masse c’était grâce au pétrole qui était abondant, peu cher et qui propulsait cette économie. Dans les années 70, c’est la crise des chocs pétroliers qui provoque un renchérissement de cette ressource indispensable. Le pétrole coûte plus cher et cette hausse des prix a déréglé la mécanique de ce système de production. L’équilibre entre le système productif et le système financier a été rompu brutalement. <br>
+Cette crise du paradigme de l’économie de masse a commencé dans les années 70 et elle n’a pas arrêté de s’aggraver en entraînant la crise de toutes ses composantes, dans toutes les interactions avec le système. 
+</p>
+<p>
+L’analyse économique de Nicolas Colin et Henry Verdier explique qu’une dynamique d’optimisation s’est amorcée dans toutes les grandes organisations depuis cette crise du paradigme de la production de masse. Certaines organisations arrivent à optimiser sans dégrader leur qualité de service ou en continuant de baisser leur prix, alors que d’autres rencontrent beaucoup plus de difficultés. Cette dynamique d’optimisation déclenche deux crises importantes que les auteurs décrivent de cette façon : 
+</p>
+<p>
+Une crise de la performance : le système fonctionne de moins en moins bien, les ressources manquent et il faut faire des économies. 
+Une crise de légitimité : force de ce constat, il faut payer plus pour recevoir moins et cela provoque des tensions politiques tangibles.
+</p>
+<p class="citation1 hideme">
+« Cette crise de la légitimité aggrave le phénomène des sorties volontaires. Ces gens qui fantasment sur le fait de sortir complètement du système. Ce sujet est longtemps resté réservé à des fanatiques un peu marginaux. Et quand c’était une frange de marginaux un peu radicaux ça n’inquiétait personne mais ce qui est inquiétant, c’est qu’on se rend compte que de plus en plus de personnes s’affranchissent du système. »
+</p>
+<p>
+On constate trois différences majeures entre le paradigme du numérique et celui du fordisme.<br>
+D’abord, nos nouvelles infrastructures ne sont plus matérielles. Elles ne sont plus composées de grands réseaux routiers ou des réseaux d’énergie mais sont toutes liées à internet comme les grandes plate-formes du cloud ou les apis, ces boîtes noires ouvertes aux développeurs. Ces genres d’infrastructures sont donc essentiels à l’économie numérique. <br>
+La deuxième différence c’est le changement de l’organisation et de la structure des nouvelles entreprises. Les entreprises pyramidales, ultra-optimisées et cadencées selon les principes de l’organisation scientifique et selon l’héritage de l’économie de masse disparaissent. Les nouvelles entreprises se battent selon des règles radicalement nouvelles. Elles conquièrent les marchés différemment, elles ont un rapport différent à leurs clients et une culture de l’innovation beaucoup plus marquée. Cela participe à créer une culture d’entreprise qui n’a rien à voir avec celles des anciennes entreprises industrielles.<br> 
+La troisième différence que l’on constate c’est que nous pensions que ce changement de paradigme allait concerner des secteurs uniquement liés à la communication. Les filières qui ont été les premières à sentir les effets de ce changement de paradigme étaient la presse, la publicité ou la musique et le cinéma. Mais quelles sont les filières qui sont en train de se convertir aujourd’hui ? C’est l’automobile avec Tesla motor, l’énergie avec Solar city ou encore la santé, les transports etc. 
+</p>
+<p>
+Il est intéressant de comparer l’industrie numérique et le fordisme. On constate à quel point un tel changement de paradigme bouleverse une société. L’industrie a changé plus vite que l’état ce qui a eu d’importantes conséquences sur les citoyens. C’est ce qui se passe aujourd’hui au travers de grande entreprise comme Google, Airbnb ou Uber. L’industrie numérique présente tout de même d’importantes différences avec le fordisme et sa force ne réside pas dans son infrastructure, ce qui la rend peut-être plus complexe à comprendre. Pourtant, il est grand temps que nous prenions conscience de ce changement de paradigme et que nous adaptions nos modèles de gouvernance et nos institutions politiques et sociales.
+</p>
+<h4>c) L’exemple d’Uber</h4>
+<p>
+Frédéric Bastiat écrit en 1845 un texte dénonciateur adressé aux députés. Sous la forme d’une pétition, les fabricants de chandelles demandent à être protégé par l’État de la « compétition ruineuse d’un rival étranger » qui est le soleil. Ils demandent que l’État ordonne la fermeture des fenêtres et des lucarnes pour empêcher le soleil de passer. Ainsi, il obtiendrait des avantages économiques et une augmentation de la consommation de nombreux produits de façon directe puis, de toute l’économie indirectement.
+</p>
+<p>
+innovation est adoptée elle bouscule le secteur dans lequel elle s’implante. Les artisans et les ouvriers sont les corps sociaux les premiers touchés et ils se raccrochent à leur savoir-faire voué à se marginaliser. C’est ce qui se passe entre Uber et les taxis. J’ai choisi de parler de cet exemple car ce combat illustre parfaitement la puissance dévastatrice de l’industrie numérique et l’incapacité des institutions à y faire face. <br>
+
+Ces nouvelles entreprises sont souvent comparées à des barbares. Lorsque les barbares ont attaqué l’Empire romain, ils ne parlaient pas le même langage, étaient désorganisés et différents de tous les autres ennemis. Les petites entreprises de l’économie numérique sont comparées, par les grandes, à cet ennemi que l’on n’arrive pas à combattre car on ne le comprend pas. C’est ainsi que seulement quelques personnes reversent des grandes entreprises colossales qui possèdent un monopole. À travers l’exemple d’Uber, nous réalisons l’urgence de changer nos institutions et de comprendre la puissance du numérique.
+
+</p>
+<p>
+Uber est devenu aujourd’hui un verbe : on parle désormais d’uberiser un secteur. Maurice Levy, le patron de Publicis, en donne sa définition en ces mots : 
+</p>
+<p class="citation1 hideme">
+« Se réveiller un matin et découvrir que son activité historique a disparue, c’est se faire Ubériser. » 
+</p>
+<p>
+Comme un rouleau compresseur, Uber s’implante de ville en ville grâce à une technologie performante, mais surtout un puissant effet de réseaux. Depuis la naissance de cette entreprise américaine, l’utilisateur est au centre de l’expérience. C’est une notion importante car une bonne expérience utilisateur engendre un effet de réseau indispensable à toute entreprise liée au numérique. Dans ce sens, il suffit pour l’utilisateur d’appuyer sur un bouton pour obtenir un chauffeur, il connaît le prix de la course à l’avance et paye via l’application. Une simplicité et une qualité de service qui transforme les utilisateurs d’Uber en véritables gardiens du temple face aux taxis. À l’inverse, les taxis ont mauvaise réputation. Des forums entiers s’en plaignent en expliquant qu’il est toujours difficile d’en trouver, qu’ils prennent le chemin dont ils ont envie, qu’ils vous refusent la course, qui ne prennent pas la carte bleue etc. Un célèbre article sur Facebook de Maxime Coulon résume très bien le dégoût de la jeunesse pour les taxis. 
+</p>
+<p>
+Inévitablement, l’industrie des taxis semble vouée à disparaître au profit d’Uber : une entreprise américaine. Plus le réseau de cette entreprise grandit et plus la qualité de service est améliorée. Quand Uber est devenu capable d’offrir un meilleur service, plus simple et moins cher, l’industrie des taxis a compris qu’il fallait agir. D’importantes manifestations virulentes ont eu lieu à Paris pour défendre les droits des taxis qui demandaient une intervention de l’État pour les aider à ne pas disparaître. L’état s’est exécuté et a modifié la loi pour avantager les taxis et pour freiner considérablement Uber. 
+</p>
+<p>
+L’État a littéralement verrouillé l’économie en protégeant les positions existantes de manière législative et réglementaire. Ces verrous ont anéanti toutes les activités françaises qui tentaient de faire bouger les lignes dans le secteur du transport. À travers cette législation, ce sont les entreprises américaines qui prospèrent et les entreprises françaises qui sont anéanties. Quand la nouvelle génération d’utilisateurs en aura assez de la mauvaise qualité des transports et qu’ils obtiendront l’abaissement de barrières réglementaires, seules les entreprises américaines auront la qualité de service et l’infrastructure nécessaires pour prendre le marché français.
+Plus radicalement, Evgeny Morozov prétend que le rôle de nos gouvernements et de nos institutions aurait été de proposer une alternative aux taxis avant l’arrivée d’Uber. Il explique :  
+
+</p>
+<p class="citation1 hideme">
+L’État a littéralement verrouillé l’économie en protégeant les positions existantes de manière législative et réglementaire. Ces verrous ont anéanti toutes les activités françaises qui tentaient de faire bouger les lignes dans le secteur du transport. À travers cette législation, ce sont les entreprises américaines qui prospèrent et les entreprises françaises qui sont anéanties. Quand la nouvelle génération d’utilisateurs en aura assez de la mauvaise qualité des transports et qu’ils obtiendront l’abaissement de barrières réglementaires, seules les entreprises américaines auront la qualité de service et l’infrastructure nécessaires pour prendre le marché français.
+Plus radicalement, Evgeny Morozov prétend que le rôle de nos gouvernements et de nos institutions aurait été de proposer une alternative aux taxis avant l’arrivée d’Uber. Il explique :  
+</p>
+<p>
+Il semble qu’il n’existe pas de politique publique de l’innovation. Les décisions de politique publique doivent être prises dans un sens favorable à l’innovation : en matière de financement de l’économie ; en matière de réglementation sectorielle ; en matière de fiscalité et de protection sociale. Aucune autre politique publique que celle-là ne peut être favorable à l’innovation. Nicolas Colin conclue sur le phénomène Uber en ces mots : 
+</p>
+<p class="citation1 hideme">
+« Si les exceptions se multiplient, si l’innovation n’est plus qu’une priorité parmi d’autres, si l’on n’abaisse pas les barrières réglementaires à l’innovation de modèle d’affaires, alors notre destin est scellé : notre économie sera bientôt tenue exclusivement par des gens qui, bien qu’ils se prétendent décideurs de l’innovation, en sont en réalité les fossoyeurs.
+Nicolas Rousselet, les taxis G7 et tous ceux qui les soutiennent au Parlement ou dans l’administration ne sont qu’un avant-goût de ce sombre avenir : bientôt, notre économie ressemblera à celle de ces pays du tiers-monde où l’homme le plus riche du pays, par ailleurs frère ou beau-frère du chef de l’État, a fait une immense fortune grâce à un monopole mal acquis sur l’importation des Mercedes d’occasion. Dans une telle configuration, on a tout gagné : des distorsions de marché, l’atrophie de la production locale, une valeur ajoutée réduite à néant, une croissance au ralenti et des inégalités de plus en plus insupportables. »
+</p>
+<p>
+L’État se retrouve à essayer d’arbitrer un rapport de forces entre les entreprises du passé et les consommateurs. Face au problème des taxis on comprend que la législation et nos institutions sont vite dépassées par les nouveaux enjeux liés au numérique. De nouveaux acteurs moins hiérarchiques, plus horizontaux avec un fonctionnement collaboratif font leur apparition et nos institutions ne savent pas comment traiter le problème. L’État devient impuissant face à la souplesse et la force de ces nouvelles entreprises. Cette force elles l’obtiennent grâce à l’effet de réseau, la différence aujourd’hui, c’est qu’il s’agit désormais de consommateurs connectés, qui se parlent, auxquels il est difficile d’imposer des mesures dont ils ne veulent pas. Et si nous sommes face à un nouveau type de consommateur, nous sommes aussi face à un nouveau type de citoyens qui ne forment plus un peuple, mais une multitude. 
+</p>
+<h3>3) Du peuple à la multitude</h3>
+<h4>a) Le concept de multitude</h4>
+
+<p>
+Le concept de multitude a été pensé par Nicolas Colin et Henry Verdier dans leur ouvrage L’âge de la multitude, entreprendre et gouverner après la Révolution Numérique.<br>
+En 1937, Ronald Coase s’interroge sur les conditions d’émergence des organisations et il explique à quel moment il est préférable de recruter des collaborateurs plutôt que de sous-traiter à des fournisseurs. En recrutant un salarié, celui-ci réserve son temps d’activité à son employeur. Il met à disposition son « capital humain », c’est-à-dire « l’ensemble des capacités productives  qu’un individu acquiert par accumulation de connaissances générales ou spécifiques. » Le capital humain a une place importante dans l’économie et dans l’économie des institutions. Dans les deux options envisagées par Ronald Coase, c’est-à-dire recruter ou sous-traiter, l’organisation doit payer soit un salaire pour un collaborateur, soit un prix pour un fournisseur. 
+</p>
+<p>
+Mais aujourd’hui une troisième option peut être envisagée. On peut désormais imaginer disposer d’un capital humain sans que le moindre paiement n’intervienne. L’ensemble de ses clients, utilisateurs ou individus pourraient créer de la valeur dans une organisation sans être employés ou mandatés par cette organisation. C’est le concept de la multitude. 
+</p>
+<p class="citation1 hideme">
+« La puissance de la multitude est faite d’intelligence et de créativité. Elle est issue de l’activité cognitive de centaines de millions d’utilisateurs d’application et d‘une infinité d’interactions entre ces centaines de millions d’utilisateurs. »
+</p>
+<p>
+La puissance des nouvelles organisations ne se construit plus en recrutant ou en sous-traitant, mais en définissant une stratégie capable de capter la puissance de cette multitude. La valeur est donc déterminée par l’engagement de la multitude.
+</p>
+<h4>b) Le peuple et la multitude </h4>
+<p>
+Les individus sont en train de changer dans leurs relations et dans l’exercice de leur puissance. Autrefois on décrivait les individus comme une masse indivisible appelée le peuple. 
+
+</p>
+<p class="citation1 hideme">
+« La multitude, ce sont des individus extrêmement affirmés qui refusent d’être fondus dans la masse et qui défendent la volonté de s’affirmer individuellement par de l’interaction permanente. »
+
+</p>
+<p>
+Ces interactions entre individus qui se connectent en réseau à la particularité de rendre la multitude très puissante et surtout ingouvernable. Ce qui a été entrepris pour gouverner le peuple, d’une manière très pyramidale liée au fordisme, devient inopérant quand le peuple devient multitude. La multitude est en mouvement permanent et grâce aux nouveaux outils numériques elle se retrouve en réseaux sur les mêmes applications. Quand un milliard de personnes se retrouvent sur la même plate-forme, leur puissance devient plus importante que les grandes organisations traditionnelles. 
+</p>
+<p>
+Le concept de multitude change l’idée qu’on se fait de la vie en démocratie. Si le peuple disparaît au profit de la multitude, comme l’explique Nicolas Colin et Henry Verdier, toutes les institutions qu’on a mises en place pour le gouverner vont devenir inopérantes.
+</p>
+<h4>c) l’intérêt général  
+</h4>
+<p>
+L’intérêt général en France c’est ce qui donne son sens à l’action publique. C’est ce qui motive la participation collective à l’exercice démocratique et ce qui inspire les politiques publiques misent en œuvre par nos dirigeants. Mais en dehors de la France le concept d’intérêt général résiste peu à d’autres visions du monde.<br> 
+Il existe des pays comme les États-unis dans lesquels l’intérêt général n’existe pas. Les Américains voient la démocratie comme un rapport de forces permanents entre des intérêts particuliers qui finissent par adopter l’adhésion du peuple. Ils ont abdiqué la notion qu’ils considèrent comme une chimère qui est celle de l’intérêt général. L’intérêt général c’est la cause du peuple et quand il n’y a plus d’intérêt général, on va s’intéresser aux intérêts particuliers des uns et des autres et on regarde l’ensemble des individus comme une multitude. 
+</p>
+<p class="citation1 hideme">
+« Durant le New Deal, les champions du processus administratif supposaient l’existence d’un « intérêt public » objectif qui pouvait être déterminé une mis en œuvre par des administrateurs spécialisés, compétents et expérimentés, pourvu qu’il leur fût conféré de généreux pouvoirs. Nous sommes moins certains aujourd’hui que des « experts » pourront déterminer et exécuter ce qui est dans l’intérêt général. Nous sommes en droit d’être sceptiques sur l’existence d’un « intérêt public » objectif, et regardons les problèmes les plus importants de politiques administratives comme un choix entre des intérêts économiques et des valeurs sociales en concurrence. Dans la mesure où les « technocrates » ne peuvent prétendre à une sagesse particulière dans de tels choix, la tendance contemporaine, consistant à considérer les problèmes se posant à l’Administration comme des problèmes de choix social, a exacerbé la contestation de la légitimité administrative. »
+</p>
+<p>
+La France est donc un pays d’expert dans lequel, certaines personnes compétentes, sont susceptibles d’intervenir dans tous les domaines pour le plus grand bénéfice du citoyen. L’intérêt général est en train de perdre de sa valeur à l’intérieur d’une crise démocratique dans laquelle le citoyen ne voit pas l’impact de la politique sur sa vie personnelle. Un pays d’experts s’oppose clairement au concept de multitude puisque les individus ont des aspérités différentes et ont la volonté et le pouvoir de changer les institutions. 
+</p>
+
+<h3>Conclusion : 
+</h3>
+<h4>La crise de nos institutions face à la multitude 
+</h4>
+<p>
+La plate-forme Facebook est utilisée au quotidien par des milliards de personnes. Elle est l’illustration parfaite de la notion de plate-forme, “une infrastructure qui capte et stocke la valeur pour la remettre ensuite à disposition du marché». D’après Henry Verdier, directeur interministériel du numérique et du système d’information de l’État français :
+</p>
+<p class="citation1 hideme">
+« Une plate-forme constitue un auxiliaire indispensable à l’opération délicate de combinaison dynamique entre le marchand et le non-marchand, entre la sphère de l’hétéronomie et la sphère de l’autonomie. »   
+</p>
+<p>
+Il ajoute que dans notre économie où l’innovation est accélérée par la baisse des coûts, certaines infrastructures deviennent cruciales et indispensables, comme un Internet libre et ouvert, l’accessibilité de certaines données ou encore des « infrastructures cognitives telles que la standardisation et l’interopérabilité de certaines plate-formes. » 
+</p>
+<p>
+L’économie s’essaie aujourd’hui de créer de la valeur en exploitant l’énergie même de nos existences. Il conclut en expliquant que le temps ne tardera pas où les individus réclameront, en retour, une rétribution pour cette utilisation de leur propre liberté. On sent déjà des traces de cette aspiration dans les nombreux mouvements “hacktivistes”, ou dans différents mouvements d’émancipation, comme “le do it yourself”. Ce débat risque fort de représenter l’enjeu politique le plus structurant des vingt prochaines années. 
+</p>
+<p>
+La naissance de la multitude est en confrontation directe avec des status quo que l’on pensaient infaillibles. Sa flexibilité, sa force et ses nouvelles aspérités mettent en porte-à-faux nos institutions. On constate  qu’il va devenir impossible de gouverner la multitude et que cette méthode pyramidale commence à s’écrouler par un mouvement « bottom up ». Nous l’avons vu, cette multitude est composée d’un nouveau citoyen directement issu du numérique. Ce citoyen n’a pas les mêmes besoins et les mêmes aspérités que ses parents. Il est déconnecté de la scène politique mais ne l’est certainement pas de la politique. Beaucoup d’espoirs sont entre ses mains et il semble remettre en question le fonctionnement de nos institutions et de notre démocratie.   
+
+</p>
+<p>
+J’espère qu’à ce stade de ce mémoire, nous ne considérons plus les outils du numérique comme de nouveaux moyens de communication. Il faut réellement comprendre que ce changement de paradigme et cette naissance de la multitude interrogent le fonctionnement notre démocratie. Tous les ingrédients semblent réunis pour écrire une nouvelle République. Il est évident que le mouvement ne sera pas initié par nos dirigeants, mais viendra directement de cette diversité d’individualités qui aspirent à affirmer leurs identités.
+</p>
+
+</div>
+<div class="footer">
+<p><a href="#">< précédent</a><a href="#">Menu</a><a href="#">suivant ></a></p>
+</div>
+
+
+
+
+  </body>
+</html>
