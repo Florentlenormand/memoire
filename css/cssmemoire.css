@@ -779,6 +779,26 @@ margin-bottom: 50px;
 	display: none;
 }
 
+.voxe2{
+	display: none;
+}
+
+.follow2{
+	display: none;
+}
+
+.vip2{
+	display: none;
+}
+
+.smartvote2{
+	display: none;
+}
+
+.gov2{
+	display: none;
+}
+
 .link{
 	font-style: bold;
 }
@@ -788,6 +808,7 @@ margin-bottom: 50px;
 	display: none;
 	z-index: 2;
 }
+
 
 
 
