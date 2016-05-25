@@ -82,8 +82,8 @@ margin: 0;
 h1 {
 	font-size: 64px;
 	font-family: 'AbrilW01-DisplayRegular', serif;
-	margin-top: 150px;
 	margin-left: 140px;
+	margin-top: 120px;
 
 }
 
@@ -137,9 +137,8 @@ h4{
 .soustitrememoire{
 	font-size: 26px;
 	font-family: 'BrandonGrotesque-Bold', sans-serif;
-	margin-bottom: 50px;
 	margin-left: 140px;
-
+	margin-bottom: 100px;
 }
 /*Les Paragraphes*/
 
@@ -214,6 +213,18 @@ a:hover {
 	cursor: pointer;
 }
 
+
+.lecturesommaire{
+margin-left: 10%;
+display: inline;	
+}
+
+.lecturesommaire2{
+	
+	display: inline;
+	float: left;
+	width: 60%;
+}
 
 /* Top bar */
 .topbar{
@@ -674,6 +685,20 @@ margin-bottom: 50px;
 .engagement2{
 	display: none;
 }
+
+.nation2{
+	display: none;
+}
+
+.socrata2{
+	display: none;
+}
+
+.demande2{
+	display: none;
+}
+
+
 /* Les contenus vidéos*/
 
 .mediavideo{
@@ -807,6 +832,31 @@ margin-bottom: 50px;
 	display: none;
 }
 
+.changeorg2{
+	display: none;
+}
+
+.mysociety2{
+	display: none;
+}
+
+.nei2{
+	display: none;
+}
+
+.mind2{
+	display: none;
+}
+
+.gov2{
+	display: none;
+}
+
+.region2{
+	display: none;
+}
+
+
 .link{
 	font-style: bold;
 }
@@ -816,6 +866,7 @@ margin-bottom: 50px;
 	display: none;
 	z-index: 2;
 }
+
 
 
 
@@ -888,6 +939,8 @@ margin-bottom: 50px;
 	width: 100px;
 	height: 100px;
 }
+
+
 /* Bkg video */
 
 
