@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="Florent Lenormand - Currently student designer at EnsAD - Email me to see my work">
+    <meta name="author" content="Florent Lenormand">
+    <link rel="icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">    
+
+
+    <title>Mémoire - La déconnexion des élites</title>
+
+
+    <!-- Bootstrap core CSS -->
+    <link href="../../dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/cssmemoire.css" rel="stylesheet">
+
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="../../assets/js/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+     <script src="js/memoire.js"></script>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  </head>
+
+  <body> 
+
+  <script>
+
+//citation
+
+$(function() {
+    $('.citation1').hover(function() { 
+        $('.reference').show(); 
+    }, function() { 
+        $('.reference').hide(); 
+    });
+});
+
+$(function() {
+    $('.citation1').hover(function() { 
+        $('.reference2').show(); 
+    }, function() { 
+        $('.reference2').hide(); 
+    });
+});
+
+//Wikipedia cards
+$(function() {
+    $('.enarque').click(function() { 
+        $('.enarque2').toggle(); 
+    });
+});
+
+$(function() {
+    $('.pierre').click(function() { 
+        $('.pierre2').toggle(); 
+    });
+});
+
+$(function() {
+    $('.invisible').click(function() { 
+        $('.invisible2').toggle(); 
+    });
+});
+
+
+$(function() {
+    $('.raconter').click(function() { 
+        $('.raconter2').toggle(); 
+    });
+});
+
+$(function() {
+    $('.electeur').click(function() { 
+        $('.electeur2').toggle(); 
+    });
+});
+
+$(function() {
+    $('.reforme').click(function() { 
+        $('.reforme2').toggle(); 
+    });
+});
+
+$(function() {
+    $('.juppe').click(function() { 
+        $('.juppe2').toggle(); 
+    });
+});
+
+$(function() {
+    $('.enarque3').click(function() { 
+        $('.enarque4').toggle(); 
+    });
+});
+
+$(function() {
+    $('.bonneraison').click(function() { 
+        $('.bonneraison2').toggle(); 
+    });
+});
+
+$(function() {
+    $('.reel').click(function() { 
+        $('.reel2').toggle(); 
+    });
+});
+
+$(function() {
+    $('.mediapart').click(function() { 
+        $('.mediapart2').toggle(); 
+    });
+});
+
+$(function() {
+    $('.cahuwiki').click(function() { 
+        $('.cahuwiki2').toggle(); 
+    });
+});
+
+$(function() {
+    $('.nul').click(function() { 
+        $('.nul2').toggle(); 
+    });
+});
+
+$(function() {
+    $('.lui').click(function() { 
+        $('.lui2').toggle(); 
+    });
+});
+
+$(function() {
+    $('.legrand').click(function() { 
+        $('.legrand2').toggle(); 
+    });
+});
+
+$(function() {
+    $('.mythe').click(function() { 
+        $('.mythe2').toggle(); 
+    });
+});
+
+$(document).ready(function(){
+    $(".link").click(function(event){
+      event.stopPropagation();
+        $(".youtube").empty();
+        $(".youtube").append('<iframe width="728" height="422" src="https://www.youtube.com/embed/rfGyRJMxRLw?autoplay=1" frameborder="0" allowfullscreen></iframe>');
+        $(".youtube").toggle();
+    });
+     $(document).click( function(){
+        $('.youtube').hide();
+        $('.youtube').empty();
+    });
+});
+
+
+
+$(document).ready(function(){
+   $('.linkarticle').click( function(event){
+        event.stopPropagation();
+        $('.article').toggle();
+    });
+
+    $(document).click( function(){
+        $('.article').hide();
+    });
+});
+
+//add overlay if it does not exist
+if( $('.overlay').length == 0 ){
+    $('body').append('<div class="overlay"></div>');
+} 
+
+$(document).ready(function(){
+    var clicks = 0;
+    $(".videolepen").click(function(event){
+      event.stopPropagation();
+        $(".youtubelepen").empty();
+        $(".youtubelepen").append('<iframe width="728" height="422" src="https://www.youtube.com/embed/JLPilAzV5dA?autoplay=1" frameborder="0" allowfullscreen></iframe>');
+        $(".youtubelepen").toggle();
+    });
+
+     $(document).click( function(){
+        $('.youtubelepen').hide();
+        $('.youtubelepen').empty();
+    });
+});
+
+
+$(document).ready(function(){
+    var clicks = 0;
+    $(".link02").click(function(event){
+      event.stopPropagation();
+        $(".youtube02").empty();
+        $(".youtube02").append('<iframe width="728" height="422" src="https://www.youtube.com/embed/ihuxnVxEpl8?autoplay=1" frameborder="0" allowfullscreen></iframe>');
+        $(".youtube02").toggle();
+    });
+
+     $(document).click( function(){
+        $('.youtube02').hide();
+        $('.youtube02').empty();
+    });
+});
+
+$(document).ready(function(){
+    var clicks = 0;
+    $(".link03").click(function(event){
+      event.stopPropagation();
+        $(".youtube03").empty();
+        $(".youtube03").append('<iframe width="728" height="422" src="https://www.youtube.com/embed/FdOnWu1qdoo?autoplay=1" frameborder="0" allowfullscreen></iframe>');
+        $(".youtube03").toggle();
+    });
+
+     $(document).click( function(){
+        $('.youtube03').hide();
+        $('.youtube03').empty();
+    });
+});
+
+$(document).ready(function(){
+    var clicks = 0;
+    $(".link04").click(function(event){
+      event.stopPropagation();
+        $(".youtube04").empty();
+        $(".youtube04").append('<iframe width="728" height="422" src="https://www.youtube.com/embed/BxemczLqgsk?autoplay=1" frameborder="0" allowfullscreen></iframe>');
+        $(".youtube04").toggle();
+    });
+
+     $(document).click( function(){
+        $('.youtube04').hide();
+        $('.youtube04').empty();
+    });
+});
+
+$(document).ready(function(){
+    var clicks = 0;
+    $(".link05").click(function(event){
+      event.stopPropagation();
+        $(".youtube05").empty();
+        $(".youtube05").append('<iframe width="728" height="422" src="https://www.youtube.com/embed/vSOxdz93jRI?autoplay=1" frameborder="0" allowfullscreen></iframe>');
+        $(".youtube05").toggle();
+    });
+
+     $(document).click( function(){
+        $('.youtube05').hide();
+        $('.youtube05').empty();
+    });
+});
+
+
+
+
+$(document).ready(function(){
+    $(".sommaire").click(function(event){
+      event.stopPropagation();
+        $(".sidemenu").toggle(100);
+
+    $(".sidemenu").click(function(event){
+      $(".sidemenu").hide(500);
+       });
+     $("html").click( function(){
+        $('.sidemenu').hide(500);
+    });
+
+
+
+    });
+    
+});
+
+// Scipt apparition citations FADE IN 
+$(document).ready(function() {
+    
+    /* Every time the window is scrolled ... */
+    $(window).scroll( function(){
+    
+        /* Check the location of each desired element */
+        $('.hideme').each( function(i){
+            
+            var bottom_of_object = $(this).offset().top + $(this).outerHeight();
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+            
+            /* If the object is completely visible in the window, fade it it */
+            if( bottom_of_window > bottom_of_object ){
+                
+                $(this).animate({'opacity':'1'},1000);
+                    
+            }
+            
+        }); 
+    
+    });
+    
+});
+
+// Scipt apparition citations FADE IN 
+
+</script>
+
+
+ <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js" type="text/javascript"></script>
+ <script type="text/javascript">
+        $(document).ready(function() {
+            $(".sidemenu").append('<p></p>')
+            $("h1, h2, h3").each(function(i) {
+                var current = $(this);
+                current.attr("id", "title" + i);
+
+                $(".sidemenu").append("<a id='link" + i + "' href='#title" + i + "' title='" + current.attr("tagName") + "'>" + current.html() + "</a>");
+            });
+        });
+    </script>
+
+
+<!-- Progress bar -->
+
+<!-- Progress bar -->
+
+
+
+  <!--
+   <script>
+    $(function() { // < handler start
+        $(".link").on({
+            click: function() {
+                $(".youtube").stop().hide(500);
+            },
+            
+            click: function() {
+                $(".youtube").stop().show(500);
+            }
+           
+            
+        })
+    }); // < handler end
+</script>
+-->
+
+<!-- Top Bar -->
+<div class="topbar">
+<div class="menu"><a href="http://florentlenormand.com/memoire-sommaire">Menu</a></div>
+
+<div class="sidemenu">
+ 
+</div>
+
+</div>
+<!-- Top Bar -->
+<!-- Sommaire -->
+
+<!-- Sommaire -->
+<!--
+<div class="img-cover1">
+<div class="bigtitle">I - La déconnexion des élites</div>
+</div>
+-->
+<h1>#Démocratie</h1>
+<div class="soustitrememoire">La nouvelle conception de la démocratie<br> 
+à l’heure de la transition numérique</div>
+<div class="gauche">
+
+
+<p>
+
+ Vous trouverez dans ce mémoire des interviews, des vidéos, des références complémentaires, mais aussi des débats et des commentaires du public. Vous pourrez ainsi y ajouter vos propres remarques ou commenter celles des autres. En mettant ce mémoire en ligne, je souhaitais l’ouvrir à la participation pour explorer la démocratie à travers un projet. 
+Je vous souhaite une bonne lecture.
+</p>
+
+<p>
+<a href="http://florentlenormand.com/memoire-intro">Commencer la lecture</a> 
+</p>
+
+
+<script>
+  (function(w, d){
+   var id='embedly-platform', n = 'script';
+   if (!d.getElementById(id)){
+     w.embedly = w.embedly || function() {(w.embedly.q = w.embedly.q || []).push(arguments);};
+     var e = d.createElement(n); e.id = id; e.async=1;
+     e.src = ('https:' === document.location.protocol ? 'https' : 'http') + '://cdn.embedly.com/widgets/platform.js';
+     var s = d.getElementsByTagName(n)[0];
+     s.parentNode.insertBefore(e, s);
+   }
+  })(window, document);
+</script>
+
+
+  </body>
+</html>

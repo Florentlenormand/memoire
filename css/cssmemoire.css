@@ -82,8 +82,8 @@ margin: 0;
 h1 {
 	font-size: 64px;
 	font-family: 'AbrilW01-DisplayRegular', serif;
-	text-transform: uppercase;
 	margin-top: 150px;
+	margin-left: 140px;
 
 }
 
@@ -133,6 +133,14 @@ h4{
 	font-size: 36px;
 	font-family: 'BrandonGrotesque-Light', sans-serif;
 	}
+
+.soustitrememoire{
+	font-size: 26px;
+	font-family: 'BrandonGrotesque-Bold', sans-serif;
+	margin-bottom: 50px;
+	margin-left: 140px;
+
+}
 /*Les Paragraphes*/
 
 p {
