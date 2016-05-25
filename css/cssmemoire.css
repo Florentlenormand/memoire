@@ -249,10 +249,14 @@ img{
 /* sommaire*/
 
 .sommaire {
-	font-size: 12px;
-	margin-left: 40px;
+	display: inline-block;
 	margin-top: 15px;
+	font-size: 14px;
+	margin-left: 40px;
 	cursor: pointer;
+	font-family:'Brandon Grotesque', sans-serif; 
+	font-weight: bold;
+
 }
 
 .sommaire:hover{
@@ -273,11 +277,12 @@ img{
 }
 
 .sommairetitle{
-	margin-top: 100px;
-	margin-left: 10px;
-	font-size: 24px;
+	margin-top: 15px;
+	margin-left: 20px;
+	font-size: 14px;
 	font-family:'Brandon Grotesque', sans-serif; 
 	font-weight: bold;
+
 }
 
 
@@ -288,16 +293,49 @@ img{
 	box-shadow: none;
      }
 
-.sidemenu a[title=H1] { font-size:18px; font-weight: bold; margin-top : 30px; margin-bottom: 25px; margin-left:10px; }
-.sidemenu a[title=H2] { font-size:14px; font-weight: bold; margin-bottom: 18px; margin-left:15px;}
-.sidemenu a[title=H3] { font-size:14px; margin-bottom: 12px; margin-left:20px;}
-
-.sidemenu a:hover{
-	border-bottom: none;
-	box-shadow: none;
+ .sidemenu a:hover{
+ 	background-color: #F3F2F2;
+ 	box-shadow: none;
 	text-decoration: underline;
 }
 
+.sidemenu a[title=H2] { font-size:18px; font-weight: bold; margin-top : 30px; margin-bottom: 25px; margin-left:10px; }
+.sidemenu a[title=H3] { font-size:14px; font-weight: bold; margin-bottom: 18px; margin-left:15px;}
+.sidemenu a[title=H4] { font-size:14px; margin-bottom: 12px; margin-left:20px;}
+
+.menu{
+	display: inline-block;
+	width: 30px;
+	margin-top: 15px;
+	margin-left: 30px;
+}
+
+.menu:hover{
+	text-decoration: underline;
+
+}
+
+.menu a {
+		font-size: 14px;
+	cursor: pointer;
+	font-family:'Brandon Grotesque', sans-serif; 
+	font-weight: bold;
+
+	display:block; 
+	text-align:left;
+	border-bottom: none;
+	box-shadow: none;
+}
+
+ .menu a:hover {
+ 	font-size: 14px;
+	cursor: pointer;
+	font-family:'Brandon Grotesque', sans-serif; 
+	font-weight: bold;
+ 	background-color: white;
+ 	box-shadow: none;
+	text-decoration: underline;
+}
 /* Sommaire */
 
 /* Container */
@@ -567,6 +605,58 @@ margin-bottom: 50px;
 	display: none;
 }
 
+.partiels2{
+	display: none;
+}
+
+.wiki2{
+	display: none;
+}
+
+.solut2{
+	display: none;
+}
+
+.seesaw2{
+	display: none;
+}
+
+.zittrain2{
+	display: none;
+}
+
+.presidente2{
+	display: none;
+}
+
+.topito2{
+	display: none;
+}
+
+.process2{
+	display: none;
+}
+
+.hacker2{
+	display: none;
+}
+
+.cardon2{
+	display: none;
+}
+
+.seth2{
+	display: none;
+}
+
+.force2{
+	display: none;
+}
+
+.contre2{
+	display: none;
+}
+
 /* Les contenus vidéos*/
 
 .mediavideo{
@@ -723,10 +813,12 @@ p {
 }
 
 .sommaire {
-	position: relative;
 	font-size: 16px;
 	margin-left: 20px;
 	cursor: pointer;
+	font-family:'Brandon Grotesque', sans-serif; 
+	font-weight: bold;
+
 }
 
 .gauche{
