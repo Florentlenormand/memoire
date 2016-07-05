@@ -33,7 +33,7 @@ margin: 0;
 }
 
 @font-face {
-	font-family:'font/BrandonGrotesque-Bold';
+	font-family:'BrandonGrotesque-Bold';
 	src: url('font/BrandonGrotesque-Bold_gdi.eot');
 	src: url('font/BrandonGrotesque-Bold_gdi.eot?#iefix') format('embedded-opentype'),
 		url('font/BrandonGrotesque-Bold_gdi.woff') format('woff'),
@@ -45,7 +45,7 @@ margin: 0;
 }
 
 @font-face {
-	font-family:'font/BrandonGrotesque-BoldItalic';
+	font-family:'BrandonGrotesque-BoldItalic';
 	src: url('font/BrandonGrotesque-BoldItalic_gdi.eot');
 	src: url('font/BrandonGrotesque-BoldItalic_gdi.eot?#iefix') format('embedded-opentype'),
 		url('font/BrandonGrotesque-BoldItalic_gdi.woff') format('woff'),
@@ -274,7 +274,7 @@ img{
 	font-size: 14px;
 	margin-left: 40px;
 	cursor: pointer;
-	font-family:'Brandon Grotesque', sans-serif; 
+	font-family:'BrandonGrotesque-Bold', sans-serif; 
 	
 
 }
@@ -301,7 +301,7 @@ img{
 	margin-top: 15px;
 	margin-left: 102px;
 	font-size: 14px;
-	font-family:'Brandon Grotesque', sans-serif; 
+	font-family:'BrandonGrotesque-Bold', sans-serif; 
 
 
 }
@@ -339,7 +339,7 @@ img{
 .menu a {
 		font-size: 14px;
 	cursor: pointer;
-	font-family:'Brandon Grotesque', sans-serif; 
+	font-family:'BrandonGrotesque-Bold', sans-serif; 
 	font-weight: bold;
 
 	display:block; 
@@ -351,7 +351,7 @@ img{
  .menu a:hover {
  	font-size: 14px;
 	cursor: pointer;
-	font-family:'Brandon Grotesque', sans-serif; 
+	font-family:'BrandonGrotesque-Bold', sans-serif; 
 	font-weight: bold;
  	background-color: white;
  	box-shadow: none;
