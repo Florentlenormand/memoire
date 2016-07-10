@@ -79,6 +79,16 @@ margin: 0;
 	color: white;
 }
 
+.titrememoire {
+	font-size: 64px;
+	font-family: 'AbrilW01-DisplayRegular', serif;
+	margin-left: 140px;
+	margin-top: 120px;
+	text-transform: uppercase;
+
+}
+
+
 h1 {
 	font-size: 64px;
 	font-family: 'AbrilW01-DisplayRegular', serif;
@@ -221,9 +231,18 @@ display: inline;
 
 .lecturesommaire2{
 	
-	display: inline;
+	display: inline-block;
 	float: left;
 	width: 60%;
+}
+
+.lecturesommaire2 a{
+	margin-left: 0px;
+}
+
+#lecture{
+	margin-left: 20px;
+	display: inline-block;
 }
 
 /* Top bar */
@@ -1004,18 +1023,26 @@ p {
 }
 
 .sommaire {
-	font-size: 16px;
+	font-size: 12px;
 	margin-left: 20px;
 	cursor: pointer;
-	font-family:'Brandon Grotesque', sans-serif; 
+	font-family:'BrandonGrotesque-Bold', sans-serif; 
 	font-weight: bold;
+}
 
+.menu{
+	font-size: 12px;
+}
+
+.menu a{
+	font-size: 12px;
 }
 
 .gauche{
 margin-left: 10px;
 shape-margin: 15px;
 width: auto;
+margin-right: 10px;
 
 }
 
@@ -1059,6 +1086,38 @@ h4{
 
 }
 
+.lecturesommaire2{
+	
+	display: inline-block;
+	float: left;
+	width: 60%;
+}
+
+.lecturesommaire2 a{
+	margin-left: 0px;
+}
+
+#lecture{
+	margin-left: 0px;
+	margin-top: 20px;
+	margin-bottom: 50px;
+	display: inline-block;
+}
+
+.soustitrememoire{
+	font-size: 20px;
+	margin-left: 20px;
+}
+
+.titrememoire {
+	font-size: 42px;
+	font-family: 'AbrilW01-DisplayRegular', serif;
+	margin-left: 20px;
+	margin-top: 120px;
+	margin-bottom: 10px;
+	text-transform: uppercase;
+
+}
 
     }
  
